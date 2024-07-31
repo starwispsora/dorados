@@ -16,12 +16,12 @@ find_package(geometry_msgs REQUIRED)
 include_directories(include)
 
 #add excutable
-add_executable(moveTSim src/moveTurtleSim.cpp src/moveTurtle.cpp)
+add_executable(moveTurtleSim src/moveTurtleSim.cpp src/moveTurtle.cpp)
 ament_target_dependencies(moveTurtleSim rclcpp geometry_msgs)
 
 #install
 install(TARGETS
-  moveTurleSim
+  moveTurtleSim
   DESTINATION lib/${PROJECT_NAME}
 )
 

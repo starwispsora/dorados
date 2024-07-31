@@ -1,4 +1,4 @@
-#include "/home/sora/Desktop/soraros/KODTA/ROS2/include/publisher.hpp"
+#include "publisher.hpp"
 
 HelloPublisher::HelloPublisher()
     : Node("hello_world"), _i(0)
