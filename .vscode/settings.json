@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "/home/sora/Desktop/soraros/KODTA/ROS2"
+    "cmake.sourceDirectory": "/home/sora/Desktop/soraros/KODTA/ROS2",
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
