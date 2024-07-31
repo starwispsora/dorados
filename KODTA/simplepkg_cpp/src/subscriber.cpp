@@ -1,4 +1,4 @@
-#include "simple_pkg_cpp/subscriber.hpp"
+#include "simplepkg_cpp/subscriber.hpp"
 
 HellowSubscriber::HellowSubscriber()
     : Node("hello_world")
@@ -9,5 +9,5 @@ HellowSubscriber::HellowSubscriber()
 
 void HellowSubscriber::sub_helloworld_msg(const std_msgs::msg::String::SharedPtr msg)
 {
-    cout << "I heard: " << msg->data << endl;
+    RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
 }

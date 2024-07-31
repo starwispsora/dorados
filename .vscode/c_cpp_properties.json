@@ -1,25 +1,27 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "ROS2",
             "includePath": [
-                "/home/sora/Desktop/soraros/**",
-                "${workspaceFolder}/KODTA/moveTSim/include"
+                "${workspaceFolder}/**",
+                "/opt/ros/humble/include/**",
+                "/opt/ros/humble/include/rclcpp",
+                "/opt/ros/humble/include/rcl",
+                "/opt/ros/humble/include/rcutils",
+                "/home/sora/Desktop/sora_ws/src/soraros/KODTA/simplepkg_cpp/include/**",
+                "/home/sora/Desktop/sora_ws/src/soraros/KODTA/moveTSim/include/**",
+                "/usr/include/opencv4",
+                "/opt/ros/humble/include/rmw",
+                "${workspaceFolder}/KODTA/simplepkg_cpp/include",
+                "/opt/ros/humble/include/rcl_yaml_param_parser",
+                "/opt/ros/humble/include/rosidl_runtime_c",
+                "/opt/ros/humble/include/rosidl_typesupport_interface"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c17",
-            "cppStandard": "gnu++17",
-            "intelliSenseMode": "linux-gcc-x64",
-            "compilerPathInCppPropertiesJson": "/usr/bin/gcc",
-            "mergeConfigurations": false,
-            "browse": {
-                "path": [
-                    "/home/sora/Desktop/soraros/**",
-                    "/home/sora/Desktop/soraros"
-                ],
-                "limitSymbolsToIncludedHeaders": true
-            }
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
         }
     ],
     "version": 4

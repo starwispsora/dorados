@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(simple_pkg_cpp)
+project(simplepkg_cpp)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
+
 
 # include directories
 include_directories(include)
@@ -35,6 +36,15 @@ ament_target_dependencies(hello_publisher_class2 rclcpp std_msgs)
 add_executable(hello_subscriber_class src/hello_subscriber_class.cpp src/subscriber.cpp)
 ament_target_dependencies(hello_subscriber_class rclcpp std_msgs)
 
+add_executable(time_publisher_class src/time_publisher_class.cpp src/time_pub.cpp)
+ament_target_dependencies(time_publisher_class rclcpp std_msgs)
+
+add_executable(time_subscriber_class src/time_subscriber_class.cpp src/time_sub.cpp)
+ament_target_dependencies(time_subscriber_class rclcpp std_msgs)
+
+add_executable(m_publisher src/m_publisher.cpp src/m_pub.cpp)
+ament_target_dependencies(m_publisher rclcpp std_msgs)
+
 #install
 install(TARGETS
   helloword
@@ -44,6 +54,9 @@ install(TARGETS
   hello_publisher_class
   hello_publisher_class2
   hello_subscriber_class
+  time_publisher_class
+  m_publisher
+  
   DESTINATION lib/${PROJECT_NAME}
 )
 
