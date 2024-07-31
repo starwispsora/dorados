@@ -9,13 +9,14 @@
 using namespace std;
 using namespace std::chrono_literals;
 
-class HelloSubscriber : public rclcpp::Node
+class HellowSubscriber : public rclcpp::Node
 {
 public:
-    HelloSubscriber();
+    HellowSubscriber();
 
 private:
-    //rclcpp::Publisher<std_msgs::msg::String>::SharedPtr _sub;
-    rclcpp::Subscription<const std_msgs::msg::String>::SharedPtr msg;
-    void sub_helloworld_msg();
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr _sub;
+    void sub_helloworld_msg(const std_msgs::msg::String::SharedPtr msg);
 };
+
+#endif // SUBSCRIBER_HPP
