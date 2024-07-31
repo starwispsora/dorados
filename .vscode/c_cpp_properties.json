@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/include/**",
-                "/opt/ros/humble/include/**"
+                "/opt/ros/humble/include/**",
+                "/opt/ros/humble/include/std_msgs"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
