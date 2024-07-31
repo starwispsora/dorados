@@ -1,4 +1,4 @@
-#include "publisher.hpp"
+#include "simplepkg_cpp/publisher.hpp"
 
 HelloPublisher::HelloPublisher()
     : Node("hello_world"), _i(0)
