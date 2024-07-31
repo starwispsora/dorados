@@ -3,16 +3,23 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
-                "/usr/include/**",
-                "/opt/ros/humble/include/**",
-                "/opt/ros/humble/include/std_msgs"
+                "/home/sora/Desktop/soraros/**",
+                "${workspaceFolder}/KODTA/moveTSim/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c17",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "linux-gcc-x64"
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPathInCppPropertiesJson": "/usr/bin/gcc",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "/home/sora/Desktop/soraros/**",
+                    "/home/sora/Desktop/soraros"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4
