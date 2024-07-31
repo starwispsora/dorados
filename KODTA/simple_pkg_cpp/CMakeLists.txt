@@ -11,7 +11,6 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 
-
 # include directories
 include_directories(include)
 
@@ -52,6 +51,7 @@ install(TARGETS
   hello_publisher_class2
   hello_subscriber_class
   time_publisher_class
+  time_subscriber_class
   DESTINATION lib/${PROJECT_NAME}
 )
 
