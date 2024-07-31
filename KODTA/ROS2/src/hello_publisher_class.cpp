@@ -18,7 +18,7 @@ public:
     }
 private:
     int _i;
-    //std::shared_ptr<rclcpp::Publisher<std_msgs::msg::String, std::allocator<void>>> _pub; A
+    //std::shared_ptr<rclcpp::Publisher<std_msgs::msg::String, std::allocator<void>>> _pub; //A
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr _pub; //A
     rclcpp::TimerBase::SharedPtr _timer;
     void publish_helloworld_msg()
@@ -38,9 +38,4 @@ int main()
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;
-}
-
-void printHello()
-{
-    cout << "Hello, World!" << endl;
 }
