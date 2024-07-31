@@ -45,6 +45,9 @@ ament_target_dependencies(time_subscriber_class rclcpp std_msgs)
 add_executable(m_publisher src/m_publisher.cpp src/m_pub.cpp)
 ament_target_dependencies(m_publisher rclcpp std_msgs)
 
+add_executable(m_subscriber src/m_subscriber.cpp src/m_sub.cpp)
+ament_target_dependencies(m_subscriber rclcpp std_msgs)
+
 #install
 install(TARGETS
   helloword
@@ -56,7 +59,7 @@ install(TARGETS
   hello_subscriber_class
   time_publisher_class
   m_publisher
-  
+  m_subscriber
   DESTINATION lib/${PROJECT_NAME}
 )
 
