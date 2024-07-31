@@ -1,4 +1,4 @@
-#include "simplepkg_cpp/subscriber.hpp"
+#include "simple_pkg_cpp/subscriber.hpp"
 
 HellowSubscriber::HellowSubscriber()
     : Node("hello_world")
