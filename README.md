@@ -10,8 +10,8 @@
 ***
 
 ###### 1Aug <br>
- - #### the day actually run and controlled my Turtlebot3 first time : <br>
-    +pkgxml, +cmakelist -> pub-sub -> compile -> run(controlled by keyboard) <br>
+#### the first day actually run and controlled my Turtlebot3 : <br>
+   +pkgxml, +cmakelist -> pub-sub -> compile -> run(controlled by keyboard) <br>
 
 ***
 
@@ -30,11 +30,9 @@ turtlebot3 (Raspberry Pi) <br>
 
 ***
 
-#### turtlebot3 running order  <br>
-1)link router <br>
-(2)vmware connect) <br>
-3)bring-up : open ros2 - ros2 launch turtlebot3_bringup robot.launch.py <br>	
-4)`turtlebot3 <br>
+#### turtlebot3 setting order  <br>
+ 1. link mine to bot's router <br>
+ (2. vmware connect) <br>
 
 ***
 
@@ -45,6 +43,7 @@ turtlebot3 (Raspberry Pi) <br>
 
 ***
 
+#### turtlebot3 set-up
  - http://192.168.14.1 <br>
  - admin-set up-network-LAN <br>
  - nb(mine 02, turtlebot=burger) <br>
@@ -54,10 +53,13 @@ turtlebot3 (Raspberry Pi) <br>
 
  ***
 
-
-#### on terminal <br>
- - ros2 launch turtlebot3_bringup robot.launch.py  <br>
- - ros2 run turtlebot3_teleop teleop_keyboard <br>
+#### turtlebot3 running order <br>
+ 1. write code (cmake, pkg.xml -> header -> cpp)
+ 2. compile the code
+ 3. (gazebo)
+ 4. turtlebor3 log in
+ 5. turtlebot3 run : ros2 launch turtlebot3_bringup robot.launch.py
+ 6. user code run : ex) ros2 run turtlebot3_teleop teleop_keyboard
 
 ***
 
@@ -73,7 +75,7 @@ turtlebot3 (Raspberry Pi) <br>
 
 ***
 
-#### etc.  <br>
+#### tips..  <br>
 unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ...... "
 
 ***
