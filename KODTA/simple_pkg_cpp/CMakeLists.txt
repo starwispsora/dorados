@@ -43,7 +43,7 @@ ament_target_dependencies(time_subscriber_class rclcpp std_msgs)
 
 #install
 install(TARGETS
-  helloword
+  helloworld
   helloOpenCV
   hello_publisher
   hello_publisher2
