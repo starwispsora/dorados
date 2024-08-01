@@ -1,6 +1,6 @@
 ***
 
-######31Jul###### <br>
+###### 31Jul <br>
 message <br>
  - message interface = message form : <br>
     1)topic(name,type): +pkgxml, +cmakelist -> pub-sub -> compile -> run <br>
@@ -9,22 +9,23 @@ message <br>
 
 ***
 
-######1Aug###### <br>
+###### 1Aug <br>
  - the day actually run and controlled my Turtlebot3 first time : <br>
     +pkgxml, +cmakelist -> pub-sub -> compile -> run(controlled by keyboard) <br>
+
+***
+
 <my laptop - DDC - my bot (simple diagram)>  <br> 
  laptop <br>
  node1 <br>	
  node2  <br>
-(-vmware : subnet - NAT bridge(wifi network card) - ifcongif(192.100.14...))  <br>
  - bring-up : open ros2 - ros2 launch turtlebot3_bringup robot.launch.py  <br>		 
 | <br>
 | <br>
-DDS(multi port<-UDP,TDP) (not safe in public  (X) <br>
-DDS(router id:turtle, pw:turtlebot3) 	        (O) <br>
+DDS(multi port<-UDP,TDP) (weaker security)  (X) <br>
+DDS(router id:turtle, pw:turtlebot3) 	      (O) <br>
 | <br>
 | <br>
-bot  <br>
 turtlebot3 (Raspberry Pi) <br>
 
 ***
