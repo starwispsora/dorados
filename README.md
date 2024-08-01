@@ -3,9 +3,9 @@
 ###### 31Jul <br>
 #### message <br>
  - message interface = message form : <br>
-    1)topic(name,type): +pkgxml, +cmakelist -> pub-sub -> compile -> run <br>
-    2)service(name,type) <br>
-    3)action(name,type) <br>
+    1. topic(name,type): +pkgxml, +cmakelist -> pub-sub -> compile -> run
+    2. service(name,type)
+    3. action(name,type)
 
 ***
 
@@ -18,8 +18,8 @@
 #### my laptop  <->  DDC  <->  my bot (simple diagram)  <br> 
  laptop <br>
  node1 <br>	
- node2  <br>
- - bring-up : open ros2 - ros2 launch turtlebot3_bringup robot.launch.py  <br>		 
+ node2 <br>
+bring-up : open ros2 - ros2 launch turtlebot3_bringup robot.launch.py  <br>		 
 | <br>
 | <br>
 DDS(multi port<-UDP,TDP) (weaker security)  (X) <br>
@@ -31,8 +31,8 @@ turtlebot3 (Raspberry Pi) <br>
 ***
 
 #### turtlebot3 setting order  <br>
- 1. link mine to bot's router <br>
- (2. vmware connect) <br>
+ 1. link mine to bot's router
+ 2. (vmware connect)
 
 ***
 
@@ -44,12 +44,12 @@ turtlebot3 (Raspberry Pi) <br>
 ***
 
 #### turtlebot3 set-up
- - http://192.168.14.1 <br>
- - admin-set up-network-LAN <br>
- - nb(mine 02, turtlebot=burger) <br>
- - ssh ubuntu@192.168.14.50  <br>
- - apt list --upgradable  <br>
- - nb(turtle's 02, turtlebot=burger) <br>
+1. http://192.168.14.1
+2. admin-set up-network-LAN
+3. nb(mine 02, turtlebot=burger)
+4. ssh ubuntu@192.168.14.50
+5. apt list --upgradable
+6. nb(turtle's 02, turtlebot=burger) <br>
 
  ***
 
