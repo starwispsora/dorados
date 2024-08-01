@@ -60,7 +60,7 @@ turtlebot3 (Raspberry Pi) <br>
  3. (gazebo)
  4. turtlebor3 log in
  5. turtlebot3 run : ros2 launch turtlebot3_bringup robot.launch.py
- 6. user code run : ex) ros2 run turtlebot3_teleop teleop_keyboard
+ 6. user, code run : ex) ros2 run turtlebot3_teleop teleop_keyboard
 
 ***
 
