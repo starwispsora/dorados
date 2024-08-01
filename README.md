@@ -1,11 +1,10 @@
 ***
 
 ###### 31Jul <br>
-#### message <br>
- - message interface = message form : <br>
-    1. topic(name,type): +pkgxml, +cmakelist -> pub-sub -> compile -> run
-    2. service(name,type)
-    3. action(name,type)
+#### message interface = message form : <br>
+   1. topic(name,type): +pkgxml, +cmakelist -> pub-sub -> compile -> run
+   2. service(name,type)
+   3. action(name,type)
 
 ***
 
