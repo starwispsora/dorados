@@ -1,35 +1,35 @@
 ***
 
-######31Jul <br>
+######31Jul###### <br>
 message <br>
  - message interface = message form : <br>
-    1)topic(name,type): +pkgxml, +cmakelist -> pub-sub -> compile -> run<br>
+    1)topic(name,type): +pkgxml, +cmakelist -> pub-sub -> compile -> run <br>
     2)service(name,type) <br>
     3)action(name,type) <br>
 
 ***
 
-######1Aug <br>
- - the day actually run and controlled my Turtlebot3 :
+######1Aug###### <br>
+ - the day actually run and controlled my Turtlebot3 first time : <br>
     +pkgxml, +cmakelist -> pub-sub -> compile -> run(controlled by keyboard) <br>
- - <my laptop - DDC - my bot (simple diagram)>
- laptop		
- node1		
- node2
-(-vmware : subnet - NAT bridge(wifi network card) - ifcongif(192.100.14...))
--bring-up : open ros2 - ros2 launch turtlebot3_bringup robot.launch.py		
-|
-|
-DDS(multi port<-UDP,TDP) (not safe in public  (X) 
-DDS(router id:turtle, pw:turtlebot3) 	      (O)
-|
-|
-bot
+<my laptop - DDC - my bot (simple diagram)>  <br> 
+ laptop <br>
+ node1 <br>	
+ node2  <br>
+(-vmware : subnet - NAT bridge(wifi network card) - ifcongif(192.100.14...))  <br>
+ - bring-up : open ros2 - ros2 launch turtlebot3_bringup robot.launch.py  <br>		 
+| <br>
+| <br>
+DDS(multi port<-UDP,TDP) (not safe in public  (X) <br>
+DDS(router id:turtle, pw:turtlebot3) 	        (O) <br>
+| <br>
+| <br>
+bot  <br>
 turtlebot3 (Raspberry Pi) <br>
 
 ***
 
-<running order>
+<turtlebot3 running order>  <br>
 1)link router <br>
 (2)vmware connect) <br>
 3)bring-up : open ros2 - ros2 launch turtlebot3_bringup robot.launch.py <br>	
@@ -37,10 +37,10 @@ turtlebot3 (Raspberry Pi) <br>
 
 ***
 
-<turtlebot3 info>
+<turtlebot3 info>  <br>
 - 12v <br>
-- volocity limit : 3m/s <br>
-- 2moters : DC moters(simplest way we can set up)(diameter cell) <br>
+- speed limit : 0.3m/s <br>
+- has 2 moters : DC moters(simplest way we can set up)(diameter cell) <br>
 
 ***
 
@@ -62,11 +62,17 @@ turtlebot3 (Raspberry Pi) <br>
 
 <on vscode>  <br>
  - vscode open remote : SSH - ubuntu@192.168.14.50 (turtle's) <br>
+ 
  ***
-------------------------------------------------------------------------------
-<gazebo simulator>
- - install(on my laptop)
- - run : "gazebo"
- - stop : "killgazebo" (to abvoid gazebos conflict)
-------------------------------------------------------------------------------
-unset GTK_PATH : qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ......
+
+<gazebo simulator>  <br>
+ - install(on my laptop)  <br>
+ - run : "gazebo"  <br>
+ - stop : "killgazebo" (to abvoid gazebos conflict)  <br>
+
+***
+
+<etc.>  <br>
+unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ...... "
+
+***
