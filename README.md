@@ -55,7 +55,7 @@ turtlebot3 (Raspberry Pi) <br>
  ***
 
 #### turtlebot3 running order <br>
- 1. write code (cmake, pkg.xml -> header -> cpp)
+ 1. write code (cmake, pkg.xml -> header, cpp)
  2. compile the code
  3. (gazebo)
  4. turtlebor3 log in
