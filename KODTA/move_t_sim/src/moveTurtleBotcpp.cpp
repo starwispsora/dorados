@@ -1,4 +1,4 @@
-#include "moveTSim/moveTurtleBotcpp.hpp"
+#include "move_t_sim/moveTurtleBotcpp.hpp"
 
 MoveTurtleBot::MoveTurtleBot()
     : Node("moveTutleBot_node"), _i(0)
@@ -14,6 +14,8 @@ void MoveTurtleBot::publish_turtlesim_msg()
 {
 }
 
-void sub_odom_msg(const nav_msgs::msg::Odometry::SharedPtr msg)
+void MoveTurtleBot::sub_odom_msg(const nav_msgs::msg::Odometry::SharedPtr msg)
 {
+    RCLCPP_INFO(this->get_logger(), 
+        "Received odometry message: '%f'", msg->twist.twist.linear.x);  
 }

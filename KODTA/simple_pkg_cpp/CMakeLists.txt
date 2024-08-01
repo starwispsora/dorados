@@ -15,7 +15,7 @@ find_package(OpenCV REQUIRED)
 include_directories(include)
 
 # excutable
-add_executable(helloword src/helloworld.cpp)
+add_executable(helloworld src/helloworld.cpp)
 
 add_executable(helloOpenCV src/helloOpenCV.cpp)
 target_link_libraries(helloOpenCV ${OpenCV_LIBS})
