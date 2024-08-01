@@ -15,7 +15,8 @@
 
 ***
 
-#### my laptop  <->  DDC  <->  my bot (simple diagram)  <br> 
+#### my laptop  <->  DDC  <->  my bot <br>
+ex) <br>
  laptop <br>
  node1 <br>	
  node2 <br>
