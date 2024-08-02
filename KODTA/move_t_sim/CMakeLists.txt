@@ -24,11 +24,16 @@ ament_target_dependencies(moveTurtleSim2 rclcpp geometry_msgs turtlesim)
 add_executable(moveTurtleBot src/moveTurtleBot.cpp src/moveTurtleBotcpp.cpp)
 ament_target_dependencies(moveTurtleBot rclcpp geometry_msgs nav_msgs)
 
+add_executable(moveTurtleBot2 src/moveTurtleBot.cpp src/moveTurtleBotcpp2.cpp)
+ament_target_dependencies(moveTurtleBot2 rclcpp geometry_msgs nav_msgs)
+
+
 #install
 install(TARGETS
   moveTurtleSim
   moveTurtleSim2
   moveTurtleBot
+  moveTurtleBot2
   DESTINATION lib/${PROJECT_NAME}
 )
 
