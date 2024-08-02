@@ -1,4 +1,4 @@
-#include "example_interfaces/srv/add_two_ints.hpp"
+#include "interface_example/srv/add_two_ints.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include <chrono>
