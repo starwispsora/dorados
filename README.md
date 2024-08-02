@@ -1,7 +1,11 @@
 ***
 
 ###### 31Jul <br>
-#### ros2 3 key communication mechanisms between nodes <br>
+#### ros2 3 key communication mechanisms between nodes
+
+<br>
+
+## Topics
 Topics: For streaming data, many-to-many communication (e.g., sensor data). 
 
 <br>
@@ -16,6 +20,7 @@ Example use cases: sensor data (e.g., camera images, laser scans), command veloc
 
 <br>
 
+##Services
 Services: For synchronous, request-reply interactions (e.g., querying a database).
 
 <br>
@@ -34,6 +39,7 @@ Example use cases: resetting a robot, querying a database.
 
 <br>
 
+##Actions
 Actions: For asynchronous, long-running tasks with feedback (e.g., moving a robot to a location).
 
 <br>
