@@ -2,23 +2,24 @@
 
 ###### 31Jul <br>
 #### ros2 3 key communication mechanisms between nodes <br>
-Topics: For streaming data, many-to-many communication (e.g., sensor data). <br>
+Topics: For streaming data, many-to-many communication (e.g., sensor data). 
+<br><br>
 Topics are used for asynchronous, many-to-many communication. They are ideal for streaming data, such as sensor readings or control commands, where the data is continuously produced and consumed. <br>
    - Publisher: A node that sends messages on a topic.
    - Subscriber: A node that receives messages from a topic.
-   - Message: The data structure sent over a topic, defined in .msg files.
-Example use cases: sensor data (e.g., camera images, laser scans), command velocities for robots.
-Services: For synchronous, request-reply interactions (e.g., querying a database).
-Services are used for synchronous, one-to-one communication. They are ideal for request-reply interactions where a node sends a request and waits for a response.
-    Service Server: A node that provides a service.
-    Service Client: A node that calls a service.
-    Service Definition: Defined in .srv files, including a request and a response message.
-Example use cases: resetting a robot, querying a database.
-Actions: For asynchronous, long-running tasks with feedback (e.g., moving a robot to a location).
-Actions are used for asynchronous, long-running tasks that can provide feedback and be preempted. They are ideal for tasks that may take a while to complete and where you want to track progress.
-    Action Server: A node that performs the action.
-    Action Client: A node that requests the action.
-    Action Definition: Defined in .action files, including goal, result, and feedback messages.
+   - Message: The data structure sent over a topic, defined in .msg files. <br>
+Example use cases: sensor data (e.g., camera images, laser scans), command velocities for robots. <br>
+Services: For synchronous, request-reply interactions (e.g., querying a database). <br>
+Services are used for synchronous, one-to-one communication. They are ideal for request-reply interactions where a node sends a request and waits for a response. <br>
+   - Service Server: A node that provides a service.
+   - Service Client: A node that calls a service.
+   - Service Definition: Defined in .srv files, including a request and a response message. <br>
+Example use cases: resetting a robot, querying a database. <br>
+Actions: For asynchronous, long-running tasks with feedback (e.g., moving a robot to a location).<br><br>
+Actions are used for asynchronous, long-running tasks that can provide feedback and be preempted. They are ideal for tasks that may take a while to complete and where you want to track progress. <br>
+   - Action Server: A node that performs the action.
+   - Action Client: A node that requests the action.
+   - Action Definition: Defined in .action files, including goal, result, and feedback messages. <br>
 Example use cases: moving a robot to a location, processing an image.
 
 ***
