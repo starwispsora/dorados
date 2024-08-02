@@ -131,7 +131,7 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
 
 ***
 
-##### 2 Aug
+##### 2Aug
 ## Service Code(User-Made Interface)
  - Why Necessary?
         Custom services allow for tailored communication between nodes, addressing specific needs of your application.
