@@ -130,6 +130,7 @@ turtlebot3 (Raspberry Pi) <br>
 unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ...... "
 
 ***
+
 ##### 2 Aug
 ## Service Code(User-Made Interface)
  - Why Necessary?
@@ -140,8 +141,9 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
     .srv File and Class Naming:
         The .srv file defines the service interface. The file name should start with a capital letter (e.g., MyService.srv), and the class name should follow CamelCase conventions.
 
- - Run:
-        Start the server and then the client.
+ - Run: Start the server and then the client.
+
+***
 
 ## Parameters
  - Use Across Multiple Functions:
@@ -171,3 +173,5 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
         Using launch files with parameters is preferred as it provides a more organized way to manage configurations and node launches.
 
  - get(bring parameter)-set(adjust)
+
+***
