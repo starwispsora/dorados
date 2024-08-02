@@ -3,7 +3,6 @@
 ###### 31Jul <br>
 #### ros2 3 key communication mechanisms between nodes
 
-<br>
 
 ## Topics
 
