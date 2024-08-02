@@ -130,47 +130,44 @@ turtlebot3 (Raspberry Pi) <br>
 unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ...... "
 
 ***
-p140
-2 Aug
-Service Code (p288)
-User-Made Interface
-
-    Why Necessary?
+##### 2 Aug
+## Service Code(User-Made Interface)
+ - Why Necessary?
         Custom services allow for tailored communication between nodes, addressing specific needs of your application.
-    How:
+  
+ - How:
         Input commands on your terminal (refer to p289 for details).
     .srv File and Class Naming:
         The .srv file defines the service interface. The file name should start with a capital letter (e.g., MyService.srv), and the class name should follow CamelCase conventions.
-    Run:
+
+ - Run:
         Start the server and then the client.
 
-Parameters
-
-    Use Across Multiple Functions:
+## Parameters
+ - Use Across Multiple Functions:
         Parameters are often preferred over variables for maintaining consistent values across different functions.
 
-    Commands:
+ - Commands:
         List parameters: ros2 param list
         Get a parameter: ros2 param get /<node_name> <parameter_name> (e.g., ros2 param get /turtlesim background_b)
         Set a parameter: ros2 param set /<node_name> <parameter_name> <value> (e.g., ros2 param set /turtlesim background_b 20)
 
-    Save Current Parameters:
+ - Save Current Parameters:
         Dump parameters to a file: ros2 param dump /<node_name> (e.g., ros2 param dump /turtlesim)
 
-    Save as YAML File:
+ - Save as YAML File:
         Save parameters as a YAML file: ros2 param dump /<node_name> > turtlesim.yaml (e.g., ros2 param dump /turtlesim > turtlesim.yaml)
 
-    Show Saved File Version:
+ - Show Saved File Version:
         Load parameters from a YAML file: ros2 param load /<node_name> turtlesim.yaml (e.g., ros2 param load /turtlesim turtlesim.yaml)
 
-    Run with Parameters File:
+ - Run with Parameters File:
         Launch node with parameters from a file: ros2 run <package_name> <node_name> --ros-args --params-file turtlesim.yaml (e.g., ros2 run turtlesim turtlesim_node --ros-args --params-file turtlesim.yaml)
 
-    Why Used:
+ - Why Used:
         Using parameters files can help manage and load configurations consistently across different runs.
 
-    Launch Files + Parameters:
+ - Launch Files + Parameters:
         Using launch files with parameters is preferred as it provides a more organized way to manage configurations and node launches.
 
-
-get(bring parameter)-set(adjust)
+ - get(bring parameter)-set(adjust)
