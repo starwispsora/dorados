@@ -1,28 +1,28 @@
-#include "move_t_sim/moveTurtle2.hpp"
+#include "move_t_sim/moveTurtleBotcpp2.hpp"
 
-MoveTurtlesim::MoveTurtlesim()
-    : Node("moveTutle_node"), _i(0)
+MoveTurtleBot::MoveTurtleBot()
+    : Node("moveTutleBot_node"), _i(0)
 {
     auto qos_profile = rclcpp::QoS(rclcpp::KeepLast(10));
-    _pub = this->create_publisher<geometry_msgs::msg::Twist>("turtle1/cmd_vel", qos_profile);
-    _sub = this->create_subscription<turtlesim::msg::Pose>("turtle1/pose", qos_profile, std::bind(&MoveTurtlesim::sub_turtlesim_pose, this, std::placeholders::_1));
-    _timer = this->create_wall_timer(30ms, std::bind(&MoveTurtlesim::publish_turtlesim_msg, this));
+    _twist_pub = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", qos_profile);
+    _odom_sub = this->create_subscription<nav_msgs::msg::Odometry>("odom", qos_profile, std::bind(&MoveTurtleBot::sub_odom_msg, this, std::placeholders::_1));
+    _timer = this->create_wall_timer(30ms, std::bind(&MoveTurtleBot::publish_turtlesim_msg, this));
 }
 
-void MoveTurtlesim::publish_turtlesim_msg()
+void MoveTurtleBot::publish_turtlesim_msg()
 {
     auto msg = geometry_msgs::msg::Twist();
     // 사각형으로 움직이기.
     switch (_i)
     {
     case 0:
-        if (_pose_msg.x < 6.5)
+        if (_odom_msg.pose.pose.position.x < 6.5)
         {
             // 직진
             msg.linear.x = 0.1;
             msg.angular.z = 0.0;
         }
-        else if (_pose_msg.theta < 1.57)
+        else if (_theta < 1.57)
         {
             // 회전
             msg.linear.x = 0.0;
@@ -34,13 +34,13 @@ void MoveTurtlesim::publish_turtlesim_msg()
         }
         break;
     case 1:
-        if (_pose_msg.y < 6.5)
+        if (_odom_msg.pose.pose.position.y < 6.5)
         {
             // 직진
             msg.linear.x = 0.1;
             msg.angular.z = 0.0;
         }
-        else if (_pose_msg.theta < 3.14 && _pose_msg.theta > 0)
+        else if (_theta < 3.14 && _theta > 0)
         {
             // 회전
             msg.linear.x = 0.0;
@@ -52,13 +52,13 @@ void MoveTurtlesim::publish_turtlesim_msg()
         }
         break;
     case 2:
-        if (_pose_msg.x > 5.5)
+        if (_odom_msg.pose.pose.position.x > 5.5)
         {
             // 직진
             msg.linear.x = 0.1;
             msg.angular.z = 0.0;
         }
-        else if (_pose_msg.theta < -1.57)
+        else if (_theta < -1.57)
         {
             // 회전
             msg.linear.x = 0.0;
@@ -70,13 +70,13 @@ void MoveTurtlesim::publish_turtlesim_msg()
         }
         break;
     case 3:
-        if (_pose_msg.y > 5.5)
+        if (_odom_msg.pose.pose.position.y > 5.5)
         {
             // 직진
             msg.linear.x = 0.1;
             msg.angular.z = 0.0;
         }
-        else if (_pose_msg.theta < 0)
+        else if (_theta < 0)
         {
             // 회전
             msg.linear.x = 0.0;
@@ -84,14 +84,17 @@ void MoveTurtlesim::publish_turtlesim_msg()
         }
         else
         {
-            _i=0;
+            _i = 0;
         }
         break;
     }
-    _pub->publish(msg);
+    _twist_pub->publish(msg);
 }
 
-void MoveTurtlesim::sub_turtlesim_pose(const turtlesim::msg::Pose::SharedPtr msg)
+void MoveTurtleBot::sub_odom_msg(const nav_msgs::msg::Odometry::SharedPtr msg)
 {
-    _pose_msg = *msg;
+    _odom_msg = *msg;
+    tf2::Quaternion q(_odom_msg.pose.pose.orientation.x, _odom_msg.pose.pose.orientation.y, _odom_msg.pose.pose.orientation.z, _odom_msg.pose.pose.orientation.w);
+    _theta = q.getAngle();
+    RCLCPP_INFO(get_logger(), "Position(x: %f, y: %f, z: %f, theta: %f)", _odom_msg.pose.pose.position.x, _odom_msg.pose.pose.position.y, _odom_msg.pose.pose.position.z, _theta);
 }
