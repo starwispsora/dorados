@@ -3,12 +3,19 @@
 ###### 31Jul <br>
 #### ros2 3 key communication mechanisms between nodes <br>
 Topics: For streaming data, many-to-many communication (e.g., sensor data). 
-<br><br>
+
+<br>
+
 Topics are used for asynchronous, many-to-many communication. They are ideal for streaming data, such as sensor readings or control commands, where the data is continuously produced and consumed. <br>
    - Publisher: A node that sends messages on a topic.
    - Subscriber: A node that receives messages from a topic.
-   - Message: The data structure sent over a topic, defined in .msg files. <br>
-Example use cases: sensor data (e.g., camera images, laser scans), command velocities for robots. <br>
+   - Message: The data structure sent over a topic, defined in .msg files.
+ <br>
+ 
+Example use cases: sensor data (e.g., camera images, laser scans), command velocities for robots.
+
+<br>
+
 Services: For synchronous, request-reply interactions (e.g., querying a database). <br>
 Services are used for synchronous, one-to-one communication. They are ideal for request-reply interactions where a node sends a request and waits for a response. <br>
    - Service Server: A node that provides a service.
