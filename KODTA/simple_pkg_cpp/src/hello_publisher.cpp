@@ -8,9 +8,6 @@ using namespace std::chrono_literals;
 
 void printHello();
 
-    
-
-
 int main()
 {
     rclcpp::init(0, nullptr);
