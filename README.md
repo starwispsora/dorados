@@ -135,3 +135,6 @@ Parameters
 
     Launch Files + Parameters:
         Using launch files with parameters is preferred as it provides a more organized way to manage configurations and node launches.
+
+
+get(bring parameter)-set(adjust)

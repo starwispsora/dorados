@@ -3,6 +3,7 @@
 #include "std_msgs/msg/string.hpp"
 #include <chrono>
 #include <iostream>
+#include "rcl_interfaces/msg/set_parameters_result.hpp"
 
 using namespace std;
 using namespace std::chrono_literals;
@@ -15,6 +16,11 @@ public:
     {
         _client = create_client<example_interfaces::srv::AddTwoInts>("add_two_ints");
         _timer = create_wall_timer(5s, std::bind(&SimpleServiceClient::send_request, this));
+        declare_parameter("a", 40);
+        declare_parameter("b", 74); //p411 parameter
+        get_parameter("a", _a);
+        get_parameter("b", _b);
+        auto add_on_set_parameters_callback(std::bind(&SimpleServiceClient::param_callback, this, std::placeholders::_1)); 
     }
 
     void send_request()
@@ -52,8 +58,25 @@ public:
 private:
     int _a;
     int _b;
+
     rclcpp::Client<example_interfaces::srv::AddTwoInts>::SharedPtr _client;
     rclcpp::TimerBase::SharedPtr _timer;
+    rclcpp::AsyncParametersClient::SharedPtr _param_client;
+
+    OnParametersSetCallbackType param_callback(const std::vector<rclcpp::Parameter> &parameters) //better code than p411's ! 
+    {
+        for (const auto &param : parameters)
+        {
+            if (param.get_name() == "a")
+            {
+                _a = param.as_int();
+            }
+            else if (param.get_name() == "b")
+            {
+                _b = param.as_int();
+            }
+        }
+        return rcl_interfaces::msg::SetParametersResult();
 };
 
 int main(int argc, char *argv[])
