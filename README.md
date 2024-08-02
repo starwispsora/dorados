@@ -1,6 +1,6 @@
 ***
 
-###### 31Jul <br>
+###### 31Jul2024 <br>
 #### ros2 3 key communication mechanisms between nodes
 
 
@@ -59,7 +59,7 @@ Example use cases: moving a robot to a location, processing an image.
 
 ***
 
-###### 1Aug <br>
+###### 1Aug2024 <br>
 #### the first day actually run and controlled my Turtlebot3 : <br>
    +pkgxml, +cmakelist -> pub-sub -> compile -> run(controlled by keyboard) <br>
 
@@ -131,7 +131,7 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
 
 ***
 
-##### 2Aug <br>
+##### 2Aug2024 <br>
 ## Service Code(User-Made Interface)
  - Why Necessary?
         Custom services allow for tailored communication between nodes, addressing specific needs of your application.
