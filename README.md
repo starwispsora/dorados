@@ -21,7 +21,7 @@ Example use cases: sensor data (e.g., camera images, laser scans), command veloc
 
 <br>
 
-##Services
+## Services
 
 Services: For synchronous, request-reply interactions (e.g., querying a database).
 
@@ -41,7 +41,7 @@ Example use cases: resetting a robot, querying a database.
 
 <br>
 
-##Actions
+## Actions
 
 Actions: For asynchronous, long-running tasks with feedback (e.g., moving a robot to a location).
 
