@@ -16,17 +16,37 @@ Example use cases: sensor data (e.g., camera images, laser scans), command veloc
 
 <br>
 
-Services: For synchronous, request-reply interactions (e.g., querying a database). <br>
-Services are used for synchronous, one-to-one communication. They are ideal for request-reply interactions where a node sends a request and waits for a response. <br>
+Services: For synchronous, request-reply interactions (e.g., querying a database).
+
+<br>
+
+Services are used for synchronous, one-to-one communication. They are ideal for request-reply interactions where a node sends a request and waits for a response. 
+
+<br>
+
    - Service Server: A node that provides a service.
    - Service Client: A node that calls a service.
-   - Service Definition: Defined in .srv files, including a request and a response message. <br>
-Example use cases: resetting a robot, querying a database. <br>
-Actions: For asynchronous, long-running tasks with feedback (e.g., moving a robot to a location).<br><br>
-Actions are used for asynchronous, long-running tasks that can provide feedback and be preempted. They are ideal for tasks that may take a while to complete and where you want to track progress. <br>
+   - Service Definition: Defined in .srv files, including a request and a response message.
+
+<br>
+ 
+Example use cases: resetting a robot, querying a database.
+
+<br>
+
+Actions: For asynchronous, long-running tasks with feedback (e.g., moving a robot to a location).
+
+<br>
+
+Actions are used for asynchronous, long-running tasks that can provide feedback and be preempted. They are ideal for tasks that may take a while to complete and where you want to track progress. 
+
+<br>
+
    - Action Server: A node that performs the action.
    - Action Client: A node that requests the action.
-   - Action Definition: Defined in .action files, including goal, result, and feedback messages. <br>
+   - Action Definition: Defined in .action files, including goal, result, and feedback messages.
+<br>
+
 Example use cases: moving a robot to a location, processing an image.
 
 ***
