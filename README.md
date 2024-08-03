@@ -10,7 +10,10 @@ Topics: For streaming data, many-to-many communication (e.g., sensor data).
 
 <br>
 
-Topics are used for asynchronous, many-to-many communication. They are ideal for streaming data, such as sensor readings or control commands, where the data is continuously produced and consumed. <br>
+Topics are used for asynchronous, many-to-many communication. They are ideal for streaming data, such as sensor readings or control commands, where the data is continuously produced and consumed. 
+
+<br>
+
    - Publisher: A node that sends messages on a topic.
    - Subscriber: A node that receives messages from a topic.
    - Message: The data structure sent over a topic, defined in .msg files.
