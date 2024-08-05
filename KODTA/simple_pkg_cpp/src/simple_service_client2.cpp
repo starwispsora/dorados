@@ -21,32 +21,13 @@ public:
         declare_parameter("b", 74);
         get_parameter("a", _a);
         get_parameter("b", _b);
-        auto ha = add_on_set_parameters_callback(
-            std::bind(&SimpleServiceClient::param_callback, this, std::placeholders::_1));
         set_parameter(rclcpp::Parameter("a", 50));
         set_parameter(rclcpp::Parameter("b", 100));
-        // _param_client = std::make_shared<rclcpp::AsyncParametersClient>(this);
-        // auto param_event_callback =
-        //     [this](const rcl_interfaces::msg::ParameterEvent::SharedPtr event) -> void
-        // {
-        //     for (auto &changed_parameter : event->changed_parameters)
-        //     {
-        //         if (changed_parameter.name == "a")
-        //         {
-        //             auto value = rclcpp::Parameter::from_parameter_msg(changed_parameter).as_int();
-        //             _a = value;
-        //         }
-        //         else if (changed_parameter.name == "b")
-        //         {
-        //             auto value = rclcpp::Parameter::from_parameter_msg(changed_parameter).as_int();
-        //             _b = value;
-        //         }
-        //     }
-        // };
-        // auto sub = _param_client->on_parameter_event(param_event_callback);
         rclcpp::QoS qos(rclcpp::KeepLast(100), rmw_qos_profile_sensor_data);
         _parameter_event_sub = create_subscription<rcl_interfaces::msg::ParameterEvent>(
-            "/parameter_events", qos, std::bind(&SimpleServiceClient::param_event_callback, this, std::placeholders::_1));
+            "/parameter_events", qos, std::bind(&SimpleServiceClient::param_event_callback, 
+                                                this, 
+                                                std::placeholders::_1));
     }
 
     void send_request()
