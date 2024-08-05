@@ -178,7 +178,7 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
  - Show Saved File Version: <br>
     Load parameters from a YAML file: <br>
     **ros2 param load /node_name turtlesim.yaml** <br>
-    **ros2 param load /turtlesim turtlesim.yaml** <br>
+    ### **ros2 param load /turtlesim turtlesim.yaml** <br>
 
  - Run with Parameters File:
  Launch node with parameters from a file: <br>
@@ -200,9 +200,9 @@ client <---------sequence------------------server <br>
 
  <br>
  
-   ros2 run simple_pkg_cpp simple_action_server <br>
-  + ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4} <br>
-
-  
+ ***
  
+ 1. ros2 run simple_pkg_cpp simple_action_server
+ 2. ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4} <br>
+
  ***
