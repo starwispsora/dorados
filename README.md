@@ -89,7 +89,7 @@ ex) <br>
  node2 <br>
 bring-up : open ros2 - 
 
-      ros2 launch turtlebot3_bringup robot.launch.py <br> 
+      ros2 launch turtlebot3_bringup robot.launch.py
 | <br>
 | <br>
 DDS(multi port<-UDP,TDP) (weaker security)    (X) <br>
