@@ -12,8 +12,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ArithmeticArgument.msg"
   "srv/AddTwoInt.srv"
-  "src/ArithmeticOperator.srv"
-
+  "srv/ArithmeticOperator.srv"
   "action/Fibonacci.action"
   "action/ArithmeticChecker.action"
 )

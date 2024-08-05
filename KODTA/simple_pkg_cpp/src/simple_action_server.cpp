@@ -1,83 +1,106 @@
-#include "example_interfaces/action/fibonacci.hpp"
+#include "interface_example/action/fibonacci.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
+#include <chrono>
 #include <functional>
 #include <memory>
+#include <sstream>
 #include <thread>
 
-class SimpleActionServer : public rclcpp::Node
+using namespace std::chrono_literals;
+
+class SimpleActionClient : public rclcpp::Node
 {
 public:
-    using Fibonacci = example_interfaces::action::Fibonacci;
-    using GoalHandleFibonacci = rclcpp_action::ServerGoalHandle<Fibonacci>;
-    SimpleActionServer() : Node("fibonacci_action_server")
+    using Fibonacci = interface_example::action::Fibonacci;
+    using GoalHandleFibonacci = rclcpp_action::ClientGoalHandle<Fibonacci>;
+
+    SimpleActionClient(const rclcpp::NodeOptions &options) : Node("fibonacci_action_client", options)
     {
         using namespace std::placeholders;
-        _action_server = rclcpp_action::create_server<Fibonacci>(
-            this, "fibonacci",
-            std::bind(&SimpleActionServer::handle_goal, this, _1, _2),
-            std::bind(&SimpleActionServer::handle_cancel, this, _1),
-            std::bind(&SimpleActionServer::handle_accepted, this, _1));
+        _action_client = rclcpp_action::create_client<Fibonacci>(this, "fibonacci");
+        _timer = create_wall_timer(500ms, std::bind(&SimpleActionClient::send_goal, this));
+    }
+    void send_goal()
+    {
+        using namespace std::placeholders;
+        _timer->cancel();
+        if (!_action_client->wait_for_action_server(10s))
+        {
+            RCLCPP_ERROR(get_logger(), "Action server not available after waiting");
+            rclcpp::shutdown();
+        }
+        auto goal_msg = Fibonacci::Goal();
+        goal_msg.order = 10;
+        RCLCPP_INFO(get_logger(), "Sending goal request");
+
+        auto send_goal_options = rclcpp_action::Client<Fibonacci>::SendGoalOptions();
+        send_goal_options.goal_response_callback = std::bind(&SimpleActionClient::goal_response_callback, this, _1);
+        send_goal_options.feedback_callback = std::bind(&SimpleActionClient::feedback_callback, this, _1, _2);
+        send_goal_options.result_callback = std::bind(&SimpleActionClient::result_callback, this, _1);
+        _action_client->async_send_goal(goal_msg, send_goal_options);
     }
 
 private:
-    rclcpp_action::Server<Fibonacci>::SharedPtr _action_server;
-    rclcpp_action::GoalResponse handle_goal(
-        const rclcpp_action::GoalUUID &uuid,
-        std::shared_ptr<const Fibonacci::Goal> goal)
+    rclcpp_action::Client<Fibonacci>::SharedPtr _action_client;
+    rclcpp::TimerBase::SharedPtr _timer;
+    void goal_response_callback(const GoalHandleFibonacci::SharedPtr &goal_handle)
     {
-        RCLCPP_INFO(this->get_logger(), "Received goal request with order %d", goal->order);
-        (void)uuid;
-        return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
+        if (!goal_handle)
+        {
+            RCLCPP_INFO(get_logger(), "Goal was rejected by server");
+        }
+        else
+        {
+            RCLCPP_INFO(get_logger(), "Goal accepted by server, waiting for result");
+        }
     }
-    rclcpp_action::CancelResponse handle_cancel(
-        const std::shared_ptr<GoalHandleFibonacci> goal_handle)
-    {
-        RCLCPP_INFO(get_logger(), "Received request to cancel goal");
-        (void)goal_handle;
-        return rclcpp_action::CancelResponse::ACCEPT;
-    }
-    void handle_accepted(const std::shared_ptr<GoalHandleFibonacci> goal_handle)
-    {
-        std::thread{std::bind(&SimpleActionServer::execute, this, std::placeholders::_1), goal_handle}.detach();
-    }
-    void execute(const std::shared_ptr<GoalHandleFibonacci> goal_handle)
-    {
-        RCLCPP_INFO(get_logger(), "Executing goal");
-        rclcpp::Rate loop_rate(1);
-        const auto goal = goal_handle->get_goal();
-        auto feedback = std::make_shared<Fibonacci::Feedback>();
-        feedback->sequence.push_back(0);
-        feedback->sequence.push_back(1);
-        auto result = std::make_shared<Fibonacci::Result>();
 
-        for (int i = 1; (i < goal->order) && rclcpp::ok(); ++i)
+    void feedback_callback(
+        GoalHandleFibonacci::SharedPtr,
+        const std::shared_ptr<const Fibonacci::Feedback> feedback)
+    {
+        std::stringstream ss;
+        ss << "Next number in sequence received: ";
+        for (auto number : feedback->partial_sequence)
         {
-            if (goal_handle->is_canceling())
-            {
-                result->sequence = feedback->sequence;
-                goal_handle->canceled(result);
-                RCLCPP_INFO(get_logger(), "Goal canceled");
-                return;
-            }
-            feedback->sequence.push_back(feedback->sequence[i] + feedback->sequence[i - 1]);
-            goal_handle->publish_feedback(feedback);
-            RCLCPP_INFO(get_logger(), "Publish feedback");
-            loop_rate.sleep();
+            ss << number << " ";
         }
-        if (rclcpp::ok())
+        RCLCPP_INFO(get_logger(), ss.str().c_str());
+    }
+
+    void result_callback(const GoalHandleFibonacci::WrappedResult &result)
+    {
+        switch (result.code)
         {
-            result->sequence = feedback->sequence;
-            goal_handle->succeed(result);
-            RCLCPP_INFO(get_logger(), "Goal succeeded");
+        case rclcpp_action::ResultCode::SUCCEEDED:
+            break;
+        case rclcpp_action::ResultCode::ABORTED:
+            RCLCPP_INFO(get_logger(), "Goal was aborted");
+            return;
+        case rclcpp_action::ResultCode::CANCELED:
+            RCLCPP_INFO(get_logger(), "Goal was canceled");
+            return;
+        case rclcpp_action::ResultCode::UNKNOWN:
+            RCLCPP_INFO(get_logger(), "Goal result is unknown");
+            return;
         }
+        std::stringstream ss;
+        ss << "Result received: ";
+        for (auto number : result.result->sequence)
+        {
+            ss << number << " ";
+        }
+        RCLCPP_INFO(get_logger(), ss.str().c_str());
+        rclcpp::shutdown();
     }
 };
 
 int main(int argc, char *argv[])
 {
     rclcpp::init(argc, argv);
-    auto node = std::make_shared<SimpleActionServer>();
+    rclcpp::NodeOptions options;
+    auto node = std::make_shared<SimpleActionClient>(options);
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;

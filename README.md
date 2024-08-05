@@ -159,9 +159,10 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
  - Save Current Parameters: <br>
  - Dump parameters to a file: <br>
  ros2 param dump ( /<node_name> ) <br>
-**ros2 param dump /turtlesim**
+ **ros2 param dump /turtlesim**
 
- - Save as YAML File:Save parameters as a **YAML file: ros2 param dump /<node_name> turtlesim.yaml** <br>
+ - Save as YAML File:Save parameters as a <br>
+ **YAML file: ros2 param dump /<node_name> turtlesim.yaml** <br>
  **ros2 param dump /turtlesim > turtlesim.yaml** <br>
 
  - Show Saved File Version: <br>
