@@ -192,17 +192,15 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
 ##### 5Aug
 
 ### action :
-
-client 					                       server
-      ------- goal(order)-------->
-      <---feedback(partial-sequence)
-      <---sequence------------------
- 
+client -------------goal(order)----------->server <br>
+client <----feedback(partial-sequence)----server <br>
+client <---------sequence------------------server <br>
  - to run server -> to run multiple clients 
  - allows simplify just service-topic
 
  <br>
-    ros2 run simple_pkg_cpp simple_action_server <br>
+ 
+   ros2 run simple_pkg_cpp simple_action_server <br>
   + ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4} <br>
 
   
