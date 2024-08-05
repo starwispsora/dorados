@@ -180,10 +180,6 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
 ***
 ##### 5Aug
 
-++add memo to the previous class
-
-
-
 ### action :
 
 client 					server
