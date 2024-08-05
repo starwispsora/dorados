@@ -175,8 +175,8 @@ turtlebot3 (Raspberry Pi) <br>
 
 ## Parameters
  - Use Across Multiple Functions: Parameters are often preferred over variables for maintaining consistent values across different functions. <br>
- - Commands: <br>
- List parameters:
+Commands: <br>
+ - List parameters:
 
          ros2 param list
  - Get a parameter: <br>
@@ -231,5 +231,51 @@ client <---------sequence------------------server <br>
 
       ros2 run simple_pkg_cpp simple_action_server
       ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4}
+ <br>
+ 
+ Turtlesim
+- action : RotateAbsolute.action
+- images -ardent(etc.. many other turtle pics)
+- include – turtlesim : turtle.h / turtle_frame.h
+- launch : multisim.launch.py
+- msg : Color.msg / Pose.msg
+- src : turtle.cpp / turtle_frame.cpp / turtlesim.cpp
+- src – turtlesim : __init__.py
+- srv : Kill.srv / SetPen.srv / Spawn.srv / TeleportAbsolute.srv / TeleportRelative.srv
+- tutorials : draw_square.cpp / mimic.cpp / teleop_turtle_key.cpp
+- CmakeLists.txt
+- package.xml
+
+### What is a Node?
+
+- Node: In the turtlesim package, the nodes would be defined in source files like turtle.cpp, turtle_frame.cpp, and turtlesim.cpp. These nodes handle specific functionalities, such as controlling the turtle's behavior or handling its graphical representation.
+
+### Why Do We Need All These Files? 
+
+- Actions and Services:
+        Actions (e.g., RotateAbsolute.action): Define goals and feedback mechanisms for actions that take time to complete.
+        Services (e.g., Kill.srv, SetPen.srv): Define request and response types for services that perform a specific task on request.
+
+- Messages:
+        Messages (e.g., Color.msg, Pose.msg): Define the data structures used for communication between nodes. These are fundamental for passing information like color settings and turtle positions.
+
+- Source Files:
+        Source Files (e.g., turtle.cpp, turtle_frame.cpp, turtlesim.cpp): Contain the implementation of the nodes and their functionalities. They define the logic and behavior of the nodes.
+
+- Include Files:
+        Header Files (e.g., turtle.h, turtle_frame.h): Define the interfaces for the source files, declaring classes and functions used in the implementation.
+- Launch Files:
+        Launch Files (e.g., multisim.launch.py): Define how multiple nodes and their configurations are launched together. They automate the process of starting up nodes with specific parameters.
+
+- Tutorials:
+        Tutorials (e.g., draw_square.cpp, mimic.cpp, teleop_turtle_key.cpp): Provide example code to demonstrate how to use the nodes or functionalities of the package. They help in learning and understanding how to apply the package’s features.
+
+- Configuration Files:
+        CMakeLists.txt: Defines how the package is built, specifying the compilation and linking instructions.
+        package.xml: Provides metadata about the package, including dependencies, version, and description.
+
+Summary
+
+In essence, all these files work together to build, configure, and run the turtlesim package effectively. The nodes are the executables that perform specific tasks, while the other files define how these tasks are carried out, configured, and communicated. Each component ensures that the package functions correctly and integrates seamlessly with other ROS2 elements.
 
  ***
