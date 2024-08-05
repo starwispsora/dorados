@@ -126,14 +126,14 @@ turtlebot3 (Raspberry Pi) <br>
 #### turtlebot3 running order <br>
  1. write code (cmake, pkg.xml -> header, cpp)
  2. compile the code
- 3. gazebo
+ 3.     gazebo
  4. turtlebor3 log in
  5. turtlebot3 run :
 
          ros2 launch turtlebot3_bringup robot.launch.py
  7. user, code run :
 
-         os2 run turtlebot3_teleop teleop_keyboard
+         ros2 run turtlebot3_teleop teleop_keyboard
 
 <br><br>
 
@@ -186,10 +186,7 @@ turtlebot3 (Raspberry Pi) <br>
  - Set a parameter: <br>
  
        ros2 param set /node_name parameter_name value
-
- <br>
-
-    ros2 param set /turtlesim background_b 20
+       ros2 param set /turtlesim background_b 20
  - Save Current Parameters: <br>
  - Dump parameters to a file: <br>
  
