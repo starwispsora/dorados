@@ -139,26 +139,23 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
  - Why Necessary?
         Custom services allow for tailored communication between nodes, addressing specific needs of your application.
   
- - How:
-        Input commands on your terminal (refer to p289 for details).
-    .srv File and Class Naming:
-        The .srv file defines the service interface. The file name should start with a capital letter (e.g., MyService.srv), and the class name should follow CamelCase conventions.
-
+ - How: Input commands on your terminal (refer to p289 for details). <br>
+ - .srv File and Class Naming: The .srv file defines the service interface. The file name should start with a capital letter (e.g., MyService.srv), and the class name should follow CamelCase conventions. <br>
  - Run: Start the server and then the client.
 
 ***
 
 ## Parameters
- - Use Across Multiple Functions:
-        Parameters are often preferred over variables for maintaining consistent values across different functions.
-
- - Commands:
-        List parameters: ros2 param list
-        Get a parameter: ros2 param get /<node_name> <parameter_name> (e.g., ros2 param get /turtlesim background_b)
-        Set a parameter: ros2 param set /<node_name> <parameter_name> <value> (e.g., ros2 param set /turtlesim background_b 20)
-
+ - Use Across Multiple Functions: Parameters are often preferred over variables for maintaining consistent values across different functions. <br>
+ - Commands: <br>
+ List parameters: ** ros2 param list **
+ - Get a parameter: ros2 param get ( /<node_name> <parameter_name>) <br>
+ ros2 param get /turtlesim background_b <br>
+ - Set a parameter: ros2 param set ( /<node_name> <parameter_name> <value>)
+ <br> ros2 param set /turtlesim background_b 20 <br>
  - Save Current Parameters:
-        Dump parameters to a file: ros2 param dump /<node_name> (e.g., ros2 param dump /turtlesim)
+ - Dump parameters to a file: ros2 param dump ( /<node_name> ) <br>
+ros2 param dump /turtlesim
 
  - Save as YAML File:
         Save parameters as a YAML file: ros2 param dump /<node_name> > turtlesim.yaml (e.g., ros2 param dump /turtlesim > turtlesim.yaml)
