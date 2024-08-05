@@ -10,7 +10,7 @@ Topics: For streaming data, many-to-many communication (e.g., sensor data).
 
 <br>
 
-Topics are used for asynchronous, many-to-many communication. They are ideal for streaming data, such as sensor readings or control commands, where the data is continuously produced and consumed. 
+Topics are used for asynchronous(요청을 보낸 후 응답과 관계없이 다음 동작을 실행할 수 있는 방식을 의미한다), many-to-many communication. They are ideal for streaming data, such as sensor readings or control commands, where the data is continuously produced and consumed. 
 
 <br>
 
@@ -25,7 +25,7 @@ Example use cases: sensor data (e.g., camera images, laser scans), command veloc
 
 ## Services
 
-Services: For synchronous, request-reply interactions (e.g., querying a database).
+Services: For synchronous(요청을 보낸 후 해당 요청의 응답을 받아야 다음 동작을 실행하는 방식을), request-reply interactions (e.g., querying a database).
 
 <br>
 
