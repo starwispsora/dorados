@@ -4,6 +4,7 @@
 #include <functional>
 #include <memory>
 #include <thread>
+#include <sstream>
 #include <chrono>
 
 using namespace std::chrono_literals;
@@ -66,7 +67,14 @@ private:
     }
     void result_callback(const GoalHandleFibonacci::WrappedResult &result)
     {
-
+        switch(result.code;){
+            case rclcpp_action::ResultCode::SUCCEEDED:
+                break;
+            case rclcpp_action::ResultCode::ABORTED:
+                break;
+            case rclcpp_action::ResultCode::CANCELED:
+                break;
+        }
     }
     
 };
