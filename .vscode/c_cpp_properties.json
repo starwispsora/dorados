@@ -15,8 +15,9 @@
                 "${workspaceFolder}/KODTA/simple_pkg_cpp/include",
                 "/opt/ros/humble/include/rcl_yaml_param_parser",
                 "/opt/ros/humble/include/rosidl_runtime_c",
-                "/opt/ros/humble/include/rosidl_typesupport_interface"
-            ],
+                "/home/sora/Desktop/sora_ws/install/interface_example"
+                "/opt/ros/humble/include/rosidl_typesupport_interface"]
+
             "defines": [],
             "compilerPath": "/usr/bin/g++",
             "cStandard": "c11",

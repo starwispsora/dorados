@@ -1,19 +1,19 @@
 //publisher
+#include "interface_example/msg/arithmetic_argument.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include <chrono> //time check
-#include "interface_example/msg/arithmetic_argument.hpp"
+
 
 using namespace std::chrono_literals;
 
 class Argument : public rclcpp::Node
 {
-  public:
-   Argument():
-   Node("argument")
+public:
+   Argument(): Node("argument")
    {
-     _publisher=rclcpp::Publisher<interface_example::ArithmeticArgument>::make_shared(this, 
-        "arithmetic_argument", 10);
-        _timer = rclcpp::create_timer(500ms, Argument::pub_callback);
+        _publisher=rclcpp::creat_publisher<interface_example::msg::ArithmeticArgument> 
+            ("arithmetic_argument", 10);
+        _timer = rclcpp::create_wall_timer(1s, std::bind(&Argument::pub_callback, this));
    }
 
   private:
@@ -25,7 +25,7 @@ class Argument : public rclcpp::Node
     {
         auto msg = interface_example::msg::ArithmeticArgument();
         msg.arithmetic_a = _num_a;
-        msg.arithmetic b = _num_b;
+        msg.arithmetic_b = _num_b;
         _publisher->publish(msg);
     }
 };
@@ -33,7 +33,7 @@ class Argument : public rclcpp::Node
 int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<ArithmeticPublisher>());
+  rclcpp::spin(std::make_shared<Argument>());
   rclcpp::shutdown();
   return 0;
 }
