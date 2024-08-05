@@ -25,9 +25,11 @@ public:
         set_parameter(rclcpp::Parameter("b", 100));
         rclcpp::QoS qos(rclcpp::KeepLast(100), rmw_qos_profile_sensor_data);
         _parameter_event_sub = create_subscription<rcl_interfaces::msg::ParameterEvent>(
-            "/parameter_events", qos, std::bind(&SimpleServiceClient::param_event_callback, 
-                                                this, 
-                                                std::placeholders::_1));
+            "/parameter_events",
+            qos,
+            std::bind(&SimpleServiceClient::param_event_callback,
+                      this,
+                      std::placeholders::_1));
     }
 
     void send_request()
@@ -48,8 +50,6 @@ public:
         auto result_future = _client->async_send_request(
             request, std::bind(&SimpleServiceClient::response_callback, this,
                                std::placeholders::_1));
-        _a++;
-        _b++;
     }
     void response_callback(rclcpp::Client<example_interfaces::srv::AddTwoInts>::SharedFuture future)
     {
@@ -79,44 +79,12 @@ public:
             }
         }
     }
-    rcl_interfaces::msg::SetParametersResult
-    param_callback(const std::vector<rclcpp::Parameter> &parameters)
-    {
-        RCLCPP_INFO(this->get_logger(), "Parameters set.");
-        for (const auto &param : parameters)
-        {
-            RCLCPP_INFO(this->get_logger(), "Parameter name: %s", param.get_name());
-            RCLCPP_INFO(this->get_logger(), "Parameter value: %ld", param.get_parameter_value().get<int>());
-            if (param.get_name() == string("a"))
-            {
-                RCLCPP_INFO(this->get_logger(), "Parameter a is set to %ld", param.get_parameter_value().get<int>());
-                _a = param.get_parameter_value().get<int>();
-            }
-            else if (param.get_name() == string("b"))
-            {
-                RCLCPP_INFO(this->get_logger(), "Parameter b is set to %ld", param.get_parameter_value().get<int>());
-                _b = param.get_parameter_value().get<int>();
-            }
-        }
-        auto result = rcl_interfaces::msg::SetParametersResult();
-        result.successful = true;
-        return result;
-    }
-    // void param_callback2(const rcl_interfaces::msg::SetParametersResult &result)
-    // {
-    //     if (!result.successful)
-    //     {
-    //         RCLCPP_INFO(this->get_logger(), "Not all parameters were set.");
-    //     }
-    // }
 
 private:
     int _a;
     int _b;
-
     rclcpp::Client<example_interfaces::srv::AddTwoInts>::SharedPtr _client;
     rclcpp::TimerBase::SharedPtr _timer;
-    rclcpp::AsyncParametersClient::SharedPtr _param_client;
     rclcpp::Subscription<rcl_interfaces::msg::ParameterEvent>::SharedPtr _parameter_event_sub;
 };
 
