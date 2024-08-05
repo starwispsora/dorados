@@ -177,7 +177,8 @@ turtlebot3 (Raspberry Pi) <br>
  - Use Across Multiple Functions: Parameters are often preferred over variables for maintaining consistent values across different functions. <br>
  - Commands: <br>
  List parameters:
-### ros2 param list
+
+       ros2 param list
  - Get a parameter: <br>
  
          ros2 param get /node_name parameter_name
@@ -188,7 +189,7 @@ turtlebot3 (Raspberry Pi) <br>
 
  <br>
 
-### ros2 param set /turtlesim background_b 20 <br>
+    ros2 param set /turtlesim background_b 20
  - Save Current Parameters: <br>
  - Dump parameters to a file: <br>
  
