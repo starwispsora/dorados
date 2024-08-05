@@ -3,14 +3,14 @@
 ###### 31Jul2024 <br>
 
 ####set-up
-1. cd /opt/ros/humble/
-2. source /opt/ros/humble/setup.bash
-3. sudo nano ~/.bashrc
- - alias r='ros2 topic list'
- - alias cw='cd ~/sora_ws'
- - alias cs='cd ~/sora_ws/src'
- - alias sb='colcon build --symlink-install'
- - alias nb='sudo nano ~/.bashrc'
+### 1. cd /opt/ros/humble/
+### 2. source /opt/ros/humble/setup.bash
+### 3. sudo nano ~/.bashrc
+### - alias r='ros2 topic list'
+### - alias cw='cd ~/sora_ws'
+### - alias cs='cd ~/sora_ws/src'
+### - alias sb='colcon build --symlink-install'
+### - alias nb='sudo nano ~/.bashrc'
 
 
 #### ros2 3 key communication mechanisms between nodes
