@@ -233,8 +233,10 @@ client <---------sequence------------------server <br>
       ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4}
  <br>
  
+ ***
+ 
 ### Turtlesim : <br>
-In essence, all these files work together to build, configure, and run the turtlesim package effectively. The nodes are the executables that perform specific tasks, while the other files define how these tasks are carried out, configured, and communicated. Each component ensures that the package functions correctly and integrates seamlessly with other ROS2 elements. <br>
+all these files below work together to build, configure, and run the turtlesim package effectively. The nodes are the executables that perform specific tasks, while the other files define how these tasks are carried out, configured, and communicated. Each component ensures that the package functions correctly and integrates seamlessly with other ROS2 elements. <br>
 - action : RotateAbsolute.action
 - images -ardent(etc.. many other turtle pics)
 - include – turtlesim : turtle.h / turtle_frame.h
