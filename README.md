@@ -126,7 +126,7 @@ turtlebot3 (Raspberry Pi) <br>
 #### turtlebot3 running order <br>
  1. write code (cmake, pkg.xml -> header, cpp)
  2. compile the code
- 3.     gazebo
+ 3.      gazebo
  4. turtlebor3 log in
  5. turtlebot3 run :
 
@@ -178,20 +178,20 @@ turtlebot3 (Raspberry Pi) <br>
  - Commands: <br>
  List parameters:
 
-       ros2 param list
+         ros2 param list
  - Get a parameter: <br>
  
          ros2 param get /node_name parameter_name
          ros2 param get /turtlesim background_b
  - Set a parameter: <br>
  
-       ros2 param set /node_name parameter_name value
-       ros2 param set /turtlesim background_b 20
+         ros2 param set /node_name parameter_name value
+         ros2 param set /turtlesim background_b 20
  - Save Current Parameters: <br>
  - Dump parameters to a file: <br>
  
-       ros2 param dump /node_name 
-       ros2 param dump /turtlesim
+         ros2 param dump /node_name 
+         ros2 param dump /turtlesim
 
  - Save as YAML File:Save parameters as a <br>
 
@@ -225,9 +225,7 @@ client <---------sequence------------------server <br>
  - allows simplify just service-topic
 
  <br>
- 
- ***
- 
+
       ros2 run simple_pkg_cpp simple_action_server
       ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4}
 
