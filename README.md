@@ -183,27 +183,12 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
 
 ### action :
 
-client 					server
- - goal(order)  ->
- <- feedback(partial-sequence)
- <- sequence
+client 					               server
+      ------- goal(order)-------->
+      <---feedback(partial-sequence)
+      <---sequence------------------
  
- run server -> run multiple clients
- allows simplify just service-topic
- 
- 
-### arithmetic
-publish = argument.cpp(publisher<-arithmetic argument a=3, b=5)///
-argument-----argumentA(topic) : arithmetic arg
-	-----argumentB(topic) :	arithmetic arg
-	
-service client = arithmetic.cpp(subscriber)///
-	MAIN NODE<---operator(node)=arithmetic operator-----+-*/------> 
-		 <------------------------value------arithmetic operator
-		
-action client
-checker=arithmetic checker
--set goal=goal_sum
-	----continuously---> MAIN NODE(sub / service server / action server)
+ - to run server -> to run multiple clients
+ - allows simplify just service-topic
  <br>
  ***
