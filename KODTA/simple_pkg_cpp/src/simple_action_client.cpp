@@ -62,6 +62,7 @@ private:
         {
             ss << number << " ";
         }
+        RCLCPP_INFO(get_logger(), ss.str().c_str());
     }
     void result_callback(const GoalHandleFibonacci::WrappedResult &result)
     {
