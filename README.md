@@ -217,7 +217,10 @@ turtlebot3 (Raspberry Pi) <br>
 
 ##### 5Aug
 
-### action :
+### action : <br>
+writing order <br>
+- when messaging : 1.service(goal) 2.topic(feedback) 3. service(result) <br> 
+- name.action(interface) : 1.goal 2.result 3.feedback <br>
 client -------------goal(order)----------->server <br>
 client <----feedback(partial-sequence)----server <br>
 client <---------sequence------------------server <br>
