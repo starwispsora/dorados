@@ -44,13 +44,24 @@ private:
     rclcpp::TimerBase::SharedPtr _timer;
     void goal_response_callback(const GoalHandleFibonacci::SharedPtr &goal_handle)
     {
-
+        if (!goal_handle)
+        {
+            RCLCPP_INFO(get_logger(), "Goal waws rejected by server");
+        }
+        else{
+            RCLCPP_INFO(get_logger(), "Goal accepted by server, waiting for result");
+        }
     }
     void feedback_callback(
         GoalHandleFibonacci::SharedPtr,
         const std::shared_ptr<const Fibonacci::Feedback> feedback)
     {
-
+        std::stringstream ss;
+        ss << "Next number in sequence recerived: ";
+        for (auto number : feedback->sequence)
+        {
+            ss << number << " ";
+        }
     }
     void result_callback(const GoalHandleFibonacci::WrappedResult &result)
     {
