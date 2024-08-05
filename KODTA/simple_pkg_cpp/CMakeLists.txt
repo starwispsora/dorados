@@ -1,91 +1,79 @@
-#include "example_interfaces/srv/add_two_ints.hpp"
-#include "rcl_interfaces/msg/set_parameters_result.hpp"
-#include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
-#include <chrono>
-#include <iostream>
+cmake_minimum_required(VERSION 3.8)
+project(simple_pkg_cpp)
 
-using namespace std;
-using namespace std::chrono_literals;
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-class SimpleServiceClient : public rclcpp::Node
-{
-public:
-    SimpleServiceClient()
-        : Node("addTwoInt_client"), _a(40), _b(74)
-    {
-        _client = create_client<example_interfaces::srv::AddTwoInts>("add_two_ints");
-        _timer = create_wall_timer(5s, std::bind(&SimpleServiceClient::send_request, this));
-        declare_parameter("a", 40);
-        declare_parameter("b", 74);
-        get_parameter("a", _a);
-        get_parameter("b", _b);
-        auto result = add_on_set_parameters_callback(std::bind(&SimpleServiceClient::param_callback, this, std::placeholders::_1));
-    }
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(example_interfaces REQUIRED)
+find_package(rcl_interfaces REQUIRED)
 
-    void send_request()
-    {
-        while (!_client->wait_for_service(1s)) // 서버연결
-        {
-            if (!rclcpp::ok())
-            {
-                RCLCPP_ERROR(get_logger(), "Over time!");
-            }
-            RCLCPP_INFO(get_logger(), "service not available, waiting again...");
-        }
-        // 보낼 변수 선언
-        auto request = std::make_shared<example_interfaces::srv::AddTwoInts::Request>();
-        request->a = _a;
-        request->b = _b;
+# include directories
+include_directories(include)
 
-        auto result_future = _client->async_send_request(
-            request, std::bind(&SimpleServiceClient::response_callback, this,
-                               std::placeholders::_1));
-    }
-    void response_callback(rclcpp::Client<example_interfaces::srv::AddTwoInts>::SharedFuture future)
-    {
-        auto status = future.wait_for(1s);
-        if (status == std::future_status::ready)
-        {
-            RCLCPP_INFO(get_logger(), "Result of %d + %d = %ld", _a, _b, future.get()->sum);
-        }
-        else
-        {
-            RCLCPP_INFO(this->get_logger(), "Service In-Progress...");
-        }
-    }
-    rcl_interfaces::msg::SetParametersResult param_callback(const std::vector<rclcpp::Parameter> &parameters)
-    {
-        for (const auto &param : parameters)
-        {
-            if (param.get_name() == "a")
-            {
-                _a = param.as_int();
-            }
-            else if (param.get_name() == "b")
-            {
-                _b = param.as_int();
-            }
-        }
-        auto result = rcl_interfaces::msg::SetParametersResult();
-        result.successful = true;
-        return result;
-    }
+# excutable
+add_executable(helloword src/helloworld.cpp)
 
-private:
-    int _a;
-    int _b;
+add_executable(helloOpenCV src/helloOpenCV.cpp)
+target_link_libraries(helloOpenCV ${OpenCV_LIBS})
 
-    rclcpp::Client<example_interfaces::srv::AddTwoInts>::SharedPtr _client;
-    rclcpp::TimerBase::SharedPtr _timer;
-    rclcpp::AsyncParametersClient::SharedPtr _param_client;
-};
+add_executable(hello_publisher src/hello_publisher.cpp)
+ament_target_dependencies(hello_publisher rclcpp std_msgs)
 
-int main(int argc, char *argv[])
-{
-    rclcpp::init(argc, argv);
-    auto node = std::make_shared<SimpleServiceClient>();
-    rclcpp::spin(node);
-    rclcpp::shutdown();
-    return 0;
-}
+add_executable(hello_publisher2 src/hello_publisher2.cpp)
+ament_target_dependencies(hello_publisher2 rclcpp std_msgs)
+
+add_executable(hello_publisher_class src/hello_publisher_class.cpp)
+ament_target_dependencies(hello_publisher_class rclcpp std_msgs)
+
+add_executable(hello_publisher_class2 src/hello_publisher_class2.cpp src/publisher.cpp)
+ament_target_dependencies(hello_publisher_class2 rclcpp std_msgs)
+
+add_executable(hello_subscriber_class src/hello_subscriber_class.cpp src/subscriber.cpp)
+ament_target_dependencies(hello_subscriber_class rclcpp std_msgs)
+
+add_executable(time_publisher_class src/time_publisher_class.cpp src/time_pub.cpp)
+ament_target_dependencies(time_publisher_class rclcpp std_msgs)
+
+add_executable(time_subscriber_class src/time_subscriber_class.cpp src/time_sub.cpp)
+ament_target_dependencies(time_subscriber_class rclcpp std_msgs)
+
+add_executable(simple_service_server src/simple_service_server.cpp)
+ament_target_dependencies(simple_service_server rclcpp std_msgs example_interfaces)
+
+add_executable(simple_service_client src/simple_service_client.cpp)
+ament_target_dependencies(simple_service_client rclcpp std_msgs example_interfaces)
+
+add_executable(simple_service_client2 src/simple_service_client2.cpp)
+ament_target_dependencies(simple_service_client2 rclcpp std_msgs example_interfaces rcl_interfaces)
+
+#install
+install(TARGETS
+  helloword
+  helloOpenCV
+  hello_publisher
+  hello_publisher2
+  hello_publisher_class
+  hello_publisher_class2
+  hello_subscriber_class
+  time_publisher_class
+  time_subscriber_class
+  simple_service_server
+  simple_service_client
+  simple_service_client2
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  set(ament_cmake_copyright_FOUND TRUE)
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+ament_package()
