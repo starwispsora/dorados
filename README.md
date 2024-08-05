@@ -3,14 +3,14 @@
 ###### 31Jul2024 <br>
 
 ####set-up
-### 1. cd /opt/ros/humble/
-### 2. source /opt/ros/humble/setup.bash
-### 3. sudo nano ~/.bashrc
-### - alias r='ros2 topic list'
-### - alias cw='cd ~/sora_ws'
-### - alias cs='cd ~/sora_ws/src'
-### - alias sb='colcon build --symlink-install'
-### - alias nb='sudo nano ~/.bashrc'
+1.       cd /opt/ros/humble/
+2.       source /opt/ros/humble/setup.bash
+3.       sudo nano ~/.bashrc
+ - +alias r='ros2 topic list'
+ - +alias cw='cd ~/sora_ws'
+ - +alias cs='cd ~/sora_ws/src'
+ - +alias sb='colcon build --symlink-install'
+ - +alias nb='sudo nano ~/.bashrc'
 
 <br>
 ***
@@ -87,7 +87,8 @@ ex) <br>
  node1 <br>	
  node2 <br>
 bring-up : open ros2 - 
-### ros2 launch turtlebot3_bringup robot.launch.py <br> 
+
+      ros2 launch turtlebot3_bringup robot.launch.py <br> 
 | <br>
 | <br>
 DDS(multi port<-UDP,TDP) (weaker security)    (X) <br>
@@ -115,27 +116,30 @@ turtlebot3 (Raspberry Pi) <br>
 1. http://192.168.14.1
 2. admin-set up-network-LAN
 3. nb(mine 02, turtlebot=burger)
-4. ssh ubuntu@192.168.14.50
-5. apt list --upgradable
-6. nb(turtle's 02, turtlebot=burger) <br>
+4.       ssh ubuntu@192.168.14.50
+6.       apt list --upgradable
+7.       nb
 
  ***
 
 #### turtlebot3 running order <br>
  1. write code (cmake, pkg.xml -> header, cpp)
  2. compile the code
- 3. (gazebo)
+ 3. gazebo
  4. turtlebor3 log in
  5. turtlebot3 run :
-    ### ros2 launch turtlebot3_bringup robot.launch.py
+
+         ros2 launch turtlebot3_bringup robot.launch.py
  7. user, code run :
-    ### ros2 run turtlebot3_teleop teleop_keyboard
+
+         os2 run turtlebot3_teleop teleop_keyboard
 
 ***
 
 #### on vscode  <br>
  - vscode open remote : 
- ### SSH - ubuntu@192.168.14.50 <br>
+
+         SSH - ubuntu@192.168.14.50
  (turtle's)
  
  ***
@@ -143,14 +147,17 @@ turtlebot3 (Raspberry Pi) <br>
 #### gazebo simulator  <br>
  - install(on my laptop)  <br>
  - run :
-   ### "gazebo"  <br>
- - stop :
-   ### "killgazebo" (to abvoid gazebos conflict)  <br>
+
+         gazebo
+ - stop(to abvoid gazebos conflict) :
+
+         killgazebo
 
 ***
 
 #### tips..  <br>
-### unset GTK_PATH <br>
+
+      unset GTK_PATH
  - use it when you get " qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ...... "
 
 ***
@@ -171,10 +178,12 @@ turtlebot3 (Raspberry Pi) <br>
  List parameters:
 ### ros2 param list
  - Get a parameter: <br>
-### ros2 param get /node_name parameter_name <br>
-### ros2 param get /turtlesim background_b <br>
+ 
+         ros2 param get /node_name parameter_name
+         ros2 param get /turtlesim background_b
  - Set a parameter: <br>
-### ros2 param set /node_name parameter_name value
+ 
+       ros2 param set /node_name parameter_name value
 
  <br>
 
@@ -186,20 +195,20 @@ turtlebot3 (Raspberry Pi) <br>
 
  - Save as YAML File:Save parameters as a <br>
 
-         YAML file: ros2 param dump /node_name > turtlesim.yaml <br>
-         ros2 param dump /turtlesim > turtlesim.yaml <br>
+         YAML file: ros2 param dump /node_name > turtlesim.yaml 
+         ros2 param dump /turtlesim > turtlesim.yaml 
 
  - Show Saved File Version: <br>
     Load parameters from a YAML file: <br>
 
-         ros2 param load /node_name turtlesim.yaml <br>
-         ros2 param load /turtlesim turtlesim.yaml <br>
+         ros2 param load /node_name turtlesim.yaml 
+         ros2 param load /turtlesim turtlesim.yaml 
 
  - Run with Parameters File:
  Launch node with parameters from a file: <br>
 
-         ros2 run package_name node_name --ros-args --params-file turtlesim.yaml <br>
-         ros2 run turtlesim turtlesim_node --ros-args --params-file turtlesim.yaml <br>
+         ros2 run package_name node_name --ros-args --params-file turtlesim.yaml
+         ros2 run turtlesim turtlesim_node --ros-args --params-file turtlesim.yaml 
  - Why Used: Using parameters files can help manage and load configurations consistently across different runs. <br>
  - Launch Files + Parameters: Using launch files with parameters is preferred as it provides a more organized way to manage configurations and node launches.
  - get(bring parameter)-set(adjust)
@@ -219,6 +228,6 @@ client <---------sequence------------------server <br>
  ***
  
       ros2 run simple_pkg_cpp simple_action_server
-      ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4} <br>
+      ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4}
 
  ***
