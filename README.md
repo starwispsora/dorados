@@ -2,7 +2,7 @@
 
 ###### 31Jul2024 <br>
 
-####set-up
+#### set-up
 1.       cd /opt/ros/humble/
 2.       source /opt/ros/humble/setup.bash
 3.       sudo nano ~/.bashrc
@@ -30,7 +30,7 @@ Topics are used for asynchronous(요청을 보낸 후 응답과 관계없이 다
    - Publisher: A node that sends messages on a topic.
    - Subscriber: A node that receives messages from a topic.
    - Message: The data structure sent over a topic, defined in .msg files.
-   - 
+     
  <br>
  
 Example use cases: sensor data (e.g., camera images, laser scans), command velocities for robots.
