@@ -1,10 +1,20 @@
 ***
 
 ###### 31Jul2024 <br>
+
+####set-up
+1. cd /opt/ros/humble/
+2. source /opt/ros/humble/setup.bash
+3. sudo nano ~/.bashrc
+ - alias r='ros2 topic list'
+ - alias cw='cd ~/sora_ws'
+ - alias cs='cd ~/sora_ws/src'
+ - alias sb='colcon build --symlink-install'
+ - alias nb='sudo nano ~/.bashrc'
+
+
 #### ros2 3 key communication mechanisms between nodes
-
-
-## Topics
+## 1.Topics
 
 Topics: For streaming data, many-to-many communication (e.g., sensor data). 
 
@@ -24,7 +34,7 @@ Example use cases: sensor data (e.g., camera images, laser scans), command veloc
 
 <br>
 
-## Services
+## 2.Services
 
 Services: For synchronous(요청을 보낸 후 해당 요청의 응답을 받아야 다음 동작을 실행하는 방식을), request-reply interactions (e.g., querying a database).
 
@@ -44,7 +54,7 @@ Example use cases: resetting a robot, querying a database.
 
 <br>
 
-## Actions
+## 3.Actions
 
 Actions: For asynchronous, long-running tasks with feedback (e.g., moving a robot to a location).
 
@@ -188,7 +198,13 @@ client 					               server
       <---feedback(partial-sequence)
       <---sequence------------------
  
- - to run server -> to run multiple clients
+ - to run server -> to run multiple clients 
  - allows simplify just service-topic
+
  <br>
+  - ros2 run simple_pkg_cpp simple_action_server <br>
+  + ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4} <br>
+
+  
+ 
  ***
