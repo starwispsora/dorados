@@ -12,6 +12,8 @@
 ### - alias sb='colcon build --symlink-install'
 ### - alias nb='sudo nano ~/.bashrc'
 
+<br>
+***
 
 #### ros2 3 key communication mechanisms between nodes
 ## 1.Topics
@@ -84,7 +86,8 @@ ex) <br>
  laptop <br>
  node1 <br>	
  node2 <br>
-bring-up : open ros2 - **ros2 launch turtlebot3_bringup robot.launch.py** <br> 
+bring-up : open ros2 - 
+### ros2 launch turtlebot3_bringup robot.launch.py <br> 
 | <br>
 | <br>
 DDS(multi port<-UDP,TDP) (weaker security)    (X) <br>
@@ -123,25 +126,32 @@ turtlebot3 (Raspberry Pi) <br>
  2. compile the code
  3. (gazebo)
  4. turtlebor3 log in
- 5. turtlebot3 run : **ros2 launch turtlebot3_bringup robot.launch.py**
- 6. user, code run : **ros2 run turtlebot3_teleop teleop_keyboard**
+ 5. turtlebot3 run :
+    ### ros2 launch turtlebot3_bringup robot.launch.py
+ 7. user, code run :
+    ### ros2 run turtlebot3_teleop teleop_keyboard
 
 ***
 
 #### on vscode  <br>
- - vscode open remote : **SSH - ubuntu@192.168.14.50** (turtle's) <br>
+ - vscode open remote : 
+ ### SSH - ubuntu@192.168.14.50 <br>
+ (turtle's)
  
  ***
 
 #### gazebo simulator  <br>
  - install(on my laptop)  <br>
- - run : "gazebo"  <br>
- - stop : "killgazebo" (to abvoid gazebos conflict)  <br>
+ - run :
+   ### "gazebo"  <br>
+ - stop :
+   ### "killgazebo" (to abvoid gazebos conflict)  <br>
 
 ***
 
 #### tips..  <br>
-unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ...... "
+### unset GTK_PATH <br>
+ - use it when you get " qt.qpa.plugin: Could not find the Qt platform plugin "wayland" in ...... "
 
 ***
 
@@ -149,8 +159,8 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
 ## Service Code(User-Made Interface)
  - Why Necessary? Custom services allow for tailored communication between nodes, addressing specific needs of your application.
   
- - How: Input commands on your terminal (refer to p289 for details). <br>
- - .srv File and Class Naming: The .srv file defines the service interface. The file name should start with a capital letter (**MyService.srv**), and the class name should follow CamelCase conventions. <br>
+ - How: Input commands on your terminal (p289). <br>
+ - .srv File and Class Naming: The .srv file defines the service interface. The file name should start with a capital letter (MyService.srv), and the class name should follow CamelCase conventions. <br>
  - Run: Start the server and then the client.
 
 ***
@@ -158,32 +168,38 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
 ## Parameters
  - Use Across Multiple Functions: Parameters are often preferred over variables for maintaining consistent values across different functions. <br>
  - Commands: <br>
- List parameters: **ros2 param list**
+ List parameters:
+### ros2 param list
  - Get a parameter: <br>
- **ros2 param get /node_name parameter_name** <br>
- **ros2 param get /turtlesim background_b** <br>
+### ros2 param get /node_name parameter_name <br>
+### ros2 param get /turtlesim background_b <br>
  - Set a parameter: <br>
- - **ros2 param set /node_name parameter_name value**
+### ros2 param set /node_name parameter_name value
+
  <br>
- **ros2 param set /turtlesim background_b 20** <br>
+
+### ros2 param set /turtlesim background_b 20 <br>
  - Save Current Parameters: <br>
  - Dump parameters to a file: <br>
  ros2 param dump /node_name <br>
- **ros2 param dump /turtlesim**
+### ros2 param dump /turtlesim
 
  - Save as YAML File:Save parameters as a <br>
- **YAML file: ros2 param dump /node_name > turtlesim.yaml** <br>
- **ros2 param dump /turtlesim > turtlesim.yaml** <br>
+
+         YAML file: ros2 param dump /node_name > turtlesim.yaml <br>
+         ros2 param dump /turtlesim > turtlesim.yaml <br>
 
  - Show Saved File Version: <br>
     Load parameters from a YAML file: <br>
-    **ros2 param load /node_name turtlesim.yaml** <br>
-    ### **ros2 param load /turtlesim turtlesim.yaml** <br>
+
+         ros2 param load /node_name turtlesim.yaml <br>
+         ros2 param load /turtlesim turtlesim.yaml <br>
 
  - Run with Parameters File:
  Launch node with parameters from a file: <br>
-**ros2 run package_name node_name --ros-args --params-file turtlesim.yaml** <br>
-**ros2 run turtlesim turtlesim_node --ros-args --params-file turtlesim.yaml** <br>
+
+         ros2 run package_name node_name --ros-args --params-file turtlesim.yaml <br>
+         ros2 run turtlesim turtlesim_node --ros-args --params-file turtlesim.yaml <br>
  - Why Used: Using parameters files can help manage and load configurations consistently across different runs. <br>
  - Launch Files + Parameters: Using launch files with parameters is preferred as it provides a more organized way to manage configurations and node launches.
  - get(bring parameter)-set(adjust)
@@ -202,7 +218,7 @@ client <---------sequence------------------server <br>
  
  ***
  
- 1. ros2 run simple_pkg_cpp simple_action_server
- 2. ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4} <br>
+      ros2 run simple_pkg_cpp simple_action_server
+      ros2 action send_goal /fibonacci interface_example/action/fibonacci {"order" : 4} <br>
 
  ***
