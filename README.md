@@ -114,7 +114,7 @@ turtlebot3 (Raspberry Pi) <br>
  3. (gazebo)
  4. turtlebor3 log in
  5. turtlebot3 run : **ros2 launch turtlebot3_bringup robot.launch.py**
- 6. user, code run : ex) **ros2 run turtlebot3_teleop teleop_keyboard**
+ 6. user, code run : **ros2 run turtlebot3_teleop teleop_keyboard**
 
 ***
 
@@ -150,29 +150,29 @@ unset GTK_PATH : use it when you get " qt.qpa.plugin: Could not find the Qt plat
  - Commands: <br>
  List parameters: **ros2 param list**
  - Get a parameter: <br>
- **ros2 param get /<node_name> <parameter_name>** <br>
+ **ros2 param get /node_name parameter_name** <br>
  **ros2 param get /turtlesim background_b** <br>
  - Set a parameter: <br>
- - **ros2 param set /<node_name> <parameter_name> <value>**
+ - **ros2 param set /node_name parameter_name value**
  <br>
  **ros2 param set /turtlesim background_b 20** <br>
  - Save Current Parameters: <br>
  - Dump parameters to a file: <br>
- ros2 param dump ( /<node_name> ) <br>
+ ros2 param dump /node_name <br>
  **ros2 param dump /turtlesim**
 
  - Save as YAML File:Save parameters as a <br>
- **YAML file: ros2 param dump /<node_name> turtlesim.yaml** <br>
+ **YAML file: ros2 param dump /node_name > turtlesim.yaml** <br>
  **ros2 param dump /turtlesim > turtlesim.yaml** <br>
 
  - Show Saved File Version: <br>
     Load parameters from a YAML file: <br>
-    **ros2 param load /<node_name> turtlesim.yaml** <br>
+    **ros2 param load /node_name turtlesim.yaml** <br>
     **ros2 param load /turtlesim turtlesim.yaml** <br>
 
  - Run with Parameters File:
  Launch node with parameters from a file: <br>
-**ros2 run <package_name> <node_name> --ros-args --params-file turtlesim.yaml** <br>
+**ros2 run package_name node_name --ros-args --params-file turtlesim.yaml** <br>
 **ros2 run turtlesim turtlesim_node --ros-args --params-file turtlesim.yaml** <br>
  - Why Used: Using parameters files can help manage and load configurations consistently across different runs. <br>
  - Launch Files + Parameters: Using launch files with parameters is preferred as it provides a more organized way to manage configurations and node launches.
