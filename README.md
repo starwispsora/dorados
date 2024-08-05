@@ -13,9 +13,10 @@
  - +alias nb='sudo nano ~/.bashrc'
 
 <br>
+
 ***
 
-#### ros2 3 key communication mechanisms between nodes
+## ros2 3 key communication mechanisms between nodes
 ## 1.Topics
 
 Topics: For streaming data, many-to-many communication (e.g., sensor data). 
@@ -97,20 +98,20 @@ DDS(router id:turtle, pw:turtlebot3) 	      (O) <br>
 | <br>
 turtlebot3 (Raspberry Pi) <br>
 
-***
+<br><br>
 
 #### turtlebot3 setting order  <br>
  1. link mine to bot's router
  2. (vmware connect)
 
-***
+<br><br>
 
 #### turtlebot3 info  <br>
 - 12v <br>
 - speed limit : 0.3m/s <br>
 - has 2 moters : DC moters(simplest way we can set up)(diameter cell) <br>
 
-***
+<br><br>
 
 #### turtlebot3 set-up
 1. http://192.168.14.1
@@ -120,7 +121,7 @@ turtlebot3 (Raspberry Pi) <br>
 6.       apt list --upgradable
 7.       nb
 
- ***
+<br><br>
 
 #### turtlebot3 running order <br>
  1. write code (cmake, pkg.xml -> header, cpp)
@@ -134,7 +135,7 @@ turtlebot3 (Raspberry Pi) <br>
 
          os2 run turtlebot3_teleop teleop_keyboard
 
-***
+<br><br>
 
 #### on vscode  <br>
  - vscode open remote : 
@@ -142,7 +143,7 @@ turtlebot3 (Raspberry Pi) <br>
          SSH - ubuntu@192.168.14.50
  (turtle's)
  
- ***
+<br><br>
 
 #### gazebo simulator  <br>
  - install(on my laptop)  <br>
@@ -153,7 +154,7 @@ turtlebot3 (Raspberry Pi) <br>
 
          killgazebo
 
-***
+<br><br>
 
 #### tips..  <br>
 
@@ -170,7 +171,7 @@ turtlebot3 (Raspberry Pi) <br>
  - .srv File and Class Naming: The .srv file defines the service interface. The file name should start with a capital letter (MyService.srv), and the class name should follow CamelCase conventions. <br>
  - Run: Start the server and then the client.
 
-***
+<br><br>
 
 ## Parameters
  - Use Across Multiple Functions: Parameters are often preferred over variables for maintaining consistent values across different functions. <br>
@@ -190,8 +191,9 @@ turtlebot3 (Raspberry Pi) <br>
 ### ros2 param set /turtlesim background_b 20 <br>
  - Save Current Parameters: <br>
  - Dump parameters to a file: <br>
- ros2 param dump /node_name <br>
-### ros2 param dump /turtlesim
+ 
+       ros2 param dump /node_name 
+       ros2 param dump /turtlesim
 
  - Save as YAML File:Save parameters as a <br>
 
@@ -214,6 +216,7 @@ turtlebot3 (Raspberry Pi) <br>
  - get(bring parameter)-set(adjust)
 
 ***
+
 ##### 5Aug
 
 ### action :
