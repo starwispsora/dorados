@@ -31,7 +31,7 @@ void Operator::response_callback(rclcpp::Client<ArithmeticOperator>::SharedFutur
     auto status = future.wait_for(1s);
     if (status == std::future_status::ready)
     {
-        //RCLCPP_INFO(get_logger(), "Result of %ld",future.get()->arithmetic_result);
+        RCLCPP_INFO(get_logger(), "Result of %f",future.get()->arithmetic_result);
     }
     else
     {
