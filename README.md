@@ -292,7 +292,10 @@ all these files below work together to build, configure, and run the turtlesim p
 
 
 ## rclcpp <br>
-a fundamental library for developing ROS2 nodes in C++, providing the necessary tools and APIs to interact with the ROS2 framework and build robust robotic applications.
+a fundamental library for developing ROS2 nodes in C++, providing the necessary tools and APIs to interact with the ROS2 framework and build robust robotic applications. <br><br>
+
+***
+
 
 
 	ros2 param dump /operator >> arithmatic.yaml
