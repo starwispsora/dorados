@@ -11,9 +11,9 @@ class Argument : public rclcpp::Node
 public:
    Argument(): Node("argument")
    {
-        _publisher=rclcpp::creat_publisher<interface_example::msg::ArithmeticArgument> 
+        _publisher=create_publisher<interface_example::msg::ArithmeticArgument> 
             ("arithmetic_argument", 10);
-        _timer = rclcpp::create_wall_timer(1s, std::bind(&Argument::pub_callback, this));
+        _timer = create_wall_timer(1s, std::bind(&Argument::pub_callback, this));
    }
 
   private:
@@ -24,8 +24,8 @@ public:
     void pub_callback()
     {
         auto msg = interface_example::msg::ArithmeticArgument();
-        msg.arithmetic_a = _num_a;
-        msg.arithmetic_b = _num_b;
+        msg.argument_a = _num_a;
+        msg.argument_b = _num_b;
         _publisher->publish(msg);
     }
 };

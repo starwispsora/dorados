@@ -54,7 +54,7 @@ add_executable(simple_service_client2 src/simple_service_client2.cpp)
 ament_target_dependencies(simple_service_client2 rclcpp std_msgs interface_example rcl_interfaces)
 
 add_executable(simple_action_server src/simple_action_server.cpp)
-ament_target_dependencies(simple_action_server rclcpp std_msgs interface_exampe rclcpp_action)
+ament_target_dependencies(simple_action_server rclcpp std_msgs interface_example rclcpp_action)
 
 add_executable(simple_action_client src/simple_action_client.cpp)
 ament_target_dependencies(simple_action_client rclcpp std_msgs interface_example rclcpp_action)
