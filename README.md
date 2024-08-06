@@ -278,28 +278,28 @@ all these files below work together to build, configure, and run the turtlesim p
  #### 6Aug
 
 #### run gazebo
-1. sudo nano ~/.bashrc
-2. source /opt/ros/humble/setup.bash
-3. ros2 launch turtlebot3_gazebo empty_world.launch.py
-4. ros2 run move_t_sim moveTurtleBot2
+1.		 sudo nano ~/.bashrc
+2.		 source /opt/ros/humble/setup.bash
+3.		 ros2 launch turtlebot3_gazebo empty_world.launch.py
+4. 		 ros2 run move_t_sim moveTurtleBot2
 
 
 ## input param <br>
  - humble can not update parameters 
- 1. ros2 run arithmetic argument
- 2. ros2 run arithmetic calculator
- 3. ros2 param set /argument max_random_num 100.0
+ 1. 	ros2 run arithmetic argument
+ 2. 	ros2 run arithmetic calculator
+ 3. 	ros2 param set /argument max_random_num 100.0
 
 
 ## rclcpp <br>
 a fundamental library for developing ROS2 nodes in C++, providing the necessary tools and APIs to interact with the ROS2 framework and build robust robotic applications.
 
 
-ros2 param dump /operator >> arithmatic.yaml
-ros2 param dump /argument >> arithmatic2.yaml
+	ros2 param dump /operator >> arithmatic.yaml
+	ros2 param dump /argument >> arithmatic2.yaml
 and then combine them into one yaml
 		
-ros2 launch arithmetic arithmetic.launch.py
-ros2 param set /operator random true
+	ros2 launch arithmetic arithmetic.launch.py
+	ros2 param set /operator random true
 
 
