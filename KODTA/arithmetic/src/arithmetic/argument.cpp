@@ -2,6 +2,8 @@
 
 Argument::Argument() : Node("argument"), _min_random_num(0.0), _max_random_num(0.0)
 {
+    //shit i wrote this
+    declare_parameter("random",0);
     declare_parameter("min_random_num", 0.0);
     declare_parameter("max_random_num", 9.0);
     _min_random_num = get_parameter("min_random_num").get_value<float>();
@@ -70,3 +72,4 @@ int main(int argc, char *argv[])
     rclcpp::shutdown();
     return 0;
 }
+
