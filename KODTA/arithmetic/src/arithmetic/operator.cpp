@@ -1,6 +1,6 @@
 #include "arithmetic/operator.hpp"
 
-Operator::Operator(const rclcpp::NodeOptions &options = rclcpp::NodeOptions())
+Operator::Operator(const rclcpp::NodeOptions &options)
     : Node("operator", options)
 {
     _service = create_client<ArithmeticOperator>("arithmetic_operator");
@@ -31,11 +31,11 @@ void Operator::response_callback(rclcpp::Client<ArithmeticOperator>::SharedFutur
     auto status = future.wait_for(1s);
     if (status == std::future_status::ready)
     {
-        // RCLCPP_INFO(get_logger(), "Result of %d + %d = %ld", _a, _b, future.get()->sum);
+        //RCLCPP_INFO(get_logger(), "Result of %ld",future.get()->arithmetic_result);
     }
     else
     {
-        // RCLCPP_INFO(this->get_logger(), "Service In-Progress...");
+        RCLCPP_INFO(this->get_logger(), "Service In-Progress...");
     }
 }
 
