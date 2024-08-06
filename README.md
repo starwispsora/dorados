@@ -256,25 +256,21 @@ all these files below work together to build, configure, and run the turtlesim p
 ### Why Do We Need All These Files? 
 
 - Actions and Services:
-        Actions (e.g., RotateAbsolute.action): Define goals and feedback mechanisms for actions that take time to complete.
+        Actions (e.g., RotateAbsolute.action): Define goals and feedback mechanisms for actions that take time to complete. <br>
         Services (e.g., Kill.srv, SetPen.srv): Define request and response types for services that perform a specific task on request.
 
-- Messages:
-        Messages (e.g., Color.msg, Pose.msg): Define the data structures used for communication between nodes. These are fundamental for passing information like color settings and turtle positions.
+- Messages (e.g., Color.msg, Pose.msg): Define the data structures used for communication between nodes. These are fundamental for passing information like color settings and turtle positions.
 
-- Source Files:
-        Source Files (e.g., turtle.cpp, turtle_frame.cpp, turtlesim.cpp): Contain the implementation of the nodes and their functionalities. They define the logic and behavior of the nodes.
+- Source Files (e.g., turtle.cpp, turtle_frame.cpp, turtlesim.cpp): Contain the implementation of the nodes and their functionalities. They define the logic and behavior of the nodes.
 
 - Include Files:
         Header Files (e.g., turtle.h, turtle_frame.h): Define the interfaces for the source files, declaring classes and functions used in the implementation.
-- Launch Files:
-        Launch Files (e.g., multisim.launch.py): Define how multiple nodes and their configurations are launched together. They automate the process of starting up nodes with specific parameters.
+- Launch Files (e.g., multisim.launch.py): Define how multiple nodes and their configurations are launched together. They automate the process of starting up nodes with specific parameters.
 
-- Tutorials:
-        Tutorials (e.g., draw_square.cpp, mimic.cpp, teleop_turtle_key.cpp): Provide example code to demonstrate how to use the nodes or functionalities of the package. They help in learning and understanding how to apply the package’s features.
+- Tutorials (e.g., draw_square.cpp, mimic.cpp, teleop_turtle_key.cpp): Provide example code to demonstrate how to use the nodes or functionalities of the package. They help in learning and understanding how to apply the package’s features.
 
 - Configuration Files:
-        CMakeLists.txt: Defines how the package is built, specifying the compilation and linking instructions.
+        CMakeLists.txt: Defines how the package is built, specifying the compilation and linking instructions. <br>
         package.xml: Provides metadata about the package, including dependencies, version, and description.
 
  ***
