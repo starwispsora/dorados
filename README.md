@@ -305,4 +305,14 @@ and then combine them into one yaml
 	ros2 launch arithmetic arithmetic.launch.py
 	ros2 param set /operator random true
 
+***
+
+##### turtlebot3(raspberry3) add camera
+1.v4l2(raspberry3) camera : plug in your port so golden part you can see
+2.install v4l2 camera node 
+3.you should intall plug in on your laptop. <br> 
+compress img :  mmpg codec <br>
+		jpg compress(8 or9 would be ideal)under 10% of the raw imgages <br>
+	 	fps : 30 frames + 8% compress <br>
+
 
