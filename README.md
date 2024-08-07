@@ -275,9 +275,9 @@ all these files below work together to build, configure, and run the turtlesim p
 
  ***
 
- #### 6Aug
+#### 6Aug
 
-#### run gazebo
+##### run gazebo
 1.		 sudo nano ~/.bashrc
 2.		 source /opt/ros/humble/setup.bash
 3.		 ros2 launch turtlebot3_gazebo empty_world.launch.py
