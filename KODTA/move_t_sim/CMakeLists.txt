@@ -29,7 +29,7 @@ ament_target_dependencies(moveTurtleBot rclcpp geometry_msgs nav_msgs)
 add_executable(moveTurtleBot2 src/moveTurtleBot2.cpp src/moveTurtleBotcpp2.cpp)
 ament_target_dependencies(moveTurtleBot2 rclcpp geometry_msgs nav_msgs tf2)
 
-add_executable(rotate_turtle scr/rotate_trutle.cpp)
+add_executable(rotate_turtle src/rotate_turtle.cpp)
 ament_target_dependencies(rotate_turtle rclcpp turtlesim rclcpp_action)
 
 #install
