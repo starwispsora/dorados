@@ -19,7 +19,8 @@
                 "/home/sora/Desktop/sora_ws/build/interface_example/rosidl_generator_cpp",
                 "/opt/ros/humble/include/rosidl_typesupport_interface",
                 "${workspaceFolder}/KODTA/arithmetic/include",
-                "/opt/ros/humble/include/cv_bridge"
+                "/opt/ros/humble/include/cv_bridge",
+                "/opt/ros/humble/include/geometry_msgs"
             ],
             "compilerPath": "/usr/bin/g++",
             "cStandard": "c11",
