@@ -17,6 +17,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 
+
 include_directories(include)
 
 #add excutable
@@ -36,7 +37,10 @@ add_executable(rotate_turtle src/rotate_turtle.cpp)
 ament_target_dependencies(rotate_turtle rclcpp turtlesim rclcpp_action)
 
 add_executable(canny_camera src/canny_camera.cpp)
-ament_target_dependencies(canny_camera rclcpp sensor_msgs cv_bridge cv_bridge OpenCV)
+ament_target_dependencies(canny_camera rclcpp sensor_msgs cv_bridge OpenCV)
+
+add_executable(canny_camera2 src/canny_camera2.cpp)
+ament_target_dependencies(canny_camera2 rclcpp sensor_msgs cv_bridge OpenCV)
 
 #install
 install(TARGETS
@@ -46,6 +50,7 @@ install(TARGETS
   moveTurtleBot2
   rotate_turtle
   canny_camera
+  canny_camera2
   DESTINATION lib/${PROJECT_NAME}
 )
 
