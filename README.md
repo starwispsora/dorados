@@ -1,19 +1,4 @@
 ***
-## project memo
-theme1 : simple_demo <br>
-plot : 2 turtlebot3s are gonna move the trajectory of circle, square each, as i code <br>
-tools : ros2(humble) / chatgpt / c++ /  <br>
-build(90%) : on weekends(10, 11Aug) <br>
-feedback(10%) : on monday(12Aug) <br>
-
-
-theme2 : distributor <br>
-stage set up : load some packages on 2 turtlebot3s - add camera on to the turtlebot3(raspberry general camera v2) - black colored line taping(one main line until the back-point, from the back-point they will have 2 lines to their aimed QRcode attached place.) <br>
-plot :  starting point is located from the beggining of the one line and start - they follow the line and then finally reach the destination(print the message "O"). but if the QR code they're supposed to meet for each other isn't correct, print the message "X", and redirect themselves back to the second point, and then select the another line then they'll meet their own aimed goals. - print the message "O" <br>
-tools : ros2(humble) / opencv(QRcode reader) / video(raspberry general camera v2) / c++ / ros2(humble)/rviz <br>
-build(90%) : on weekends(17,18Aug) write code, ppt <br>
-feedback(10%) : on monday(27Aug) <br>
-
 ###### 31Jul2024 <br>
 
 #### set-up
