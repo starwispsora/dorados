@@ -316,12 +316,16 @@ compress img :  mmpg codec <br>
 
 ***
 ##### 9Aug
-
 https://emanual.robotis.com/docs/en/platform/turtlebot3/nav_simulation/
-
 #### slam
 #### nevigation
 #### fine tuning
-
+### fine tuning
+ - amcl
+ - you can guess from it where you wanna locate your bot
+ - #DWB parameters -> you can adjust options from here
+ - sim_time -> you can add numbers 1.5~5, it would have look like a better bot lol
+ - local_costmap : important!
+ - inflation layer = make it have bigger number if you don't want it to approach too close to the wall. important!
+   
 ***
-
