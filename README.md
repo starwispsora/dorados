@@ -320,7 +320,7 @@ https://emanual.robotis.com/docs/en/platform/turtlebot3/nav_simulation/
 #### slam
 #### nevigation
 #### fine tuning
-### fine tuning
+#### fine tuning
  - amcl
  - you can guess from it where you wanna locate your bot
  - #DWB parameters -> you can adjust options from here
