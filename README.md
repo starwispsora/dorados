@@ -1,7 +1,7 @@
 ***
 ## project memo
 theme1 : simple_demo <br>
-plot : it moves trajectory of circle/square as i code <br>
+plot : 2 turtlebot3s are gonna move the trajectory of circle, square each, as i code <br>
 tools : ros2(humble) / chatgpt / c++ /  <br>
 build(90%) : on weekends(10, 11Aug) <br>
 feedback(10%) : on monday(12Aug) <br>
