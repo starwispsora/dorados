@@ -314,4 +314,11 @@ compress img :  mmpg codec <br>
 		jpg compress(8 or9 would be ideal)under 10% of the raw imgages <br>
 	 	fps : 30 frames + 8% compress <br>
 
+***
+##### 9Aug
+
+https://emanual.robotis.com/docs/en/platform/turtlebot3/nav_simulation/
+
+#### slam
+#### nevigation
 
