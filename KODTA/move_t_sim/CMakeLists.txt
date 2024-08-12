@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(nav2_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(rclcpp_action REQUIRED)
@@ -51,6 +52,9 @@ ament_target_dependencies(stay_thirty rclcpp geometry_msgs sensor_msgs)
 add_executable(follow_wall src/follow_wall.cpp)
 ament_target_dependencies(follow_wall rclcpp geometry_msgs sensor_msgs)
 
+add_executable(waypoints_action src/waypoints_action.cpp)
+ament_target_dependencies(waypoints_action rclcpp nav2_msgs rclcpp_action)
+
 #install
 install(TARGETS
   moveTurtleSim
@@ -62,6 +66,7 @@ install(TARGETS
   canny_camera2
   simple_ridar
   follow_wall
+  waypoints_action
   DESTINATION lib/${PROJECT_NAME}
 )
 
