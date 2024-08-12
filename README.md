@@ -319,6 +319,7 @@ compress img :  mmpg codec <br>
 https://emanual.robotis.com/docs/en/platform/turtlebot3/nav_simulation/
 #### slam
 #### nevigation
+ - https://ros2-industrial-workshop.readthedocs.io/en/latest/_source/navigation/ROS2-Navigation.html
 ####catographer
  - https://ros2-industrial-workshop.readthedocs.io/en/latest/_source/navigation/ROS2-Cartographer.html
  - fine tuning
