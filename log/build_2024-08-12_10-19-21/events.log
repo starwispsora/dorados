@@ -1,0 +1,1161 @@
+[0.000000] (-) TimerEvent: {}
+[0.000103] (interface_example) JobQueued: {'identifier': 'interface_example', 'dependencies': OrderedDict()}
+[0.000124] (move_t_sim) JobQueued: {'identifier': 'move_t_sim', 'dependencies': OrderedDict()}
+[0.000132] (simple_pkg_cpp) JobQueued: {'identifier': 'simple_pkg_cpp', 'dependencies': OrderedDict()}
+[0.000142] (topic_final) JobQueued: {'identifier': 'topic_final', 'dependencies': OrderedDict()}
+[0.000153] (arithmetic) JobQueued: {'identifier': 'arithmetic', 'dependencies': OrderedDict([('interface_example', '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example')])}
+[0.000163] (interface_example) JobStarted: {'identifier': 'interface_example'}
+[0.005890] (move_t_sim) JobStarted: {'identifier': 'move_t_sim'}
+[0.008798] (simple_pkg_cpp) JobStarted: {'identifier': 'simple_pkg_cpp'}
+[0.011999] (topic_final) JobStarted: {'identifier': 'topic_final'}
+[0.019490] (interface_example) JobProgress: {'identifier': 'interface_example', 'progress': 'cmake'}
+[0.019694] (interface_example) Command: {'cmd': ['/usr/bin/cmake', '/home/sora/Desktop/sora_ws/src/soraros/KODTA/interface_example', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sora/Desktop/sora_ws/src/soraros/install/interface_example'], 'cwd': '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'sora'), ('LC_TIME', 'en_US.UTF-8'), ('GIO_MODULE_DIR', '/home/sora/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sora/Desktop/sora_ws/install/interface_example/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/sora'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.92.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/166/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/sora/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/166/usr/share/code/code'), ('MANAGERPID', '995'), ('SYSTEMD_EXEC_PID', '1260'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22751'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sora'), ('JOURNAL_STREAM', '8:22137'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'sora'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sora-in15-3530:@/tmp/.ICE-unix/1220,unix/sora-in15-3530:/tmp/.ICE-unix/1220'), ('GTK_EXE_PREFIX', '/snap/code/166/usr'), ('INVOCATION_ID', '63d7e240e5d94b84b95f44bb7a9c006d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/166/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.YVKDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-49262faea3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/sora/snap/code/166/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '02'), ('AMENT_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/home/sora/snap/code/166/.local/share:/home/sora/snap/code/166:/snap/code/166/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sora/Desktop/sora_ws/install/interface_example/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble')]), 'shell': False}
+[0.022365] (move_t_sim) JobProgress: {'identifier': 'move_t_sim', 'progress': 'cmake'}
+[0.022549] (move_t_sim) Command: {'cmd': ['/usr/bin/cmake', '/home/sora/Desktop/sora_ws/src/soraros/KODTA/move_t_sim', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sora/Desktop/sora_ws/src/soraros/install/move_t_sim'], 'cwd': '/home/sora/Desktop/sora_ws/src/soraros/build/move_t_sim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'sora'), ('LC_TIME', 'en_US.UTF-8'), ('GIO_MODULE_DIR', '/home/sora/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sora/Desktop/sora_ws/install/interface_example/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/sora'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.92.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/166/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/sora/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/166/usr/share/code/code'), ('MANAGERPID', '995'), ('SYSTEMD_EXEC_PID', '1260'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22751'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sora'), ('JOURNAL_STREAM', '8:22137'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'sora'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sora-in15-3530:@/tmp/.ICE-unix/1220,unix/sora-in15-3530:/tmp/.ICE-unix/1220'), ('GTK_EXE_PREFIX', '/snap/code/166/usr'), ('INVOCATION_ID', '63d7e240e5d94b84b95f44bb7a9c006d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/166/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.YVKDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-49262faea3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/sora/snap/code/166/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '02'), ('AMENT_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sora/Desktop/sora_ws/src/soraros/build/move_t_sim'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/home/sora/snap/code/166/.local/share:/home/sora/snap/code/166:/snap/code/166/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sora/Desktop/sora_ws/install/interface_example/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble')]), 'shell': False}
+[0.026784] (simple_pkg_cpp) JobProgress: {'identifier': 'simple_pkg_cpp', 'progress': 'cmake'}
+[0.026867] (simple_pkg_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/sora/Desktop/sora_ws/src/soraros/KODTA/simple_pkg_cpp', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sora/Desktop/sora_ws/src/soraros/install/simple_pkg_cpp'], 'cwd': '/home/sora/Desktop/sora_ws/src/soraros/build/simple_pkg_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'sora'), ('LC_TIME', 'en_US.UTF-8'), ('GIO_MODULE_DIR', '/home/sora/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sora/Desktop/sora_ws/install/interface_example/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/sora'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.92.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/166/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/sora/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/166/usr/share/code/code'), ('MANAGERPID', '995'), ('SYSTEMD_EXEC_PID', '1260'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22751'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sora'), ('JOURNAL_STREAM', '8:22137'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'sora'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sora-in15-3530:@/tmp/.ICE-unix/1220,unix/sora-in15-3530:/tmp/.ICE-unix/1220'), ('GTK_EXE_PREFIX', '/snap/code/166/usr'), ('INVOCATION_ID', '63d7e240e5d94b84b95f44bb7a9c006d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/166/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.YVKDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-49262faea3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/sora/snap/code/166/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '02'), ('AMENT_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sora/Desktop/sora_ws/src/soraros/build/simple_pkg_cpp'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/home/sora/snap/code/166/.local/share:/home/sora/snap/code/166:/snap/code/166/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sora/Desktop/sora_ws/install/interface_example/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble')]), 'shell': False}
+[0.032038] (topic_final) JobProgress: {'identifier': 'topic_final', 'progress': 'cmake'}
+[0.032533] (topic_final) Command: {'cmd': ['/usr/bin/cmake', '/home/sora/Desktop/sora_ws/src/soraros/KODTA/topic_final', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sora/Desktop/sora_ws/src/soraros/install/topic_final'], 'cwd': '/home/sora/Desktop/sora_ws/src/soraros/build/topic_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'sora'), ('LC_TIME', 'en_US.UTF-8'), ('GIO_MODULE_DIR', '/home/sora/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sora/Desktop/sora_ws/install/interface_example/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/sora'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.92.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/166/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/sora/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/166/usr/share/code/code'), ('MANAGERPID', '995'), ('SYSTEMD_EXEC_PID', '1260'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22751'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sora'), ('JOURNAL_STREAM', '8:22137'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'sora'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sora-in15-3530:@/tmp/.ICE-unix/1220,unix/sora-in15-3530:/tmp/.ICE-unix/1220'), ('GTK_EXE_PREFIX', '/snap/code/166/usr'), ('INVOCATION_ID', '63d7e240e5d94b84b95f44bb7a9c006d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/166/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.YVKDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-49262faea3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/sora/snap/code/166/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '02'), ('AMENT_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sora/Desktop/sora_ws/src/soraros/build/topic_final'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/home/sora/snap/code/166/.local/share:/home/sora/snap/code/166:/snap/code/166/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sora/Desktop/sora_ws/install/interface_example/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble')]), 'shell': False}
+[0.067474] (interface_example) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.081356] (move_t_sim) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.081852] (simple_pkg_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.085186] (topic_final) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099432] (-) TimerEvent: {}
+[0.124153] (move_t_sim) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.125255] (interface_example) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.130824] (interface_example) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.131922] (move_t_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.133961] (topic_final) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.134195] (simple_pkg_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.141267] (simple_pkg_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.141558] (topic_final) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.178089] (interface_example) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.180756] (move_t_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.185566] (move_t_sim) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.185784] (move_t_sim) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.185917] (move_t_sim) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.186108] (interface_example) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.186471] (interface_example) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.186963] (interface_example) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.188197] (move_t_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.190024] (interface_example) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199542] (-) TimerEvent: {}
+[0.204624] (simple_pkg_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.213067] (topic_final) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.213329] (simple_pkg_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.213424] (simple_pkg_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.213641] (simple_pkg_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.215716] (simple_pkg_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.222036] (topic_final) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.222258] (topic_final) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.222655] (topic_final) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.226111] (topic_final) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.260444] (move_t_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.263320] (interface_example) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.268760] (interface_example) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.268991] (interface_example) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.269252] (interface_example) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.269358] (move_t_sim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.269674] (move_t_sim) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.270238] (move_t_sim) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.272620] (interface_example) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.273848] (move_t_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.291117] (simple_pkg_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.299644] (-) TimerEvent: {}
+[0.300075] (simple_pkg_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.300823] (simple_pkg_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.301244] (simple_pkg_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.305069] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.311786] (topic_final) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.316832] (topic_final) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.317038] (topic_final) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.317356] (topic_final) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.320039] (topic_final) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.390139] (interface_example) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.399743] (-) TimerEvent: {}
+[0.422444] (move_t_sim) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.438174] (interface_example) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.448432] (topic_final) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.464184] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.467141] (move_t_sim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.484851] (interface_example) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.490413] (interface_example) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.491767] (move_t_sim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.499872] (-) TimerEvent: {}
+[0.501153] (interface_example) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.518776] (topic_final) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.520052] (simple_pkg_cpp) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.528789] (move_t_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.533075] (move_t_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.539924] (move_t_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.549081] (move_t_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.558244] (interface_example) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.558441] (topic_final) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.561464] (move_t_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.563143] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.593310] (topic_final) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.596573] (move_t_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.598579] (topic_final) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.599211] (move_t_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.599937] (-) TimerEvent: {}
+[0.605196] (topic_final) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.616257] (topic_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.620641] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.628180] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.629426] (topic_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.639242] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.654571] (simple_pkg_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.667855] (move_t_sim) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.670547] (topic_final) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.672719] (topic_final) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.675528] (simple_pkg_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.693385] (move_t_sim) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.700039] (-) TimerEvent: {}
+[0.724805] (move_t_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.732857] (move_t_sim) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.735066] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.739438] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.739744] (topic_final) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.760042] (topic_final) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.790740] (topic_final) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.798540] (move_t_sim) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.798888] (move_t_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.799500] (topic_final) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.800100] (-) TimerEvent: {}
+[0.821496] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.850568] (move_t_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.851527] (move_t_sim) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.856301] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.866241] (topic_final) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.866569] (topic_final) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.892210] (move_t_sim) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.900231] (-) TimerEvent: {}
+[0.905732] (simple_pkg_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.909379] (move_t_sim) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.919091] (simple_pkg_cpp) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.921828] (interface_example) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.929815] (move_t_sim) StdoutLine: {'line': b'-- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)\n'}
+[0.935590] (topic_final) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.936857] (topic_final) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.973308] (simple_pkg_cpp) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.973469] (simple_pkg_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.975296] (move_t_sim) StdoutLine: {'line': b'-- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.990495] (move_t_sim) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[0.993452] (topic_final) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.000345] (-) TimerEvent: {}
+[1.005733] (move_t_sim) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.030346] (simple_pkg_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.031588] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.032566] (move_t_sim) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.052603] (move_t_sim) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[1.074336] (move_t_sim) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.085489] (topic_final) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.085698] (topic_final) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.085779] (topic_final) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.086081] (topic_final) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.086389] (topic_final) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.086871] (topic_final) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.087574] (topic_final) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.087687] (topic_final) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.087959] (topic_final) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.088812] (topic_final) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.094618] (interface_example) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.100105] (topic_final) StdoutLine: {'line': b'-- Generating done\n'}
+[1.100406] (-) TimerEvent: {}
+[1.101290] (topic_final) StdoutLine: {'line': b'-- Build files have been written to: /home/sora/Desktop/sora_ws/src/soraros/build/topic_final\n'}
+[1.103916] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[1.106859] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found interface_example: 0.0.0 (/home/sora/Desktop/sora_ws/install/interface_example/share/interface_example/cmake)\n'}
+[1.109084] (topic_final) CommandEnded: {'returncode': 0}
+[1.109802] (topic_final) JobProgress: {'identifier': 'topic_final', 'progress': 'build'}
+[1.110869] (topic_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sora/Desktop/sora_ws/src/soraros/build/topic_final', '--', '-j12', '-l12'], 'cwd': '/home/sora/Desktop/sora_ws/src/soraros/build/topic_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'sora'), ('LC_TIME', 'en_US.UTF-8'), ('GIO_MODULE_DIR', '/home/sora/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sora/Desktop/sora_ws/install/interface_example/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/sora'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.92.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/166/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/sora/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/166/usr/share/code/code'), ('MANAGERPID', '995'), ('SYSTEMD_EXEC_PID', '1260'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22751'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sora'), ('JOURNAL_STREAM', '8:22137'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'sora'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sora-in15-3530:@/tmp/.ICE-unix/1220,unix/sora-in15-3530:/tmp/.ICE-unix/1220'), ('GTK_EXE_PREFIX', '/snap/code/166/usr'), ('INVOCATION_ID', '63d7e240e5d94b84b95f44bb7a9c006d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/166/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.YVKDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-49262faea3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/sora/snap/code/166/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '02'), ('AMENT_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sora/Desktop/sora_ws/src/soraros/build/topic_final'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/home/sora/snap/code/166/.local/share:/home/sora/snap/code/166:/snap/code/166/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sora/Desktop/sora_ws/install/interface_example/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble')]), 'shell': False}
+[1.159734] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[1.160149] (topic_final) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/mpub.dir/src/mpub.cpp.o\x1b[0m\n'}
+[1.160258] (move_t_sim) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.160343] (topic_final) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/msub.dir/src/msub.cpp.o\x1b[0m\n'}
+[1.160647] (move_t_sim) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/sora/Desktop/sora_ws/src/soraros/KODTA/move_t_sim/include\n'}
+[1.160767] (move_t_sim) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.161915] (move_t_sim) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.163946] (move_t_sim) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.164202] (move_t_sim) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.164921] (move_t_sim) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.167334] (topic_final) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/tpub.dir/src/tpub.cpp.o\x1b[0m\n'}
+[1.167684] (topic_final) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/msub2.dir/src/msub2.cpp.o\x1b[0m\n'}
+[1.167806] (topic_final) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/mtsub.dir/src/mtsub.cpp.o\x1b[0m\n'}
+[1.167911] (move_t_sim) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.196673] (simple_pkg_cpp) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.203171] (-) TimerEvent: {}
+[1.218856] (move_t_sim) StdoutLine: {'line': b'-- Generating done\n'}
+[1.221814] (move_t_sim) StdoutLine: {'line': b'-- Build files have been written to: /home/sora/Desktop/sora_ws/src/soraros/build/move_t_sim\n'}
+[1.243264] (move_t_sim) CommandEnded: {'returncode': 0}
+[1.243902] (move_t_sim) JobProgress: {'identifier': 'move_t_sim', 'progress': 'build'}
+[1.243956] (move_t_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sora/Desktop/sora_ws/src/soraros/build/move_t_sim', '--', '-j12', '-l12'], 'cwd': '/home/sora/Desktop/sora_ws/src/soraros/build/move_t_sim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'sora'), ('LC_TIME', 'en_US.UTF-8'), ('GIO_MODULE_DIR', '/home/sora/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sora/Desktop/sora_ws/install/interface_example/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/sora'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.92.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/166/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/sora/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/166/usr/share/code/code'), ('MANAGERPID', '995'), ('SYSTEMD_EXEC_PID', '1260'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22751'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sora'), ('JOURNAL_STREAM', '8:22137'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'sora'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sora-in15-3530:@/tmp/.ICE-unix/1220,unix/sora-in15-3530:/tmp/.ICE-unix/1220'), ('GTK_EXE_PREFIX', '/snap/code/166/usr'), ('INVOCATION_ID', '63d7e240e5d94b84b95f44bb7a9c006d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/166/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.YVKDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-49262faea3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/sora/snap/code/166/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '02'), ('AMENT_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sora/Desktop/sora_ws/src/soraros/build/move_t_sim'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/home/sora/snap/code/166/.local/share:/home/sora/snap/code/166:/snap/code/166/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sora/Desktop/sora_ws/install/interface_example/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble')]), 'shell': False}
+[1.303417] (-) TimerEvent: {}
+[1.321330] (simple_pkg_cpp) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.323492] (simple_pkg_cpp) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/sora/Desktop/sora_ws/src/soraros/KODTA/simple_pkg_cpp/include\n'}
+[1.323799] (simple_pkg_cpp) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.324960] (simple_pkg_cpp) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.326975] (simple_pkg_cpp) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.328079] (move_t_sim) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/moveTurtleSim.dir/src/moveTurtleSim.cpp.o\x1b[0m\n'}
+[1.329008] (simple_pkg_cpp) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.332007] (simple_pkg_cpp) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.332334] (simple_pkg_cpp) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.333761] (simple_pkg_cpp) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.338719] (simple_pkg_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.340662] (move_t_sim) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/moveTurtleSim.dir/src/moveTurtle.cpp.o\x1b[0m\n'}
+[1.358685] (move_t_sim) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/moveTurtleBot2.dir/src/moveTurtleBotcpp2.cpp.o\x1b[0m\n'}
+[1.369464] (move_t_sim) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/moveTurtleBot.dir/src/moveTurtleBotcpp.cpp.o\x1b[0m\n'}
+[1.371640] (move_t_sim) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/moveTurtleBot2.dir/src/moveTurtleBot2.cpp.o\x1b[0m\n'}
+[1.373667] (move_t_sim) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/moveTurtleBot.dir/src/moveTurtleBot.cpp.o\x1b[0m\n'}
+[1.402677] (interface_example) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.403494] (-) TimerEvent: {}
+[1.425133] (move_t_sim) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/rotate_turtle.dir/src/rotate_turtle.cpp.o\x1b[0m\n'}
+[1.475458] (move_t_sim) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/canny_camera.dir/src/canny_camera.cpp.o\x1b[0m\n'}
+[1.476641] (move_t_sim) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/follow_wall.dir/src/follow_wall.cpp.o\x1b[0m\n'}
+[1.484268] (move_t_sim) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/simple_ridar.dir/src/simple_ridar.cpp.o\x1b[0m\n'}
+[1.490656] (move_t_sim) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/stay_thirty.dir/src/stay_thirty.cpp.o\x1b[0m\n'}
+[1.495699] (move_t_sim) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/canny_camera2.dir/src/canny_camera2.cpp.o\x1b[0m\n'}
+[1.503653] (-) TimerEvent: {}
+[1.518010] (interface_example) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.527290] (interface_example) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.563289] (simple_pkg_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[1.580549] (simple_pkg_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/sora/Desktop/sora_ws/src/soraros/build/simple_pkg_cpp\n'}
+[1.603852] (-) TimerEvent: {}
+[1.624022] (interface_example) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.624985] (interface_example) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.625265] (interface_example) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.625464] (interface_example) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.675604] (simple_pkg_cpp) CommandEnded: {'returncode': 0}
+[1.676345] (simple_pkg_cpp) JobProgress: {'identifier': 'simple_pkg_cpp', 'progress': 'build'}
+[1.676383] (simple_pkg_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sora/Desktop/sora_ws/src/soraros/build/simple_pkg_cpp', '--', '-j12', '-l12'], 'cwd': '/home/sora/Desktop/sora_ws/src/soraros/build/simple_pkg_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'sora'), ('LC_TIME', 'en_US.UTF-8'), ('GIO_MODULE_DIR', '/home/sora/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sora/Desktop/sora_ws/install/interface_example/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/sora'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.92.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/166/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/sora/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/166/usr/share/code/code'), ('MANAGERPID', '995'), ('SYSTEMD_EXEC_PID', '1260'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22751'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sora'), ('JOURNAL_STREAM', '8:22137'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'sora'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sora-in15-3530:@/tmp/.ICE-unix/1220,unix/sora-in15-3530:/tmp/.ICE-unix/1220'), ('GTK_EXE_PREFIX', '/snap/code/166/usr'), ('INVOCATION_ID', '63d7e240e5d94b84b95f44bb7a9c006d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/166/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.YVKDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-49262faea3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/sora/snap/code/166/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '02'), ('AMENT_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sora/Desktop/sora_ws/src/soraros/build/simple_pkg_cpp'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/home/sora/snap/code/166/.local/share:/home/sora/snap/code/166:/snap/code/166/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sora/Desktop/sora_ws/install/interface_example/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble')]), 'shell': False}
+[1.684823] (interface_example) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.703977] (-) TimerEvent: {}
+[1.804416] (-) TimerEvent: {}
+[1.905372] (-) TimerEvent: {}
+[1.968331] (simple_pkg_cpp) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/helloword.dir/src/helloworld.cpp.o\x1b[0m\n'}
+[1.981894] (interface_example) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.993449] (simple_pkg_cpp) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/hello_publisher2.dir/src/hello_publisher2.cpp.o\x1b[0m\n'}
+[1.999194] (simple_pkg_cpp) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/helloOpenCV.dir/src/helloOpenCV.cpp.o\x1b[0m\n'}
+[2.005511] (-) TimerEvent: {}
+[2.021667] (simple_pkg_cpp) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/hello_publisher.dir/src/hello_publisher.cpp.o\x1b[0m\n'}
+[2.035209] (simple_pkg_cpp) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/hello_publisher_class2.dir/src/publisher.cpp.o\x1b[0m\n'}
+[2.042586] (simple_pkg_cpp) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/hello_publisher_class.dir/src/hello_publisher_class.cpp.o\x1b[0m\n'}
+[2.059632] (simple_pkg_cpp) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/hello_subscriber_class.dir/src/hello_subscriber_class.cpp.o\x1b[0m\n'}
+[2.070887] (simple_pkg_cpp) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/hello_publisher_class2.dir/src/hello_publisher_class2.cpp.o\x1b[0m\n'}
+[2.096862] (simple_pkg_cpp) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/hello_subscriber_class.dir/src/subscriber.cpp.o\x1b[0m\n'}
+[2.105626] (-) TimerEvent: {}
+[2.142627] (simple_pkg_cpp) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/time_subscriber_class.dir/src/time_subscriber_class.cpp.o\x1b[0m\n'}
+[2.166287] (simple_pkg_cpp) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/time_publisher_class.dir/src/time_publisher_class.cpp.o\x1b[0m\n'}
+[2.201489] (interface_example) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.205795] (-) TimerEvent: {}
+[2.228259] (simple_pkg_cpp) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/simple_service_server.dir/src/simple_service_server.cpp.o\x1b[0m\n'}
+[2.284231] (simple_pkg_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sora/Desktop/sora_ws/src/soraros/KODTA/simple_pkg_cpp/src/simple_service_server.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kinterface_example/srv/add_two_int.hpp: No such file or directory\n'}
+[2.284565] (simple_pkg_cpp) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K"interface_example/srv/add_two_int.hpp"\x1b[m\x1b[K\n'}
+[2.284731] (simple_pkg_cpp) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.284920] (simple_pkg_cpp) StderrLine: {'line': b'compilation terminated.\n'}
+[2.286152] (simple_pkg_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/simple_service_server.dir/build.make:76: CMakeFiles/simple_service_server.dir/src/simple_service_server.cpp.o] Error 1\n'}
+[2.286906] (simple_pkg_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:397: CMakeFiles/simple_service_server.dir/all] Error 2\n'}
+[2.287059] (simple_pkg_cpp) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[2.305931] (-) TimerEvent: {}
+[2.406429] (-) TimerEvent: {}
+[2.418146] (simple_pkg_cpp) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/time_subscriber_class.dir/src/time_sub.cpp.o\x1b[0m\n'}
+[2.468622] (interface_example) StdoutLine: {'line': b'-- Generating done\n'}
+[2.496136] (interface_example) StdoutLine: {'line': b'-- Build files have been written to: /home/sora/Desktop/sora_ws/src/soraros/build/interface_example\n'}
+[2.506528] (-) TimerEvent: {}
+[2.542751] (interface_example) CommandEnded: {'returncode': 0}
+[2.543389] (interface_example) JobProgress: {'identifier': 'interface_example', 'progress': 'build'}
+[2.543426] (interface_example) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example', '--', '-j12', '-l12'], 'cwd': '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'sora'), ('LC_TIME', 'en_US.UTF-8'), ('GIO_MODULE_DIR', '/home/sora/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sora/Desktop/sora_ws/install/interface_example/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/sora'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.92.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/166/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/sora/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/166/usr/share/code/code'), ('MANAGERPID', '995'), ('SYSTEMD_EXEC_PID', '1260'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22751'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sora'), ('JOURNAL_STREAM', '8:22137'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'sora'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sora-in15-3530:@/tmp/.ICE-unix/1220,unix/sora-in15-3530:/tmp/.ICE-unix/1220'), ('GTK_EXE_PREFIX', '/snap/code/166/usr'), ('INVOCATION_ID', '63d7e240e5d94b84b95f44bb7a9c006d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/166/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.YVKDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-49262faea3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/sora/snap/code/166/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '02'), ('AMENT_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/home/sora/snap/code/166/.local/share:/home/sora/snap/code/166:/snap/code/166/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sora/Desktop/sora_ws/install/interface_example/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble')]), 'shell': False}
+[2.556051] (simple_pkg_cpp) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX executable helloword\x1b[0m\n'}
+[2.606677] (-) TimerEvent: {}
+[2.707711] (-) TimerEvent: {}
+[2.789078] (interface_example) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.807861] (-) TimerEvent: {}
+[2.845113] (interface_example) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.908015] (-) TimerEvent: {}
+[2.961852] (interface_example) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_interface_example\n'}
+[3.008165] (-) TimerEvent: {}
+[3.045594] (simple_pkg_cpp) StdoutLine: {'line': b'[ 43%] Built target helloword\n'}
+[3.095763] (simple_pkg_cpp) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/time_publisher_class.dir/src/time_pub.cpp.o\x1b[0m\n'}
+[3.108851] (-) TimerEvent: {}
+[3.209578] (-) TimerEvent: {}
+[3.313839] (-) TimerEvent: {}
+[3.414298] (-) TimerEvent: {}
+[3.515693] (-) TimerEvent: {}
+[3.616103] (-) TimerEvent: {}
+[3.716555] (-) TimerEvent: {}
+[3.817011] (-) TimerEvent: {}
+[3.919558] (-) TimerEvent: {}
+[4.038524] (-) TimerEvent: {}
+[4.047803] (interface_example) StdoutLine: {'line': b'running egg_info\n'}
+[4.049478] (interface_example) StdoutLine: {'line': b'creating interface_example.egg-info\n'}
+[4.050220] (interface_example) StdoutLine: {'line': b'writing interface_example.egg-info/PKG-INFO\n'}
+[4.051273] (interface_example) StdoutLine: {'line': b'writing dependency_links to interface_example.egg-info/dependency_links.txt\n'}
+[4.052015] (interface_example) StdoutLine: {'line': b'writing top-level names to interface_example.egg-info/top_level.txt\n'}
+[4.052813] (interface_example) StdoutLine: {'line': b"writing manifest file 'interface_example.egg-info/SOURCES.txt'\n"}
+[4.062327] (interface_example) StdoutLine: {'line': b"reading manifest file 'interface_example.egg-info/SOURCES.txt'\n"}
+[4.063837] (interface_example) StdoutLine: {'line': b"writing manifest file 'interface_example.egg-info/SOURCES.txt'\n"}
+[4.138675] (-) TimerEvent: {}
+[4.239173] (-) TimerEvent: {}
+[4.288143] (interface_example) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_interface_example_egg\n'}
+[4.339333] (-) TimerEvent: {}
+[4.440488] (-) TimerEvent: {}
+[4.541477] (-) TimerEvent: {}
+[4.642514] (-) TimerEvent: {}
+[4.743546] (-) TimerEvent: {}
+[4.844586] (-) TimerEvent: {}
+[4.945726] (-) TimerEvent: {}
+[5.051894] (-) TimerEvent: {}
+[5.156197] (-) TimerEvent: {}
+[5.256699] (-) TimerEvent: {}
+[5.357167] (-) TimerEvent: {}
+[5.457609] (-) TimerEvent: {}
+[5.559316] (-) TimerEvent: {}
+[5.660298] (-) TimerEvent: {}
+[5.761517] (-) TimerEvent: {}
+[5.866539] (-) TimerEvent: {}
+[5.966991] (-) TimerEvent: {}
+[6.067923] (-) TimerEvent: {}
+[6.168976] (-) TimerEvent: {}
+[6.270009] (-) TimerEvent: {}
+[6.370522] (-) TimerEvent: {}
+[6.471024] (-) TimerEvent: {}
+[6.571530] (-) TimerEvent: {}
+[6.672017] (-) TimerEvent: {}
+[6.773182] (-) TimerEvent: {}
+[6.873878] (-) TimerEvent: {}
+[6.977011] (-) TimerEvent: {}
+[6.983221] (interface_example) StdoutLine: {'line': b'[  3%] Built target interface_example__cpp\n'}
+[7.069632] (interface_example) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.077160] (-) TimerEvent: {}
+[7.085017] (interface_example) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.113434] (interface_example) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.177293] (-) TimerEvent: {}
+[7.277758] (-) TimerEvent: {}
+[7.378234] (-) TimerEvent: {}
+[7.478724] (-) TimerEvent: {}
+[7.579176] (-) TimerEvent: {}
+[7.679646] (-) TimerEvent: {}
+[7.780664] (-) TimerEvent: {}
+[7.881069] (-) TimerEvent: {}
+[7.966246] (interface_example) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_generator_c.dir/rosidl_generator_c/interface_example/msg/detail/arithmetic_argument__functions.c.o\x1b[0m\n'}
+[7.981192] (-) TimerEvent: {}
+[7.983105] (interface_example) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_generator_c.dir/rosidl_generator_c/interface_example/srv/detail/arithmetic_operator__functions.c.o\x1b[0m\n'}
+[8.011503] (interface_example) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_generator_c.dir/rosidl_generator_c/interface_example/srv/detail/add_two_int__functions.c.o\x1b[0m\n'}
+[8.018768] (interface_example) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_generator_c.dir/rosidl_generator_c/interface_example/action/detail/arithmetic_checker__functions.c.o\x1b[0m\n'}
+[8.034870] (interface_example) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_generator_c.dir/rosidl_generator_c/interface_example/action/detail/fibonacci__functions.c.o\x1b[0m\n'}
+[8.081339] (-) TimerEvent: {}
+[8.182244] (-) TimerEvent: {}
+[8.283279] (-) TimerEvent: {}
+[8.383749] (-) TimerEvent: {}
+[8.484226] (-) TimerEvent: {}
+[8.584666] (-) TimerEvent: {}
+[8.685632] (-) TimerEvent: {}
+[8.786535] (-) TimerEvent: {}
+[8.887571] (-) TimerEvent: {}
+[8.952023] (interface_example) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libinterface_example__rosidl_generator_c.so\x1b[0m\n'}
+[8.987702] (-) TimerEvent: {}
+[9.088683] (-) TimerEvent: {}
+[9.110843] (interface_example) StdoutLine: {'line': b'[ 17%] Built target interface_example__rosidl_generator_c\n'}
+[9.188839] (-) TimerEvent: {}
+[9.218035] (interface_example) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.242575] (interface_example) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.253215] (interface_example) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.288962] (-) TimerEvent: {}
+[9.389949] (-) TimerEvent: {}
+[9.490364] (-) TimerEvent: {}
+[9.590815] (-) TimerEvent: {}
+[9.691273] (-) TimerEvent: {}
+[9.791705] (-) TimerEvent: {}
+[9.823319] (interface_example) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_example/msg/arithmetic_argument__type_support.cpp.o\x1b[0m\n'}
+[9.842693] (interface_example) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_example/srv/add_two_int__type_support.cpp.o\x1b[0m\n'}
+[9.881186] (interface_example) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_example/srv/arithmetic_operator__type_support.cpp.o\x1b[0m\n'}
+[9.891835] (-) TimerEvent: {}
+[9.992807] (-) TimerEvent: {}
+[9.993242] (interface_example) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_example/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[10.008481] (interface_example) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_example/action/arithmetic_checker__type_support.cpp.o\x1b[0m\n'}
+[10.092919] (-) TimerEvent: {}
+[10.193774] (-) TimerEvent: {}
+[10.294798] (-) TimerEvent: {}
+[10.395215] (-) TimerEvent: {}
+[10.495607] (-) TimerEvent: {}
+[10.596554] (-) TimerEvent: {}
+[10.697542] (-) TimerEvent: {}
+[10.797987] (-) TimerEvent: {}
+[10.899014] (-) TimerEvent: {}
+[10.927312] (interface_example) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_example/srv/detail/add_two_int__type_support.cpp.o\x1b[0m\n'}
+[10.966962] (interface_example) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_example/msg/detail/arithmetic_argument__type_support.cpp.o\x1b[0m\n'}
+[10.999155] (-) TimerEvent: {}
+[11.043042] (interface_example) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_example/srv/detail/arithmetic_operator__type_support.cpp.o\x1b[0m\n'}
+[11.058626] (simple_pkg_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable helloOpenCV\x1b[0m\n'}
+[11.099298] (-) TimerEvent: {}
+[11.151045] (interface_example) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_example/action/detail/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[11.199434] (-) TimerEvent: {}
+[11.278805] (interface_example) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_example/action/detail/arithmetic_checker__type_support.cpp.o\x1b[0m\n'}
+[11.299570] (-) TimerEvent: {}
+[11.400048] (-) TimerEvent: {}
+[11.501231] (-) TimerEvent: {}
+[11.601774] (-) TimerEvent: {}
+[11.702229] (-) TimerEvent: {}
+[11.767532] (interface_example) StdoutLine: {'line': b'[ 39%] \x1b[32m\x1b[1mLinking CXX shared library libinterface_example__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.802356] (-) TimerEvent: {}
+[11.903351] (-) TimerEvent: {}
+[11.991888] (interface_example) StdoutLine: {'line': b'[ 39%] Built target interface_example__rosidl_typesupport_cpp\n'}
+[12.003491] (-) TimerEvent: {}
+[12.104508] (-) TimerEvent: {}
+[12.205402] (-) TimerEvent: {}
+[12.260265] (interface_example) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_example/msg/arithmetic_argument__type_support.cpp.o\x1b[0m\n'}
+[12.271342] (interface_example) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_example/srv/add_two_int__type_support.cpp.o\x1b[0m\n'}
+[12.286724] (interface_example) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_example/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[12.289375] (interface_example) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_example/srv/arithmetic_operator__type_support.cpp.o\x1b[0m\n'}
+[12.305536] (-) TimerEvent: {}
+[12.356079] (interface_example) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_example/action/arithmetic_checker__type_support.cpp.o\x1b[0m\n'}
+[12.407665] (-) TimerEvent: {}
+[12.508153] (-) TimerEvent: {}
+[12.608857] (-) TimerEvent: {}
+[12.653260] (interface_example) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libinterface_example__rosidl_typesupport_c.so\x1b[0m\n'}
+[12.703201] (interface_example) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_example/msg/detail/dds_fastrtps/arithmetic_argument__type_support.cpp.o\x1b[0m\n'}
+[12.709232] (-) TimerEvent: {}
+[12.730060] (interface_example) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_example/srv/detail/dds_fastrtps/arithmetic_operator__type_support.cpp.o\x1b[0m\n'}
+[12.736665] (interface_example) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_example/msg/detail/arithmetic_argument__type_support_c.cpp.o\x1b[0m\n'}
+[12.770595] (interface_example) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_example/srv/detail/dds_fastrtps/add_two_int__type_support.cpp.o\x1b[0m\n'}
+[12.771031] (interface_example) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_example/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[12.771311] (interface_example) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_example/srv/detail/add_two_int__type_support_c.cpp.o\x1b[0m\n'}
+[12.809157] (-) TimerEvent: {}
+[12.855180] (interface_example) StdoutLine: {'line': b'[ 58%] Built target interface_example__rosidl_typesupport_c\n'}
+[12.858933] (interface_example) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_example/action/detail/dds_fastrtps/arithmetic_checker__type_support.cpp.o\x1b[0m\n'}
+[12.875661] (interface_example) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_example/srv/detail/arithmetic_operator__type_support_c.cpp.o\x1b[0m\n'}
+[12.909297] (-) TimerEvent: {}
+[13.010760] (-) TimerEvent: {}
+[13.111688] (-) TimerEvent: {}
+[13.212755] (-) TimerEvent: {}
+[13.313314] (-) TimerEvent: {}
+[13.377554] (interface_example) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_example/action/detail/fibonacci__type_support_c.cpp.o\x1b[0m\n'}
+[13.413439] (-) TimerEvent: {}
+[13.498137] (interface_example) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_example/action/detail/arithmetic_checker__type_support_c.cpp.o\x1b[0m\n'}
+[13.513600] (-) TimerEvent: {}
+[13.614730] (-) TimerEvent: {}
+[13.715677] (-) TimerEvent: {}
+[13.720384] (simple_pkg_cpp) StdoutLine: {'line': b'[ 50%] Built target helloOpenCV\n'}
+[13.815828] (-) TimerEvent: {}
+[13.917584] (-) TimerEvent: {}
+[14.018177] (-) TimerEvent: {}
+[14.118913] (-) TimerEvent: {}
+[14.219676] (-) TimerEvent: {}
+[14.320511] (-) TimerEvent: {}
+[14.421365] (-) TimerEvent: {}
+[14.522272] (-) TimerEvent: {}
+[14.623167] (-) TimerEvent: {}
+[14.724034] (-) TimerEvent: {}
+[14.824847] (-) TimerEvent: {}
+[14.925685] (-) TimerEvent: {}
+[15.026519] (-) TimerEvent: {}
+[15.055153] (interface_example) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_example/msg/detail/arithmetic_argument__type_support.c.o\x1b[0m\n'}
+[15.126699] (-) TimerEvent: {}
+[15.136367] (interface_example) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_example/srv/detail/arithmetic_operator__type_support.c.o\x1b[0m\n'}
+[15.151288] (interface_example) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_example/action/detail/fibonacci__type_support.c.o\x1b[0m\n'}
+[15.217602] (interface_example) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_example/srv/detail/add_two_int__type_support.c.o\x1b[0m\n'}
+[15.251264] (-) TimerEvent: {}
+[15.359734] (-) TimerEvent: {}
+[15.393994] (interface_example) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libinterface_example__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[15.416086] (interface_example) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_example/action/detail/arithmetic_checker__type_support.c.o\x1b[0m\n'}
+[15.459928] (-) TimerEvent: {}
+[15.566641] (-) TimerEvent: {}
+[15.667452] (-) TimerEvent: {}
+[15.769545] (-) TimerEvent: {}
+[15.871531] (-) TimerEvent: {}
+[15.973801] (-) TimerEvent: {}
+[16.075615] (-) TimerEvent: {}
+[16.176438] (-) TimerEvent: {}
+[16.277971] (-) TimerEvent: {}
+[16.379740] (-) TimerEvent: {}
+[16.405404] (interface_example) StdoutLine: {'line': b'[ 74%] Built target interface_example__rosidl_typesupport_introspection_cpp\n'}
+[16.443461] (interface_example) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C shared library libinterface_example__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[16.479932] (-) TimerEvent: {}
+[16.581906] (-) TimerEvent: {}
+[16.687057] (-) TimerEvent: {}
+[16.747675] (interface_example) StdoutLine: {'line': b'[ 76%] Built target interface_example__rosidl_typesupport_introspection_c\n'}
+[16.787237] (-) TimerEvent: {}
+[16.889180] (-) TimerEvent: {}
+[16.992897] (-) TimerEvent: {}
+[17.076248] (interface_example) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libinterface_example__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[17.095954] (-) TimerEvent: {}
+[17.191471] (simple_pkg_cpp) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX executable hello_publisher\x1b[0m\n'}
+[17.196135] (-) TimerEvent: {}
+[17.297814] (-) TimerEvent: {}
+[17.398945] (-) TimerEvent: {}
+[17.499835] (-) TimerEvent: {}
+[17.601050] (-) TimerEvent: {}
+[17.702907] (-) TimerEvent: {}
+[17.804714] (-) TimerEvent: {}
+[17.851346] (interface_example) StdoutLine: {'line': b'[ 77%] Built target interface_example__rosidl_typesupport_fastrtps_c\n'}
+[17.904916] (-) TimerEvent: {}
+[18.005737] (-) TimerEvent: {}
+[18.106704] (-) TimerEvent: {}
+[18.208591] (-) TimerEvent: {}
+[18.310884] (-) TimerEvent: {}
+[18.412974] (-) TimerEvent: {}
+[18.514830] (-) TimerEvent: {}
+[18.609446] (simple_pkg_cpp) StdoutLine: {'line': b'[ 53%] Built target hello_publisher\n'}
+[18.615069] (-) TimerEvent: {}
+[18.715875] (-) TimerEvent: {}
+[18.816721] (-) TimerEvent: {}
+[18.917522] (-) TimerEvent: {}
+[18.928369] (interface_example) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libinterface_example__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[19.017796] (-) TimerEvent: {}
+[19.119680] (-) TimerEvent: {}
+[19.221720] (-) TimerEvent: {}
+[19.324083] (-) TimerEvent: {}
+[19.381984] (move_t_sim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[19.382441] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[19.382681] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[19.382861] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[19.383039] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[19.383223] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[19.383392] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[19.383548] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[19.383710] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[19.383870] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[19.384013] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[19.384309] (move_t_sim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sora/Desktop/sora_ws/src/soraros/KODTA/move_t_sim/src/canny_camera.cpp:3\x1b[m\x1b[K:\n'}
+[19.384526] (move_t_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sora/Desktop/sora_ws/src/soraros/KODTA/move_t_sim/src/canny_camera.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CannyCamera::sub_img(sensor_msgs::msg::CompressedImage)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.384727] (move_t_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sora/Desktop/sora_ws/src/soraros/KODTA/move_t_sim/src/canny_camera.cpp:33:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%s\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kstd::string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.384902] (move_t_sim) StderrLine: {'line': b'   33 |         RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K" %s"\x1b[m\x1b[K, std::\x1b[32m\x1b[Kstring(msg.header.frame_id)\x1b[m\x1b[K);\n'}
+[19.385063] (move_t_sim) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K       \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.385239] (move_t_sim) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[19.385404] (move_t_sim) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[Kstd::string {aka std::__cxx11::basic_string<char>}\x1b[m\x1b[K\n'}
+[19.385655] (move_t_sim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sora/Desktop/sora_ws/src/soraros/KODTA/move_t_sim/src/canny_camera.cpp:33:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[19.385835] (move_t_sim) StderrLine: {'line': b'   33 |         RCLCPP_INFO(get_logger(), " \x1b[01;36m\x1b[K%s\x1b[m\x1b[K", std::string(msg.header.frame_id));\n'}
+[19.386014] (move_t_sim) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[19.386165] (move_t_sim) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[19.386318] (move_t_sim) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[Kchar*\x1b[m\x1b[K\n'}
+[19.414559] (interface_example) StdoutLine: {'line': b'[ 79%] Built target interface_example__rosidl_typesupport_fastrtps_cpp\n'}
+[19.424204] (-) TimerEvent: {}
+[19.525184] (-) TimerEvent: {}
+[19.627569] (-) TimerEvent: {}
+[19.709655] (interface_example) StdoutLine: {'line': b'[ 79%] Built target interface_example\n'}
+[19.727713] (-) TimerEvent: {}
+[19.828823] (-) TimerEvent: {}
+[19.930444] (-) TimerEvent: {}
+[19.977295] (interface_example) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[20.030587] (-) TimerEvent: {}
+[20.131577] (-) TimerEvent: {}
+[20.232719] (-) TimerEvent: {}
+[20.333201] (-) TimerEvent: {}
+[20.433672] (-) TimerEvent: {}
+[20.534634] (-) TimerEvent: {}
+[20.635130] (-) TimerEvent: {}
+[20.735654] (-) TimerEvent: {}
+[20.836131] (-) TimerEvent: {}
+[20.936621] (-) TimerEvent: {}
+[21.037105] (-) TimerEvent: {}
+[21.140699] (-) TimerEvent: {}
+[21.241161] (-) TimerEvent: {}
+[21.341631] (-) TimerEvent: {}
+[21.442113] (-) TimerEvent: {}
+[21.542837] (-) TimerEvent: {}
+[21.643292] (-) TimerEvent: {}
+[21.743741] (-) TimerEvent: {}
+[21.844214] (-) TimerEvent: {}
+[21.944667] (-) TimerEvent: {}
+[22.045126] (-) TimerEvent: {}
+[22.145631] (-) TimerEvent: {}
+[22.246077] (-) TimerEvent: {}
+[22.346565] (-) TimerEvent: {}
+[22.446997] (-) TimerEvent: {}
+[22.547423] (-) TimerEvent: {}
+[22.650028] (-) TimerEvent: {}
+[22.750506] (-) TimerEvent: {}
+[22.852179] (-) TimerEvent: {}
+[22.954253] (-) TimerEvent: {}
+[23.056487] (-) TimerEvent: {}
+[23.156999] (-) TimerEvent: {}
+[23.257478] (-) TimerEvent: {}
+[23.357957] (-) TimerEvent: {}
+[23.458440] (-) TimerEvent: {}
+[23.558887] (-) TimerEvent: {}
+[23.659905] (-) TimerEvent: {}
+[23.760350] (-) TimerEvent: {}
+[23.860783] (-) TimerEvent: {}
+[23.961219] (-) TimerEvent: {}
+[24.061674] (-) TimerEvent: {}
+[24.162155] (-) TimerEvent: {}
+[24.264745] (-) TimerEvent: {}
+[24.365186] (-) TimerEvent: {}
+[24.465808] (-) TimerEvent: {}
+[24.566753] (-) TimerEvent: {}
+[24.669840] (-) TimerEvent: {}
+[24.770279] (-) TimerEvent: {}
+[24.870742] (-) TimerEvent: {}
+[24.971180] (-) TimerEvent: {}
+[25.071635] (-) TimerEvent: {}
+[25.172091] (-) TimerEvent: {}
+[25.272534] (-) TimerEvent: {}
+[25.372992] (-) TimerEvent: {}
+[25.473455] (-) TimerEvent: {}
+[25.573911] (-) TimerEvent: {}
+[25.674379] (-) TimerEvent: {}
+[25.774836] (-) TimerEvent: {}
+[25.875284] (-) TimerEvent: {}
+[25.975854] (-) TimerEvent: {}
+[26.060584] (topic_final) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable tpub\x1b[0m\n'}
+[26.076115] (-) TimerEvent: {}
+[26.177960] (-) TimerEvent: {}
+[26.279659] (-) TimerEvent: {}
+[26.381662] (-) TimerEvent: {}
+[26.489134] (-) TimerEvent: {}
+[26.590191] (-) TimerEvent: {}
+[26.691173] (-) TimerEvent: {}
+[26.768837] (topic_final) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable mpub\x1b[0m\n'}
+[26.791282] (-) TimerEvent: {}
+[26.891726] (-) TimerEvent: {}
+[26.960568] (topic_final) StdoutLine: {'line': b'[ 70%] Built target tpub\n'}
+[26.991858] (-) TimerEvent: {}
+[27.092319] (-) TimerEvent: {}
+[27.192792] (-) TimerEvent: {}
+[27.293228] (-) TimerEvent: {}
+[27.393680] (-) TimerEvent: {}
+[27.494137] (-) TimerEvent: {}
+[27.594619] (-) TimerEvent: {}
+[27.695064] (-) TimerEvent: {}
+[27.792526] (simple_pkg_cpp) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX executable hello_publisher_class\x1b[0m\n'}
+[27.795255] (-) TimerEvent: {}
+[27.895999] (-) TimerEvent: {}
+[27.996766] (-) TimerEvent: {}
+[28.097546] (-) TimerEvent: {}
+[28.198333] (-) TimerEvent: {}
+[28.299161] (-) TimerEvent: {}
+[28.400062] (-) TimerEvent: {}
+[28.500986] (-) TimerEvent: {}
+[28.603026] (-) TimerEvent: {}
+[28.704868] (-) TimerEvent: {}
+[28.784482] (topic_final) StdoutLine: {'line': b'[ 70%] Built target mpub\n'}
+[28.805053] (-) TimerEvent: {}
+[28.906834] (-) TimerEvent: {}
+[29.008528] (-) TimerEvent: {}
+[29.110884] (-) TimerEvent: {}
+[29.212687] (-) TimerEvent: {}
+[29.314357] (-) TimerEvent: {}
+[29.392167] (simple_pkg_cpp) StdoutLine: {'line': b'[ 56%] Built target hello_publisher_class\n'}
+[29.414564] (-) TimerEvent: {}
+[29.516414] (-) TimerEvent: {}
+[29.618512] (-) TimerEvent: {}
+[29.720305] (-) TimerEvent: {}
+[29.822387] (-) TimerEvent: {}
+[29.932947] (-) TimerEvent: {}
+[29.976983] (interface_example) StdoutLine: {'line': b'[ 80%] Built target interface_example__py\n'}
+[30.033542] (-) TimerEvent: {}
+[30.112709] (interface_example) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_generator_py.dir/rosidl_generator_py/interface_example/msg/_arithmetic_argument_s.c.o\x1b[0m\n'}
+[30.133787] (-) TimerEvent: {}
+[30.268437] (-) TimerEvent: {}
+[30.370949] (-) TimerEvent: {}
+[30.478684] (-) TimerEvent: {}
+[30.581402] (-) TimerEvent: {}
+[30.682559] (-) TimerEvent: {}
+[30.774921] (move_t_sim) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX executable rotate_turtle\x1b[0m\n'}
+[30.782731] (-) TimerEvent: {}
+[30.871134] (interface_example) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_generator_py.dir/rosidl_generator_py/interface_example/action/_arithmetic_checker_s.c.o\x1b[0m\n'}
+[30.882980] (-) TimerEvent: {}
+[30.983815] (-) TimerEvent: {}
+[30.984958] (move_t_sim) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable moveTurtleSim\x1b[0m\n'}
+[31.083937] (-) TimerEvent: {}
+[31.184849] (-) TimerEvent: {}
+[31.285971] (-) TimerEvent: {}
+[31.386493] (-) TimerEvent: {}
+[31.486958] (-) TimerEvent: {}
+[31.587457] (-) TimerEvent: {}
+[31.687963] (-) TimerEvent: {}
+[31.788923] (-) TimerEvent: {}
+[31.889487] (-) TimerEvent: {}
+[31.916320] (move_t_sim) StdoutLine: {'line': b'[ 66%] Built target rotate_turtle\n'}
+[31.989765] (-) TimerEvent: {}
+[32.090657] (-) TimerEvent: {}
+[32.163617] (interface_example) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_generator_py.dir/rosidl_generator_py/interface_example/action/_fibonacci_s.c.o\x1b[0m\n'}
+[32.190828] (-) TimerEvent: {}
+[32.303039] (-) TimerEvent: {}
+[32.321019] (simple_pkg_cpp) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX executable hello_publisher2\x1b[0m\n'}
+[32.403235] (-) TimerEvent: {}
+[32.412394] (move_t_sim) StdoutLine: {'line': b'[ 66%] Built target moveTurtleSim\n'}
+[32.421810] (simple_pkg_cpp) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX executable hello_publisher_class2\x1b[0m\n'}
+[32.503409] (-) TimerEvent: {}
+[32.605701] (-) TimerEvent: {}
+[32.706573] (-) TimerEvent: {}
+[32.807375] (-) TimerEvent: {}
+[32.908192] (-) TimerEvent: {}
+[32.929998] (interface_example) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_generator_py.dir/rosidl_generator_py/interface_example/srv/_arithmetic_operator_s.c.o\x1b[0m\n'}
+[33.008374] (-) TimerEvent: {}
+[33.110297] (-) TimerEvent: {}
+[33.212375] (-) TimerEvent: {}
+[33.314210] (-) TimerEvent: {}
+[33.415999] (-) TimerEvent: {}
+[33.460337] (interface_example) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_generator_py.dir/rosidl_generator_py/interface_example/srv/_add_two_int_s.c.o\x1b[0m\n'}
+[33.516186] (-) TimerEvent: {}
+[33.597166] (simple_pkg_cpp) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX executable time_publisher_class\x1b[0m\n'}
+[33.616372] (-) TimerEvent: {}
+[33.717146] (-) TimerEvent: {}
+[33.795551] (interface_example) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interface_example/libinterface_example__rosidl_generator_py.so\x1b[0m\n'}
+[33.817331] (-) TimerEvent: {}
+[33.918493] (-) TimerEvent: {}
+[34.019347] (-) TimerEvent: {}
+[34.031630] (simple_pkg_cpp) StdoutLine: {'line': b'[ 65%] Built target time_publisher_class\n'}
+[34.060082] (simple_pkg_cpp) StdoutLine: {'line': b'[ 65%] Built target hello_publisher2\n'}
+[34.119472] (-) TimerEvent: {}
+[34.159547] (interface_example) StdoutLine: {'line': b'[ 90%] Built target interface_example__rosidl_generator_py\n'}
+[34.219606] (-) TimerEvent: {}
+[34.220530] (simple_pkg_cpp) StdoutLine: {'line': b'[ 65%] Built target hello_publisher_class2\n'}
+[34.320170] (-) TimerEvent: {}
+[34.345456] (interface_example) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interface_example/_interface_example_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[34.420285] (-) TimerEvent: {}
+[34.520757] (-) TimerEvent: {}
+[34.621237] (-) TimerEvent: {}
+[34.721713] (-) TimerEvent: {}
+[34.822193] (-) TimerEvent: {}
+[34.923257] (-) TimerEvent: {}
+[35.024389] (-) TimerEvent: {}
+[35.125468] (-) TimerEvent: {}
+[35.205650] (interface_example) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interface_example/interface_example_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[35.225608] (-) TimerEvent: {}
+[35.316483] (interface_example) StdoutLine: {'line': b'[ 93%] Built target interface_example__rosidl_typesupport_fastrtps_c__pyext\n'}
+[35.325747] (-) TimerEvent: {}
+[35.358471] (interface_example) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interface_example/_interface_example_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[35.425926] (-) TimerEvent: {}
+[35.526436] (-) TimerEvent: {}
+[35.626906] (-) TimerEvent: {}
+[35.727389] (-) TimerEvent: {}
+[35.827862] (-) TimerEvent: {}
+[35.840824] (interface_example) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interface_example/interface_example_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[35.927996] (-) TimerEvent: {}
+[36.028442] (-) TimerEvent: {}
+[36.072528] (interface_example) StdoutLine: {'line': b'[ 96%] Built target interface_example__rosidl_typesupport_c__pyext\n'}
+[36.129734] (-) TimerEvent: {}
+[36.230682] (-) TimerEvent: {}
+[36.286367] (interface_example) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interface_example/_interface_example_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[36.330887] (-) TimerEvent: {}
+[36.431734] (-) TimerEvent: {}
+[36.532640] (-) TimerEvent: {}
+[36.633419] (-) TimerEvent: {}
+[36.734253] (-) TimerEvent: {}
+[36.835333] (-) TimerEvent: {}
+[36.936095] (-) TimerEvent: {}
+[37.036924] (-) TimerEvent: {}
+[37.137775] (-) TimerEvent: {}
+[37.238562] (-) TimerEvent: {}
+[37.339339] (-) TimerEvent: {}
+[37.440102] (-) TimerEvent: {}
+[37.526798] (interface_example) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interface_example/interface_example_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[37.540281] (-) TimerEvent: {}
+[37.642934] (-) TimerEvent: {}
+[37.744746] (-) TimerEvent: {}
+[37.818834] (interface_example) StdoutLine: {'line': b'[100%] Built target interface_example__rosidl_typesupport_introspection_c__pyext\n'}
+[37.849893] (-) TimerEvent: {}
+[37.950731] (-) TimerEvent: {}
+[37.991118] (interface_example) CommandEnded: {'returncode': 0}
+[38.051236] (-) TimerEvent: {}
+[38.152076] (-) TimerEvent: {}
+[38.252933] (-) TimerEvent: {}
+[38.353785] (-) TimerEvent: {}
+[38.455731] (-) TimerEvent: {}
+[38.557589] (-) TimerEvent: {}
+[38.659720] (-) TimerEvent: {}
+[38.761923] (-) TimerEvent: {}
+[38.765480] (interface_example) JobProgress: {'identifier': 'interface_example', 'progress': 'install'}
+[38.862115] (-) TimerEvent: {}
+[38.876076] (interface_example) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example'], 'cwd': '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'sora'), ('LC_TIME', 'en_US.UTF-8'), ('GIO_MODULE_DIR', '/home/sora/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sora/Desktop/sora_ws/install/interface_example/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/sora'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.92.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/166/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/sora/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/166/usr/share/code/code'), ('MANAGERPID', '995'), ('SYSTEMD_EXEC_PID', '1260'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22751'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sora'), ('JOURNAL_STREAM', '8:22137'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'sora'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sora-in15-3530:@/tmp/.ICE-unix/1220,unix/sora-in15-3530:/tmp/.ICE-unix/1220'), ('GTK_EXE_PREFIX', '/snap/code/166/usr'), ('INVOCATION_ID', '63d7e240e5d94b84b95f44bb7a9c006d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/166/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.YVKDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-49262faea3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/sora/snap/code/166/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '02'), ('AMENT_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/home/sora/snap/code/166/.local/share:/home/sora/snap/code/166:/snap/code/166/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sora/Desktop/sora_ws/install/interface_example/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble')]), 'shell': False}
+[38.916977] (interface_example) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.920405] (interface_example) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[38.922150] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/ament_index/resource_index/rosidl_interfaces/interface_example\n'}
+[38.940210] (topic_final) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable msub\x1b[0m\n'}
+[38.962279] (-) TimerEvent: {}
+[39.063983] (-) TimerEvent: {}
+[39.106568] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/arithmetic_checker.h\n'}
+[39.164162] (-) TimerEvent: {}
+[39.253129] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__functions.h\n'}
+[39.264348] (-) TimerEvent: {}
+[39.287170] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__struct.h\n'}
+[39.319895] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__type_support.h\n'}
+[39.359876] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__functions.h\n'}
+[39.364537] (-) TimerEvent: {}
+[39.395607] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__struct.h\n'}
+[39.431457] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__type_support.h\n'}
+[39.464730] (-) TimerEvent: {}
+[39.469189] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/fibonacci.h\n'}
+[39.509037] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/arithmetic_argument.h\n'}
+[39.547905] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__functions.h\n'}
+[39.564918] (-) TimerEvent: {}
+[39.588223] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__struct.h\n'}
+[39.627132] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__type_support.h\n'}
+[39.665204] (-) TimerEvent: {}
+[39.675326] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/rosidl_generator_c__visibility_control.h\n'}
+[39.731436] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/add_two_int.h\n'}
+[39.765394] (-) TimerEvent: {}
+[39.773785] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/arithmetic_operator.h\n'}
+[39.824528] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__functions.h\n'}
+[39.865599] (-) TimerEvent: {}
+[39.924070] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__struct.h\n'}
+[39.965790] (-) TimerEvent: {}
+[40.006986] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__type_support.h\n'}
+[40.047053] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__functions.h\n'}
+[40.065978] (-) TimerEvent: {}
+[40.106502] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__struct.h\n'}
+[40.166092] (-) TimerEvent: {}
+[40.184527] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__type_support.h\n'}
+[40.222600] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/library_path.sh\n'}
+[40.266235] (-) TimerEvent: {}
+[40.275133] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/library_path.dsv\n'}
+[40.335980] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__rosidl_typesupport_fastrtps_c.h\n'}
+[40.366370] (-) TimerEvent: {}
+[40.388575] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h\n'}
+[40.400355] (topic_final) StdoutLine: {'line': b'[ 80%] Built target msub\n'}
+[40.466608] (-) TimerEvent: {}
+[40.472610] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__rosidl_typesupport_fastrtps_c.h\n'}
+[40.562005] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[40.566794] (-) TimerEvent: {}
+[40.647396] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__rosidl_typesupport_fastrtps_c.h\n'}
+[40.666986] (-) TimerEvent: {}
+[40.736294] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__rosidl_typesupport_fastrtps_c.h\n'}
+[40.767183] (-) TimerEvent: {}
+[40.784262] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__rosidl_typesupport_introspection_c.h\n'}
+[40.799227] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__rosidl_typesupport_introspection_c.h\n'}
+[40.817508] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__rosidl_typesupport_introspection_c.h\n'}
+[40.837457] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[40.856423] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__rosidl_typesupport_introspection_c.h\n'}
+[40.867300] (-) TimerEvent: {}
+[40.876013] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__rosidl_typesupport_introspection_c.h\n'}
+[40.895762] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/arithmetic_checker.hpp\n'}
+[40.915293] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__builder.hpp\n'}
+[40.933499] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__struct.hpp\n'}
+[40.951814] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__traits.hpp\n'}
+[40.967440] (-) TimerEvent: {}
+[40.970792] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__builder.hpp\n'}
+[41.003937] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__struct.hpp\n'}
+[41.037629] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__traits.hpp\n'}
+[41.055645] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/fibonacci.hpp\n'}
+[41.069601] (-) TimerEvent: {}
+[41.081244] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/arithmetic_argument.hpp\n'}
+[41.104494] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__builder.hpp\n'}
+[41.120999] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__struct.hpp\n'}
+[41.142848] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__traits.hpp\n'}
+[41.162684] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/add_two_int.hpp\n'}
+[41.171346] (-) TimerEvent: {}
+[41.183666] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/arithmetic_operator.hpp\n'}
+[41.212917] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__builder.hpp\n'}
+[41.236840] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__struct.hpp\n'}
+[41.256745] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__traits.hpp\n'}
+[41.271483] (-) TimerEvent: {}
+[41.279106] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__builder.hpp\n'}
+[41.301541] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__struct.hpp\n'}
+[41.323255] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__traits.hpp\n'}
+[41.349397] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[41.371217] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[41.371513] (-) TimerEvent: {}
+[41.393013] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[41.416464] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[41.435875] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[41.458265] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[41.471670] (-) TimerEvent: {}
+[41.484723] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__rosidl_typesupport_introspection_cpp.hpp\n'}
+[41.507705] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp\n'}
+[41.525425] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__rosidl_typesupport_introspection_cpp.hpp\n'}
+[41.538393] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__rosidl_typesupport_introspection_cpp.hpp\n'}
+[41.551412] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__rosidl_typesupport_introspection_cpp.hpp\n'}
+[41.563415] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/pythonpath.sh\n'}
+[41.571801] (-) TimerEvent: {}
+[41.576351] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/pythonpath.dsv\n'}
+[41.591782] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[41.605757] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[41.618632] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[41.631102] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[41.644613] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/__init__.py\n'}
+[41.656627] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/_interface_example_s.ep.rosidl_typesupport_c.c\n'}
+[41.670791] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/_interface_example_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[41.671895] (-) TimerEvent: {}
+[41.698030] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/_interface_example_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[41.717468] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/__init__.py\n'}
+[41.736294] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_arithmetic_checker.py\n'}
+[41.754689] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_arithmetic_checker_s.c\n'}
+[41.772222] (-) TimerEvent: {}
+[41.773275] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_fibonacci.py\n'}
+[41.803633] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_fibonacci_s.c\n'}
+[41.822349] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[41.840944] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[41.859093] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[41.872358] (-) TimerEvent: {}
+[41.883909] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/libinterface_example__rosidl_generator_py.so\n'}
+[41.905914] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg/__init__.py\n'}
+[41.931316] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg/_arithmetic_argument.py\n'}
+[41.949250] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg/_arithmetic_argument_s.c\n'}
+[41.967342] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/__init__.py\n'}
+[41.972498] (-) TimerEvent: {}
+[42.001342] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_add_two_int.py\n'}
+[42.020932] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_add_two_int_s.c\n'}
+[42.039892] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_arithmetic_operator.py\n'}
+[42.058116] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_arithmetic_operator_s.c\n'}
+[42.072634] (-) TimerEvent: {}
+[42.093207] (interface_example) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[42.094955] (interface_example) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[42.096289] (interface_example) StdoutLine: {'line': b'-- Up-to-date symlink: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[42.097297] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/msg/ArithmeticArgument.idl\n'}
+[42.115229] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/AddTwoInt.idl\n'}
+[42.135389] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/ArithmeticOperator.idl\n'}
+[42.154018] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/action/Fibonacci.idl\n'}
+[42.172350] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/action/ArithmeticChecker.idl\n'}
+[42.172623] (-) TimerEvent: {}
+[42.203850] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/msg/ArithmeticArgument.msg\n'}
+[42.222225] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/AddTwoInt.srv\n'}
+[42.243662] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/AddTwoInt_Request.msg\n'}
+[42.263142] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/AddTwoInt_Response.msg\n'}
+[42.272776] (-) TimerEvent: {}
+[42.287677] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/ArithmeticOperator.srv\n'}
+[42.308412] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/ArithmeticOperator_Request.msg\n'}
+[42.329493] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/ArithmeticOperator_Response.msg\n'}
+[42.349102] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/action/Fibonacci.action\n'}
+[42.370598] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/action/ArithmeticChecker.action\n'}
+[42.372980] (-) TimerEvent: {}
+[42.394085] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/ament_index/resource_index/package_run_dependencies/interface_example\n'}
+[42.414908] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/ament_index/resource_index/parent_prefix_path/interface_example\n'}
+[42.434936] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/ament_prefix_path.sh\n'}
+[42.455791] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/ament_prefix_path.dsv\n'}
+[42.473110] (-) TimerEvent: {}
+[42.477094] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/path.sh\n'}
+[42.499131] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/path.dsv\n'}
+[42.523243] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/local_setup.bash\n'}
+[42.542714] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/local_setup.sh\n'}
+[42.562296] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/local_setup.zsh\n'}
+[42.573242] (-) TimerEvent: {}
+[42.586363] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/local_setup.dsv\n'}
+[42.607263] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/package.dsv\n'}
+[42.629507] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/ament_index/resource_index/packages/interface_example\n'}
+[42.650817] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/rosidl_cmake-extras.cmake\n'}
+[42.672196] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[42.673471] (-) TimerEvent: {}
+[42.695981] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[42.720060] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[42.739516] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[42.759925] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[42.773619] (-) TimerEvent: {}
+[42.782432] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[42.802773] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_exampleConfig.cmake\n'}
+[42.823410] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_exampleConfig-version.cmake\n'}
+[42.844799] (interface_example) StdoutLine: {'line': b'-- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/package.xml\n'}
+[42.866349] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_generator_c.so\n'}
+[42.869954] (interface_example) StdoutLine: {'line': b'-- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_generator_c.so" to ""\n'}
+[42.871755] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_fastrtps_c.so\n'}
+[42.877143] (-) TimerEvent: {}
+[42.878139] (interface_example) StdoutLine: {'line': b'-- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[42.879221] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_introspection_c.so\n'}
+[42.886001] (interface_example) StdoutLine: {'line': b'-- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_introspection_c.so" to ""\n'}
+[42.887145] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_c.so\n'}
+[42.895218] (interface_example) StdoutLine: {'line': b'-- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_c.so" to ""\n'}
+[42.896290] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_fastrtps_cpp.so\n'}
+[42.908864] (interface_example) StdoutLine: {'line': b'-- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[42.909928] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_introspection_cpp.so\n'}
+[42.918223] (interface_example) StdoutLine: {'line': b'-- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[42.919552] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_cpp.so\n'}
+[42.925629] (interface_example) StdoutLine: {'line': b'-- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_cpp.so" to ""\n'}
+[42.977347] (-) TimerEvent: {}
+[43.061150] (interface_example) StdoutLine: {'line': b"Listing '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example'...\n"}
+[43.061712] (interface_example) StdoutLine: {'line': b"Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/__init__.py'...\n"}
+[43.062526] (interface_example) StdoutLine: {'line': b"Listing '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action'...\n"}
+[43.063026] (interface_example) StdoutLine: {'line': b"Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/__init__.py'...\n"}
+[43.063349] (interface_example) StdoutLine: {'line': b"Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_arithmetic_checker.py'...\n"}
+[43.063668] (interface_example) StdoutLine: {'line': b"Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_fibonacci.py'...\n"}
+[43.063984] (interface_example) StdoutLine: {'line': b"Listing '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg'...\n"}
+[43.064319] (interface_example) StdoutLine: {'line': b"Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg/__init__.py'...\n"}
+[43.064623] (interface_example) StdoutLine: {'line': b"Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg/_arithmetic_argument.py'...\n"}
+[43.064934] (interface_example) StdoutLine: {'line': b"Listing '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv'...\n"}
+[43.065226] (interface_example) StdoutLine: {'line': b"Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/__init__.py'...\n"}
+[43.065511] (interface_example) StdoutLine: {'line': b"Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_add_two_int.py'...\n"}
+[43.065793] (interface_example) StdoutLine: {'line': b"Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_arithmetic_operator.py'...\n"}
+[43.077545] (-) TimerEvent: {}
+[43.078819] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_generator_py.so\n'}
+[43.085026] (interface_example) StdoutLine: {'line': b'-- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_generator_py.so" to ""\n'}
+[43.085734] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_generator_cExport.cmake\n'}
+[43.086315] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_generator_cExport-noconfig.cmake\n'}
+[43.086998] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[43.087865] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[43.088280] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_introspection_cExport.cmake\n'}
+[43.089080] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[43.089527] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_cExport.cmake\n'}
+[43.089942] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[43.090440] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_generator_cppExport.cmake\n'}
+[43.090957] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[43.091315] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[43.091750] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[43.092163] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[43.092583] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_cppExport.cmake\n'}
+[43.092991] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[43.093733] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_generator_pyExport.cmake\n'}
+[43.094055] (interface_example) StdoutLine: {'line': b'-- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_generator_pyExport-noconfig.cmake\n'}
+[43.109568] (interface_example) CommandEnded: {'returncode': 0}
+[43.177679] (-) TimerEvent: {}
+[43.278154] (-) TimerEvent: {}
+[43.379320] (-) TimerEvent: {}
+[43.479740] (-) TimerEvent: {}
+[43.580126] (-) TimerEvent: {}
+[43.680561] (-) TimerEvent: {}
+[43.780990] (-) TimerEvent: {}
+[43.882218] (-) TimerEvent: {}
+[43.990509] (-) TimerEvent: {}
+[44.098533] (-) TimerEvent: {}
+[44.199013] (-) TimerEvent: {}
+[44.299420] (-) TimerEvent: {}
+[44.399858] (-) TimerEvent: {}
+[44.500305] (-) TimerEvent: {}
+[44.602768] (-) TimerEvent: {}
+[44.703549] (-) TimerEvent: {}
+[44.806170] (-) TimerEvent: {}
+[44.817273] (move_t_sim) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable canny_camera\x1b[0m\n'}
+[44.906278] (-) TimerEvent: {}
+[45.006728] (-) TimerEvent: {}
+[45.107327] (-) TimerEvent: {}
+[45.208454] (-) TimerEvent: {}
+[45.299668] (interface_example) JobEnded: {'identifier': 'interface_example', 'rc': 0}
+[45.304267] (arithmetic) JobStarted: {'identifier': 'arithmetic'}
+[45.309026] (-) TimerEvent: {}
+[45.411240] (-) TimerEvent: {}
+[45.413282] (arithmetic) JobProgress: {'identifier': 'arithmetic', 'progress': 'cmake'}
+[45.414785] (arithmetic) Command: {'cmd': ['/usr/bin/cmake', '/home/sora/Desktop/sora_ws/src/soraros/KODTA/arithmetic', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/sora/Desktop/sora_ws/src/soraros/install/arithmetic'], 'cwd': '/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'sora'), ('LC_TIME', 'en_US.UTF-8'), ('GIO_MODULE_DIR', '/home/sora/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib:/home/sora/Desktop/sora_ws/install/interface_example/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/sora'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.92.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/166/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/sora/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/166/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/166/usr/share/code/code'), ('MANAGERPID', '995'), ('SYSTEMD_EXEC_PID', '1260'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '22751'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sora/Desktop/sora_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sora'), ('JOURNAL_STREAM', '8:22137'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'sora'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sora-in15-3530:@/tmp/.ICE-unix/1220,unix/sora-in15-3530:/tmp/.ICE-unix/1220'), ('GTK_EXE_PREFIX', '/snap/code/166/usr'), ('INVOCATION_ID', '63d7e240e5d94b84b95f44bb7a9c006d'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/166/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.YVKDS2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-49262faea3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/sora/snap/code/166/.local/share/glib-2.0/schemas'), ('ROS_DOMAIN_ID', '02'), ('AMENT_PREFIX_PATH', '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example:/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/home/sora/snap/code/166/.local/share:/home/sora/snap/code/166:/snap/code/166/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages:/home/sora/Desktop/sora_ws/install/interface_example/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example:/home/sora/Desktop/sora_ws/install/turtlebot3_simulations:/home/sora/Desktop/sora_ws/install/turtlebot3_gazebo:/home/sora/Desktop/sora_ws/install/turtlebot3_fake_node:/home/sora/Desktop/sora_ws/install/topic_final:/home/sora/Desktop/sora_ws/install/simple_pkg_cpp:/home/sora/Desktop/sora_ws/install/project_14:/home/sora/Desktop/sora_ws/install/move_t_sim:/home/sora/Desktop/sora_ws/install/arithmetic:/home/sora/Desktop/sora_ws/install/interface_example:/opt/ros/humble')]), 'shell': False}
+[45.442308] (move_t_sim) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable moveTurtleBot\x1b[0m\n'}
+[45.511424] (-) TimerEvent: {}
+[45.612143] (-) TimerEvent: {}
+[45.712667] (-) TimerEvent: {}
+[45.713162] (arithmetic) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[45.812822] (-) TimerEvent: {}
+[45.913392] (-) TimerEvent: {}
+[46.007845] (move_t_sim) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable moveTurtleBot2\x1b[0m\n'}
+[46.013523] (-) TimerEvent: {}
+[46.062601] (arithmetic) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[46.071118] (move_t_sim) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable stay_thirty\x1b[0m\n'}
+[46.098431] (arithmetic) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[46.113788] (-) TimerEvent: {}
+[46.214292] (-) TimerEvent: {}
+[46.314934] (-) TimerEvent: {}
+[46.418552] (-) TimerEvent: {}
+[46.519111] (-) TimerEvent: {}
+[46.622660] (-) TimerEvent: {}
+[46.726511] (-) TimerEvent: {}
+[46.732153] (arithmetic) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[46.754852] (topic_final) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable msub2\x1b[0m\n'}
+[46.795290] (arithmetic) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[46.795925] (arithmetic) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[46.796306] (arithmetic) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[46.826494] (arithmetic) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[46.827020] (-) TimerEvent: {}
+[46.928797] (-) TimerEvent: {}
+[47.040901] (-) TimerEvent: {}
+[47.084799] (move_t_sim) StdoutLine: {'line': b'[ 85%] Built target moveTurtleBot\n'}
+[47.116864] (move_t_sim) StdoutLine: {'line': b'[ 85%] Built target canny_camera\n'}
+[47.141039] (-) TimerEvent: {}
+[47.242102] (-) TimerEvent: {}
+[47.302697] (arithmetic) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[47.342250] (-) TimerEvent: {}
+[47.359552] (arithmetic) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[47.370021] (arithmetic) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[47.372290] (arithmetic) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[47.383454] (move_t_sim) StdoutLine: {'line': b'[ 85%] Built target stay_thirty\n'}
+[47.392798] (arithmetic) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[47.442527] (-) TimerEvent: {}
+[47.543247] (-) TimerEvent: {}
+[47.643972] (-) TimerEvent: {}
+[47.744868] (-) TimerEvent: {}
+[47.764657] (move_t_sim) StdoutLine: {'line': b'[ 85%] Built target moveTurtleBot2\n'}
+[47.769109] (simple_pkg_cpp) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable hello_subscriber_class\x1b[0m\n'}
+[47.845091] (-) TimerEvent: {}
+[47.945892] (-) TimerEvent: {}
+[47.990732] (arithmetic) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[48.046131] (-) TimerEvent: {}
+[48.147145] (-) TimerEvent: {}
+[48.248021] (-) TimerEvent: {}
+[48.261609] (arithmetic) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[48.312124] (topic_final) StdoutLine: {'line': b'[ 90%] Built target msub2\n'}
+[48.344731] (arithmetic) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[48.348213] (-) TimerEvent: {}
+[48.448972] (-) TimerEvent: {}
+[48.470923] (arithmetic) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[48.500863] (arithmetic) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[48.544215] (arithmetic) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[48.549090] (-) TimerEvent: {}
+[48.609539] (arithmetic) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[48.649215] (-) TimerEvent: {}
+[48.698454] (arithmetic) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[48.749340] (-) TimerEvent: {}
+[48.849879] (-) TimerEvent: {}
+[48.933137] (arithmetic) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[48.947770] (simple_pkg_cpp) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable time_subscriber_class\x1b[0m\n'}
+[48.949427] (arithmetic) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[48.949898] (-) TimerEvent: {}
+[49.050552] (-) TimerEvent: {}
+[49.113214] (arithmetic) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[49.150757] (-) TimerEvent: {}
+[49.154994] (simple_pkg_cpp) StdoutLine: {'line': b'[ 71%] Built target hello_subscriber_class\n'}
+[49.234315] (arithmetic) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[49.250974] (-) TimerEvent: {}
+[49.351737] (-) TimerEvent: {}
+[49.411889] (arithmetic) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[49.451829] (-) TimerEvent: {}
+[49.456928] (arithmetic) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[49.483402] (move_t_sim) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable follow_wall\x1b[0m\n'}
+[49.552058] (-) TimerEvent: {}
+[49.652724] (-) TimerEvent: {}
+[49.719266] (arithmetic) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[49.720859] (arithmetic) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[49.752970] (-) TimerEvent: {}
+[49.853763] (-) TimerEvent: {}
+[49.954548] (-) TimerEvent: {}
+[49.994218] (arithmetic) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[49.999833] (arithmetic) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[50.054766] (-) TimerEvent: {}
+[50.098284] (move_t_sim) StdoutLine: {'line': b'[ 90%] Built target follow_wall\n'}
+[50.154988] (-) TimerEvent: {}
+[50.221216] (simple_pkg_cpp) StdoutLine: {'line': b'[ 71%] Built target time_subscriber_class\n'}
+[50.224426] (simple_pkg_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[50.229286] (simple_pkg_cpp) CommandEnded: {'returncode': 2}
+[50.233144] (move_t_sim) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable simple_ridar\x1b[0m\n'}
+[50.246123] (arithmetic) StdoutLine: {'line': b'-- Found interface_example: 0.0.0 (/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake)\n'}
+[50.255151] (-) TimerEvent: {}
+[50.342193] (move_t_sim) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable canny_camera2\x1b[0m\n'}
+[50.355441] (-) TimerEvent: {}
+[50.443115] (simple_pkg_cpp) JobEnded: {'identifier': 'simple_pkg_cpp', 'rc': 2}
+[50.453254] (arithmetic) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[50.455561] (-) TimerEvent: {}
+[50.546384] (arithmetic) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[50.555760] (-) TimerEvent: {}
+[50.656418] (-) TimerEvent: {}
+[50.757034] (-) TimerEvent: {}
+[50.769773] (arithmetic) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[50.771264] (arithmetic) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/sora/Desktop/sora_ws/src/soraros/KODTA/arithmetic/include\n'}
+[50.771798] (arithmetic) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[50.774676] (arithmetic) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[50.778991] (arithmetic) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[50.781870] (arithmetic) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[50.790498] (arithmetic) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[50.790918] (arithmetic) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[50.793626] (arithmetic) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[50.801056] (arithmetic) StdoutLine: {'line': b'-- Configuring done\n'}
+[50.857196] (-) TimerEvent: {}
+[50.888451] (arithmetic) StdoutLine: {'line': b'-- Generating done\n'}
+[50.896258] (arithmetic) StdoutLine: {'line': b'-- Build files have been written to: /home/sora/Desktop/sora_ws/src/soraros/build/arithmetic\n'}
+[50.929593] (arithmetic) JobEnded: {'identifier': 'arithmetic', 'rc': 'SIGINT'}
+[50.958384] (-) TimerEvent: {}
+[51.059066] (-) TimerEvent: {}
+[51.159731] (-) TimerEvent: {}
+[51.193896] (move_t_sim) StdoutLine: {'line': b'[100%] Built target canny_camera2\n'}
+[51.259952] (-) TimerEvent: {}
+[51.352850] (move_t_sim) StdoutLine: {'line': b'[100%] Built target simple_ridar\n'}
+[51.360093] (-) TimerEvent: {}
+[51.365035] (move_t_sim) JobEnded: {'identifier': 'move_t_sim', 'rc': 'SIGINT'}
+[51.460230] (-) TimerEvent: {}
+[51.560710] (-) TimerEvent: {}
+[51.661095] (-) TimerEvent: {}
+[51.761492] (-) TimerEvent: {}
+[51.861892] (-) TimerEvent: {}
+[51.962274] (-) TimerEvent: {}
+[52.062666] (-) TimerEvent: {}
+[52.163057] (-) TimerEvent: {}
+[52.238954] (topic_final) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mtsub\x1b[0m\n'}
+[52.263209] (-) TimerEvent: {}
+[52.363618] (-) TimerEvent: {}
+[52.463967] (-) TimerEvent: {}
+[52.564314] (-) TimerEvent: {}
+[52.664826] (-) TimerEvent: {}
+[52.666374] (topic_final) StdoutLine: {'line': b'[100%] Built target mtsub\n'}
+[52.677008] (topic_final) JobEnded: {'identifier': 'topic_final', 'rc': 'SIGINT'}
+[52.687798] (-) EventReactorShutdown: {}

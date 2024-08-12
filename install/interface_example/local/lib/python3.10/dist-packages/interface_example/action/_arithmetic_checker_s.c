@@ -1,0 +1,1 @@
+/home/sora/Desktop/sora_ws/src/soraros/build/interface_example/rosidl_generator_py/interface_example/action/_arithmetic_checker_s.c

@@ -1,0 +1,1 @@
+/home/sora/Desktop/sora_ws/src/soraros/build/interface_example/rosidl_typesupport_introspection_c/interface_example/msg/detail/arithmetic_argument__rosidl_typesupport_introspection_c.h

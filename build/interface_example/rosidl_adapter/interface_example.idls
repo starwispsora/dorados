@@ -1,0 +1,5 @@
+/home/sora/Desktop/sora_ws/src/soraros/build/interface_example/rosidl_adapter/interface_example:msg/ArithmeticArgument.idl
+/home/sora/Desktop/sora_ws/src/soraros/build/interface_example/rosidl_adapter/interface_example:srv/AddTwoInt.idl
+/home/sora/Desktop/sora_ws/src/soraros/build/interface_example/rosidl_adapter/interface_example:srv/ArithmeticOperator.idl
+/home/sora/Desktop/sora_ws/src/soraros/build/interface_example/rosidl_adapter/interface_example:action/Fibonacci.idl
+/home/sora/Desktop/sora_ws/src/soraros/build/interface_example/rosidl_adapter/interface_example:action/ArithmeticChecker.idl

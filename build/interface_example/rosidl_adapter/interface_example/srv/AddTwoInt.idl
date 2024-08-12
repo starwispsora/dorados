@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from interface_example/srv/AddTwoInt.srv
+// generated code does not contain a copyright notice
+
+
+module interface_example {
+  module srv {
+    struct AddTwoInt_Request {
+      int8 a;
+
+      int8 b;
+    };
+    struct AddTwoInt_Response {
+      int8 sum;
+    };
+  };
+};

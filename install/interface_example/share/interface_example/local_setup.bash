@@ -1,0 +1,1 @@
+/home/sora/Desktop/sora_ws/src/soraros/build/interface_example/ament_cmake_environment_hooks/local_setup.bash

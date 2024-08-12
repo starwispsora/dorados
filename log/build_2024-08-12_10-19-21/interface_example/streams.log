@@ -1,0 +1,307 @@
+[0.020s] Invoking command in '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sora/Desktop/sora_ws/src/soraros/KODTA/interface_example -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sora/Desktop/sora_ws/src/soraros/install/interface_example
+[0.067s] -- The C compiler identification is GNU 11.4.0
+[0.125s] -- The CXX compiler identification is GNU 11.4.0
+[0.131s] -- Detecting C compiler ABI info
+[0.178s] -- Detecting C compiler ABI info - done
+[0.186s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.186s] -- Detecting C compile features
+[0.187s] -- Detecting C compile features - done
+[0.190s] -- Detecting CXX compiler ABI info
+[0.263s] -- Detecting CXX compiler ABI info - done
+[0.269s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.269s] -- Detecting CXX compile features
+[0.269s] -- Detecting CXX compile features - done
+[0.273s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.390s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.438s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.485s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.490s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.501s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.558s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.922s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.095s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.403s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.518s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.527s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.624s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.625s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.625s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.626s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.685s] -- Found PythonExtra: .so  
+[1.982s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.201s] -- Configuring done
+[2.469s] -- Generating done
+[2.496s] -- Build files have been written to: /home/sora/Desktop/sora_ws/src/soraros/build/interface_example
+[2.543s] Invoked command in '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sora/Desktop/sora_ws/src/soraros/KODTA/interface_example -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sora/Desktop/sora_ws/src/soraros/install/interface_example
+[2.544s] Invoking command in '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sora/Desktop/sora_ws/src/soraros/build/interface_example -- -j12 -l12
+[2.789s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.845s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.962s] [  3%] Built target ament_cmake_python_symlink_interface_example
+[4.048s] running egg_info
+[4.049s] creating interface_example.egg-info
+[4.050s] writing interface_example.egg-info/PKG-INFO
+[4.051s] writing dependency_links to interface_example.egg-info/dependency_links.txt
+[4.052s] writing top-level names to interface_example.egg-info/top_level.txt
+[4.053s] writing manifest file 'interface_example.egg-info/SOURCES.txt'
+[4.062s] reading manifest file 'interface_example.egg-info/SOURCES.txt'
+[4.064s] writing manifest file 'interface_example.egg-info/SOURCES.txt'
+[4.288s] [  3%] Built target ament_cmake_python_build_interface_example_egg
+[6.983s] [  3%] Built target interface_example__cpp
+[7.070s] [  4%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.085s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.113s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.966s] [  9%] [32mBuilding C object CMakeFiles/interface_example__rosidl_generator_c.dir/rosidl_generator_c/interface_example/msg/detail/arithmetic_argument__functions.c.o[0m
+[7.983s] [ 11%] [32mBuilding C object CMakeFiles/interface_example__rosidl_generator_c.dir/rosidl_generator_c/interface_example/srv/detail/arithmetic_operator__functions.c.o[0m
+[8.012s] [ 12%] [32mBuilding C object CMakeFiles/interface_example__rosidl_generator_c.dir/rosidl_generator_c/interface_example/srv/detail/add_two_int__functions.c.o[0m
+[8.019s] [ 14%] [32mBuilding C object CMakeFiles/interface_example__rosidl_generator_c.dir/rosidl_generator_c/interface_example/action/detail/arithmetic_checker__functions.c.o[0m
+[8.035s] [ 15%] [32mBuilding C object CMakeFiles/interface_example__rosidl_generator_c.dir/rosidl_generator_c/interface_example/action/detail/fibonacci__functions.c.o[0m
+[8.952s] [ 17%] [32m[1mLinking C shared library libinterface_example__rosidl_generator_c.so[0m
+[9.111s] [ 17%] Built target interface_example__rosidl_generator_c
+[9.218s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[9.243s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[9.253s] [ 22%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[9.823s] [ 23%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_example/msg/arithmetic_argument__type_support.cpp.o[0m
+[9.843s] [ 25%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_example/srv/add_two_int__type_support.cpp.o[0m
+[9.881s] [ 26%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_example/srv/arithmetic_operator__type_support.cpp.o[0m
+[9.993s] [ 28%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_example/action/fibonacci__type_support.cpp.o[0m
+[10.008s] [ 30%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interface_example/action/arithmetic_checker__type_support.cpp.o[0m
+[10.927s] [ 31%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_example/srv/detail/add_two_int__type_support.cpp.o[0m
+[10.967s] [ 33%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_example/msg/detail/arithmetic_argument__type_support.cpp.o[0m
+[11.043s] [ 34%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_example/srv/detail/arithmetic_operator__type_support.cpp.o[0m
+[11.151s] [ 36%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_example/action/detail/fibonacci__type_support.cpp.o[0m
+[11.279s] [ 38%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interface_example/action/detail/arithmetic_checker__type_support.cpp.o[0m
+[11.768s] [ 39%] [32m[1mLinking CXX shared library libinterface_example__rosidl_typesupport_cpp.so[0m
+[11.992s] [ 39%] Built target interface_example__rosidl_typesupport_cpp
+[12.260s] [ 41%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_example/msg/arithmetic_argument__type_support.cpp.o[0m
+[12.271s] [ 42%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_example/srv/add_two_int__type_support.cpp.o[0m
+[12.287s] [ 44%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_example/action/fibonacci__type_support.cpp.o[0m
+[12.289s] [ 46%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_example/srv/arithmetic_operator__type_support.cpp.o[0m
+[12.356s] [ 47%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_c.dir/rosidl_typesupport_c/interface_example/action/arithmetic_checker__type_support.cpp.o[0m
+[12.653s] [ 49%] [32m[1mLinking CXX shared library libinterface_example__rosidl_typesupport_c.so[0m
+[12.703s] [ 50%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_example/msg/detail/dds_fastrtps/arithmetic_argument__type_support.cpp.o[0m
+[12.730s] [ 52%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_example/srv/detail/dds_fastrtps/arithmetic_operator__type_support.cpp.o[0m
+[12.737s] [ 53%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_example/msg/detail/arithmetic_argument__type_support_c.cpp.o[0m
+[12.771s] [ 55%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_example/srv/detail/dds_fastrtps/add_two_int__type_support.cpp.o[0m
+[12.771s] [ 57%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_example/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o[0m
+[12.771s] [ 58%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_example/srv/detail/add_two_int__type_support_c.cpp.o[0m
+[12.855s] [ 58%] Built target interface_example__rosidl_typesupport_c
+[12.859s] [ 60%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interface_example/action/detail/dds_fastrtps/arithmetic_checker__type_support.cpp.o[0m
+[12.876s] [ 61%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_example/srv/detail/arithmetic_operator__type_support_c.cpp.o[0m
+[13.378s] [ 63%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_example/action/detail/fibonacci__type_support_c.cpp.o[0m
+[13.498s] [ 65%] [32mBuilding CXX object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interface_example/action/detail/arithmetic_checker__type_support_c.cpp.o[0m
+[15.055s] [ 66%] [32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_example/msg/detail/arithmetic_argument__type_support.c.o[0m
+[15.137s] [ 68%] [32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_example/srv/detail/arithmetic_operator__type_support.c.o[0m
+[15.152s] [ 69%] [32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_example/action/detail/fibonacci__type_support.c.o[0m
+[15.218s] [ 71%] [32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_example/srv/detail/add_two_int__type_support.c.o[0m
+[15.394s] [ 73%] [32m[1mLinking CXX shared library libinterface_example__rosidl_typesupport_introspection_cpp.so[0m
+[15.416s] [ 74%] [32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interface_example/action/detail/arithmetic_checker__type_support.c.o[0m
+[16.406s] [ 74%] Built target interface_example__rosidl_typesupport_introspection_cpp
+[16.446s] [ 76%] [32m[1mLinking C shared library libinterface_example__rosidl_typesupport_introspection_c.so[0m
+[16.748s] [ 76%] Built target interface_example__rosidl_typesupport_introspection_c
+[17.077s] [ 77%] [32m[1mLinking CXX shared library libinterface_example__rosidl_typesupport_fastrtps_c.so[0m
+[17.852s] [ 77%] Built target interface_example__rosidl_typesupport_fastrtps_c
+[18.929s] [ 79%] [32m[1mLinking CXX shared library libinterface_example__rosidl_typesupport_fastrtps_cpp.so[0m
+[19.415s] [ 79%] Built target interface_example__rosidl_typesupport_fastrtps_cpp
+[19.710s] [ 79%] Built target interface_example
+[19.977s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[29.977s] [ 80%] Built target interface_example__py
+[30.113s] [ 82%] [32mBuilding C object CMakeFiles/interface_example__rosidl_generator_py.dir/rosidl_generator_py/interface_example/msg/_arithmetic_argument_s.c.o[0m
+[30.871s] [ 84%] [32mBuilding C object CMakeFiles/interface_example__rosidl_generator_py.dir/rosidl_generator_py/interface_example/action/_arithmetic_checker_s.c.o[0m
+[32.164s] [ 85%] [32mBuilding C object CMakeFiles/interface_example__rosidl_generator_py.dir/rosidl_generator_py/interface_example/action/_fibonacci_s.c.o[0m
+[32.931s] [ 87%] [32mBuilding C object CMakeFiles/interface_example__rosidl_generator_py.dir/rosidl_generator_py/interface_example/srv/_arithmetic_operator_s.c.o[0m
+[33.461s] [ 88%] [32mBuilding C object CMakeFiles/interface_example__rosidl_generator_py.dir/rosidl_generator_py/interface_example/srv/_add_two_int_s.c.o[0m
+[33.796s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/interface_example/libinterface_example__rosidl_generator_py.so[0m
+[34.160s] [ 90%] Built target interface_example__rosidl_generator_py
+[34.346s] [ 92%] [32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interface_example/_interface_example_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[35.206s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/interface_example/interface_example_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[35.317s] [ 93%] Built target interface_example__rosidl_typesupport_fastrtps_c__pyext
+[35.359s] [ 95%] [32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interface_example/_interface_example_s.ep.rosidl_typesupport_c.c.o[0m
+[35.841s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/interface_example/interface_example_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[36.073s] [ 96%] Built target interface_example__rosidl_typesupport_c__pyext
+[36.287s] [ 98%] [32mBuilding C object CMakeFiles/interface_example__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interface_example/_interface_example_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[37.527s] [100%] [32m[1mLinking C shared library rosidl_generator_py/interface_example/interface_example_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[37.819s] [100%] Built target interface_example__rosidl_typesupport_introspection_c__pyext
+[37.992s] Invoked command in '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sora/Desktop/sora_ws/src/soraros/build/interface_example -- -j12 -l12
+[38.877s] Invoking command in '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sora/Desktop/sora_ws/src/soraros/build/interface_example
+[38.917s] -- Install configuration: ""
+[38.921s] -- Execute custom install script
+[38.922s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/ament_index/resource_index/rosidl_interfaces/interface_example
+[39.107s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/arithmetic_checker.h
+[39.253s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__functions.h
+[39.287s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__struct.h
+[39.320s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__type_support.h
+[39.360s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__functions.h
+[39.396s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__struct.h
+[39.432s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__type_support.h
+[39.469s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/fibonacci.h
+[39.509s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/arithmetic_argument.h
+[39.548s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__functions.h
+[39.588s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__struct.h
+[39.627s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__type_support.h
+[39.676s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/rosidl_generator_c__visibility_control.h
+[39.732s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/add_two_int.h
+[39.774s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/arithmetic_operator.h
+[39.825s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__functions.h
+[39.924s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__struct.h
+[40.007s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__type_support.h
+[40.047s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__functions.h
+[40.107s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__struct.h
+[40.185s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__type_support.h
+[40.223s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/library_path.sh
+[40.275s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/library_path.dsv
+[40.336s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__rosidl_typesupport_fastrtps_c.h
+[40.389s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h
+[40.473s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__rosidl_typesupport_fastrtps_c.h
+[40.562s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[40.648s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__rosidl_typesupport_fastrtps_c.h
+[40.737s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__rosidl_typesupport_fastrtps_c.h
+[40.784s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__rosidl_typesupport_introspection_c.h
+[40.799s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__rosidl_typesupport_introspection_c.h
+[40.818s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__rosidl_typesupport_introspection_c.h
+[40.837s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[40.856s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__rosidl_typesupport_introspection_c.h
+[40.876s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__rosidl_typesupport_introspection_c.h
+[40.896s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/arithmetic_checker.hpp
+[40.915s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__builder.hpp
+[40.934s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__struct.hpp
+[40.952s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__traits.hpp
+[40.971s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__builder.hpp
+[41.004s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__struct.hpp
+[41.038s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__traits.hpp
+[41.056s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/fibonacci.hpp
+[41.081s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/arithmetic_argument.hpp
+[41.105s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__builder.hpp
+[41.121s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__struct.hpp
+[41.143s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__traits.hpp
+[41.163s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/add_two_int.hpp
+[41.184s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/arithmetic_operator.hpp
+[41.213s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__builder.hpp
+[41.237s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__struct.hpp
+[41.257s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__traits.hpp
+[41.279s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__builder.hpp
+[41.302s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__struct.hpp
+[41.323s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__traits.hpp
+[41.349s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__rosidl_typesupport_fastrtps_cpp.hpp
+[41.371s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp
+[41.393s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__rosidl_typesupport_fastrtps_cpp.hpp
+[41.417s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[41.436s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__rosidl_typesupport_fastrtps_cpp.hpp
+[41.458s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__rosidl_typesupport_fastrtps_cpp.hpp
+[41.485s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/arithmetic_checker__rosidl_typesupport_introspection_cpp.hpp
+[41.508s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp
+[41.525s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/msg/detail/arithmetic_argument__rosidl_typesupport_introspection_cpp.hpp
+[41.538s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/add_two_int__rosidl_typesupport_introspection_cpp.hpp
+[41.551s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/include/interface_example/interface_example/srv/detail/arithmetic_operator__rosidl_typesupport_introspection_cpp.hpp
+[41.563s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/pythonpath.sh
+[41.576s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/pythonpath.dsv
+[41.592s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example-0.0.0-py3.10.egg-info/PKG-INFO
+[41.606s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example-0.0.0-py3.10.egg-info/SOURCES.txt
+[41.619s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example-0.0.0-py3.10.egg-info/dependency_links.txt
+[41.631s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example-0.0.0-py3.10.egg-info/top_level.txt
+[41.645s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/__init__.py
+[41.657s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/_interface_example_s.ep.rosidl_typesupport_c.c
+[41.671s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/_interface_example_s.ep.rosidl_typesupport_fastrtps_c.c
+[41.698s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/_interface_example_s.ep.rosidl_typesupport_introspection_c.c
+[41.718s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/__init__.py
+[41.736s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_arithmetic_checker.py
+[41.755s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_arithmetic_checker_s.c
+[41.773s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_fibonacci.py
+[41.804s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_fibonacci_s.c
+[41.822s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[41.841s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[41.859s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[41.884s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/libinterface_example__rosidl_generator_py.so
+[41.906s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg/__init__.py
+[41.931s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg/_arithmetic_argument.py
+[41.949s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg/_arithmetic_argument_s.c
+[41.967s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/__init__.py
+[42.001s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_add_two_int.py
+[42.021s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_add_two_int_s.c
+[42.040s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_arithmetic_operator.py
+[42.058s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_arithmetic_operator_s.c
+[42.094s] -- Up-to-date symlink: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[42.095s] -- Up-to-date symlink: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[42.096s] -- Up-to-date symlink: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/interface_example_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[42.097s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/msg/ArithmeticArgument.idl
+[42.115s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/AddTwoInt.idl
+[42.135s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/ArithmeticOperator.idl
+[42.154s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/action/Fibonacci.idl
+[42.172s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/action/ArithmeticChecker.idl
+[42.204s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/msg/ArithmeticArgument.msg
+[42.223s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/AddTwoInt.srv
+[42.244s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/AddTwoInt_Request.msg
+[42.263s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/AddTwoInt_Response.msg
+[42.288s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/ArithmeticOperator.srv
+[42.308s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/ArithmeticOperator_Request.msg
+[42.330s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/srv/ArithmeticOperator_Response.msg
+[42.349s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/action/Fibonacci.action
+[42.371s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/action/ArithmeticChecker.action
+[42.394s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/ament_index/resource_index/package_run_dependencies/interface_example
+[42.415s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/ament_index/resource_index/parent_prefix_path/interface_example
+[42.435s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/ament_prefix_path.sh
+[42.456s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/ament_prefix_path.dsv
+[42.477s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/path.sh
+[42.499s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/environment/path.dsv
+[42.523s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/local_setup.bash
+[42.543s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/local_setup.sh
+[42.563s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/local_setup.zsh
+[42.586s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/local_setup.dsv
+[42.607s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/package.dsv
+[42.630s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/ament_index/resource_index/packages/interface_example
+[42.651s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/rosidl_cmake-extras.cmake
+[42.672s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/ament_cmake_export_dependencies-extras.cmake
+[42.696s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/ament_cmake_export_include_directories-extras.cmake
+[42.720s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/ament_cmake_export_libraries-extras.cmake
+[42.740s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/ament_cmake_export_targets-extras.cmake
+[42.760s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[42.782s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[42.803s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_exampleConfig.cmake
+[42.823s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_exampleConfig-version.cmake
+[42.845s] -- Symlinking: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/package.xml
+[42.866s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_generator_c.so
+[42.870s] -- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_generator_c.so" to ""
+[42.872s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_fastrtps_c.so
+[42.878s] -- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_fastrtps_c.so" to ""
+[42.879s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_introspection_c.so
+[42.886s] -- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_introspection_c.so" to ""
+[42.887s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_c.so
+[42.895s] -- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_c.so" to ""
+[42.896s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_fastrtps_cpp.so
+[42.909s] -- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_fastrtps_cpp.so" to ""
+[42.910s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_introspection_cpp.so
+[42.919s] -- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_introspection_cpp.so" to ""
+[42.920s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_cpp.so
+[42.926s] -- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_typesupport_cpp.so" to ""
+[43.061s] Listing '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example'...
+[43.062s] Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/__init__.py'...
+[43.063s] Listing '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action'...
+[43.063s] Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/__init__.py'...
+[43.063s] Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_arithmetic_checker.py'...
+[43.064s] Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/action/_fibonacci.py'...
+[43.064s] Listing '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg'...
+[43.064s] Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg/__init__.py'...
+[43.065s] Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/msg/_arithmetic_argument.py'...
+[43.065s] Listing '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv'...
+[43.065s] Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/__init__.py'...
+[43.066s] Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_add_two_int.py'...
+[43.066s] Compiling '/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/local/lib/python3.10/dist-packages/interface_example/srv/_arithmetic_operator.py'...
+[43.079s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_generator_py.so
+[43.085s] -- Set runtime path of "/home/sora/Desktop/sora_ws/src/soraros/install/interface_example/lib/libinterface_example__rosidl_generator_py.so" to ""
+[43.086s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_generator_cExport.cmake
+[43.086s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_generator_cExport-noconfig.cmake
+[43.087s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_typesupport_fastrtps_cExport.cmake
+[43.088s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[43.088s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_introspection_cExport.cmake
+[43.089s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[43.090s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_cExport.cmake
+[43.090s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_cExport-noconfig.cmake
+[43.091s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_generator_cppExport.cmake
+[43.091s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_typesupport_fastrtps_cppExport.cmake
+[43.091s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[43.092s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_introspection_cppExport.cmake
+[43.092s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[43.093s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_cppExport.cmake
+[43.093s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/interface_example__rosidl_typesupport_cppExport-noconfig.cmake
+[43.094s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_generator_pyExport.cmake
+[43.094s] -- Installing: /home/sora/Desktop/sora_ws/src/soraros/install/interface_example/share/interface_example/cmake/export_interface_example__rosidl_generator_pyExport-noconfig.cmake
+[43.110s] Invoked command in '/home/sora/Desktop/sora_ws/src/soraros/build/interface_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sora/Desktop/sora_ws/src/soraros/build/interface_example

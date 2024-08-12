@@ -1,0 +1,10 @@
+{
+  "package_name": "interface_example",
+  "non_idl_tuples": [
+    "/home/sora/Desktop/sora_ws/src/soraros/KODTA/interface_example:msg/ArithmeticArgument.msg",
+    "/home/sora/Desktop/sora_ws/src/soraros/KODTA/interface_example:srv/AddTwoInt.srv",
+    "/home/sora/Desktop/sora_ws/src/soraros/KODTA/interface_example:srv/ArithmeticOperator.srv",
+    "/home/sora/Desktop/sora_ws/src/soraros/KODTA/interface_example:action/Fibonacci.action",
+    "/home/sora/Desktop/sora_ws/src/soraros/KODTA/interface_example:action/ArithmeticChecker.action"
+  ]
+}

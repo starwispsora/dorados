@@ -1,0 +1,1 @@
+/home/sora/Desktop/sora_ws/src/soraros/build/interface_example/rosidl_generator_py/interface_example/srv/_arithmetic_operator_s.c

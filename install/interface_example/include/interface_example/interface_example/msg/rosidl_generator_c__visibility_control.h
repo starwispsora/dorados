@@ -1,0 +1,1 @@
+/home/sora/Desktop/sora_ws/src/soraros/build/interface_example/rosidl_generator_c/interface_example/msg/rosidl_generator_c__visibility_control.h

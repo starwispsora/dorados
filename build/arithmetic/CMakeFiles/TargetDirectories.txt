@@ -1,0 +1,13 @@
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/uninstall.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/arithmetic_uninstall.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/calculator.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/argument.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/operator.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/checker.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/test.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/edit_cache.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/rebuild_cache.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/list_install_components.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/install.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/install/local.dir
+/home/sora/Desktop/sora_ws/src/soraros/build/arithmetic/CMakeFiles/install/strip.dir
