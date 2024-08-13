@@ -318,29 +318,14 @@ compress img :  mmpg codec <br>
 ##### 9Aug
 https://emanual.robotis.com/docs/en/platform/turtlebot3/nav_simulation/
 #### slam
-1. Simultaneous Localization and Mapping (SLAM)
 
-    Definition: SLAM is a technique used in robotics and computer vision to create a map of an unknown environment while simultaneously keeping track of the robot's location within that environment.
+  Simultaneous Localization and Mapping
+
+Definition: SLAM is a technique used in robotics and computer vision to create a map of an unknown environment while simultaneously keeping track of the robot's location within that environment.
     Applications: It is commonly used in autonomous vehicles, drones, and robotic systems where real-time navigation and environment mapping are required.
     How It Works: SLAM algorithms use sensors (like cameras, LIDAR, or GPS) to gather data about the environment. The algorithm then processes this data to construct a map and estimate the position of the robot or vehicle.
 
-2. SLAM (Sports/Entertainment)
-
-    Definition: In sports or entertainment contexts, "slam" might refer to a high-impact or dramatic action.
-    Examples:
-        Basketball: A "slam dunk" is a powerful shot where the player jumps and forcefully scores by putting the ball directly through the hoop.
-        Music: In the context of music, a "slam" can refer to a powerful or impactful performance or move.
-
-3. SLAM (General Term)
-
-    Definition: As a general term, "slam" can mean to strike or hit something forcefully or to criticize something harshly.
-    Example:
-        Verb: "He slammed the door shut."
-        Noun: "She received a harsh slam from the reviewer."
-    SLAM (Robotics/Computer Vision): Refers to Simultaneous Localization and Mapping, a key technology in autonomous systems.
-    SLAM (Sports/Entertainment): Refers to high-impact actions or performances.
-    SLAM (General Use): Refers to forceful actions or criticism.
-
+    
 #### nevigation
  - https://ros2-industrial-workshop.readthedocs.io/en/latest/_source/navigation/ROS2-Navigation.html
 #### catographer
